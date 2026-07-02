@@ -98,7 +98,7 @@ One Property Maintenance Partner for the Work That Keeps a Site Moving
 
 Intro copy:
 
-A stronger site should not read like a vague contractor list. It should give clear direction for the services that affect access, safety, appearance, drainage, and day-to-day use. APS should be presented around the service groups customers are most likely to understand and request.
+A stronger site should not read like a unfocused service list. It should give clear direction for the services that affect access, safety, appearance, drainage, and day-to-day use. APS should be presented around the service groups customers are most likely to understand and request.
 
 Service cards:
 
@@ -158,7 +158,7 @@ Audience priority should be confirmed with APS before launch.
 
 Section heading:
 
-Clearer Than a Long Contractor Directory
+A Clearer Way to Present Property Services
 
 Copy:
 
@@ -280,4 +280,5 @@ Recommended service-interest options:
 - Design Agent should create a clean demo layout around service clarity, CTA visibility, and property-maintenance credibility.
 - Build Agent should not begin until sitemap, copy direction, and design direction are approved for demo build.
 - Final public copy still requires human/client approval.
+
 

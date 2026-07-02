@@ -30,7 +30,7 @@ The design should feel like a practical property maintenance company: organized,
 
 ## Observations
 
-- The existing site appears cluttered and service-heavy, with repeated SEO text weakening credibility.
+- The existing site appears cluttered and service-heavy, with repeated SEO text making the business harder to evaluate quickly.
 - The demo needs to make service clarity obvious in the first viewport.
 - The strongest visual direction is utility and confidence, not a flashy marketing site.
 - Real project/equipment/property photos would materially improve credibility if approved.
@@ -269,6 +269,13 @@ Mobile:
 - Use form labels, not placeholders only.
 - Avoid text embedded in images.
 
+## Phase Three Build Readiness
+
+- Demo page priority: Home first, then Services, Contact, and one flagship service page.
+- Form states: loading, success, error, and required fields.
+- Asset plan: approved photos are preferred; placeholders are acceptable for demo only.
+- Acceptance criteria: mobile-first layout, visible CTAs, no unsupported trust claims, no fake reviews, and no invented certifications.
+
 ## Recommendations
 
 - Build the demo around the homepage first, then service overview and a small set of service detail pages.
@@ -291,4 +298,6 @@ Mobile:
 - Build Agent should use this spec with `sitemap.md`, `homepage-copy.md`, and `seo-package.md`.
 - QA Agent should later verify mobile layout, CTA visibility, form usability, image rendering, and text overlap.
 - Deployment Agent should not plan production deployment, DNS, or analytics changes without approval.
+
+
 

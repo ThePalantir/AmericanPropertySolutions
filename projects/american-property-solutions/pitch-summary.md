@@ -2,7 +2,7 @@
 
 ## Summary
 
-American Property Solutions already appears to have the raw material for a stronger website: real services, local presence, year-round property maintenance positioning, and a broad set of exterior/property support capabilities. The current site does not present that clearly enough.
+American Property Solutions already appears to have the raw material for a stronger website: real services, local presence, year-round property maintenance positioning, and a broad set of exterior/property support capabilities. The current site could present that more clearly.
 
 The opportunity is to show the owner a practical before-and-after: same business, cleaner message, better service organization, stronger quote path, and more credible local SEO.
 
@@ -118,4 +118,5 @@ Show a simple Vercel demo with:
 - Build Agent should not start until the user explicitly approves demo build work.
 - Copywriting and SEO should remain marked as draft until client validation.
 - Design Agent can use this summary to keep the demo grounded in business value rather than visual polish alone.
+
 
