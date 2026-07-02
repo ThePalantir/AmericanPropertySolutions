@@ -1,0 +1,294 @@
+# Design Spec
+
+## Summary
+
+This design spec defines a modern Vercel demo direction for American Property Solutions. The goal is to show the owner a cleaner, more credible website concept without building the site yet.
+
+The design should feel like a practical property maintenance company: organized, direct, local, and capable. It should avoid clutter, keyword blocks, unverified trust claims, and decorative excess.
+
+## Inputs Reviewed
+
+- `AGENTS.md`
+- `projects/american-property-solutions/intake.md`
+- `projects/american-property-solutions/current-site-audit.md`
+- `projects/american-property-solutions/brief.md`
+- `projects/american-property-solutions/sitemap.md`
+- `projects/american-property-solutions/homepage-copy.md`
+- `projects/american-property-solutions/seo-package.md`
+- `projects/american-property-solutions/open-questions.md`
+- `projects/american-property-solutions/decisions.md`
+
+## Confirmed Facts
+
+- Business name: American Property Solutions.
+- APS publicly positions itself as a four-season property maintenance company.
+- APS publicly lists snow removal/snow plowing, parking lot services, excavation/sitework, landscaping/hardscaping, concrete/drainage, and building maintenance/repair services.
+- APS publicly lists phone number `610-760-0600`.
+- APS publicly lists locations in Walnutport, PA and Vestal, NY.
+- APS publicly lists hours as `M-F 9AM-4PM`.
+- Final public copy, final sitemap, deployment, analytics changes, DNS changes, and public trust claims require approval.
+
+## Observations
+
+- The existing site appears cluttered and service-heavy, with repeated SEO text weakening credibility.
+- The demo needs to make service clarity obvious in the first viewport.
+- The strongest visual direction is utility and confidence, not a flashy marketing site.
+- Real project/equipment/property photos would materially improve credibility if approved.
+- Trust badges and testimonials should be placeholders or omitted until verified.
+
+## Assumptions
+
+- If approved, the demo would be built as a modern responsive site with a Vercel-friendly frontend stack.
+- The primary audience includes commercial property owners, property managers, local businesses, and residential homeowners pending validation.
+- APS has or can approve service photos for snow, parking lots, sitework, landscaping/hardscaping, and repairs.
+- The demo should prioritize homepage and service-path clarity over deep content pages.
+
+## Design Goals
+
+- Make APS appear clear and credible within the first screen.
+- Make the service offering easier to understand than the current site.
+- Make phone and quote actions obvious on desktop and mobile.
+- Present commercial/property-manager appeal without excluding residential needs before validation.
+- Replace keyword clutter with clean service sections and natural local context.
+- Keep the design maintainable for future small-business website projects.
+
+## Visual Direction
+
+Recommended look:
+
+- Professional, grounded, work-ready.
+- Clean white and light neutral backgrounds with strong dark text.
+- Controlled use of APS brand colors if logo assets are available.
+- High-contrast call-to-action buttons.
+- Real service imagery over generic stock whenever approved.
+- Simple service cards and section bands, not nested card-heavy layouts.
+
+Avoid:
+
+- Oversized marketing hero with vague claims.
+- Decorative gradients, visual clutter, or ornamental graphics.
+- Repeated badges or testimonials before approval.
+- Dense keyword text blocks.
+- Overly residential-home-improvement styling if commercial positioning remains primary.
+
+## Suggested Page Layout: Homepage
+
+### Header
+
+- Left: APS logo or text wordmark.
+- Center/right navigation: Home, Services, Snow & Ice, Parking Lots, Sitework, About, Contact.
+- Right CTA cluster: phone link and `Request a Quote` button.
+- Mobile: compact menu, sticky phone/quote action if practical.
+
+### Hero
+
+Purpose:
+
+- State what APS does and who it helps.
+- Show real property maintenance capability.
+- Provide immediate call and quote paths.
+
+Recommended layout:
+
+- Full-width section with text on the left and strong service image on the right, or a restrained full-bleed image treatment with readable text overlay.
+- Use one headline, one short paragraph, and two CTAs.
+- Include a small location/service-area line below CTAs.
+
+Preferred imagery:
+
+- Snow clearing at a commercial lot.
+- Parking lot/sitework equipment.
+- Maintained commercial exterior.
+
+### Service Overview
+
+Purpose:
+
+- Turn the broad service list into five understandable buckets.
+
+Layout:
+
+- Five service cards in a responsive grid.
+- Each card includes icon, title, 2-3 lines of copy, and text link.
+- Cards should be compact, scannable, and equal height.
+
+Suggested icons:
+
+- Snowflake or plow-related icon for Snow & Ice.
+- Parking/road icon for Parking Lot Maintenance.
+- Shovel/excavator/construction icon for Sitework.
+- Leaf/tree icon for Landscaping & Hardscaping.
+- Wrench/tool icon for Building Maintenance & Repairs.
+
+### Who APS Helps
+
+Purpose:
+
+- Speak to property owners and managers without overclaiming.
+
+Layout:
+
+- Simple two-column band.
+- Left: short positioning copy.
+- Right: audience list with checkmarks or subtle icons.
+
+Audience labels:
+
+- Commercial property owners
+- Property managers
+- Local businesses
+- Facilities and operations managers
+- Residential homeowners with exterior property needs
+
+### Proof/Trust Placeholder
+
+Purpose:
+
+- Reserve space for approved trust signals without inventing them.
+
+Layout:
+
+- Use muted placeholder row in internal demo or omit from public-looking mock until approved.
+- Label internally as pending approval.
+
+Potential approved content later:
+
+- Testimonials
+- Membership or affiliation badges
+- Company history
+- Project photos
+- Snow operations details
+
+### Service Area Band
+
+Purpose:
+
+- Replace SEO stuffing with natural local relevance.
+
+Layout:
+
+- Short paragraph plus select visible areas.
+- Link to Contact.
+- Do not create location cards for every town.
+
+### Final CTA
+
+Purpose:
+
+- Convert interested visitors.
+
+Layout:
+
+- Strong but simple band with `Request a Quote` and `Call 610-760-0600`.
+- Include short reassurance: "Tell us what property issue you need help with, and APS can discuss the right next step."
+
+## Page Templates
+
+### Services Overview Template
+
+- H1 and short intro.
+- Five service group cards.
+- Sub-service lists under each group.
+- Cross-links to relevant service pages.
+- CTA band.
+
+### Service Detail Template
+
+- H1 and service-specific intro.
+- Short "what we handle" list.
+- "Good fit for" section pending validation.
+- Related services.
+- Quote CTA.
+- Optional approved image gallery.
+
+### Contact Template
+
+- H1.
+- Phone CTA.
+- Quote form.
+- Service-interest dropdown matching sitemap.
+- Public locations and hours.
+- Service-area note.
+- Map only if approved and useful.
+
+## Content and Component Guidance
+
+- Buttons: use clear text labels, not vague `Learn More` repeated everywhere.
+- Primary button: `Request a Quote`.
+- Secondary button: `Call 610-760-0600`.
+- Forms: labels visible, fields easy to tap on mobile, clear required-field indicators.
+- Service cards: title, icon, concise body, link.
+- Trust sections: do not show final-looking badges or testimonials unless approved.
+- Photos: use real work photos where possible; avoid generic glossy stock photos.
+
+## Color and Typography Direction
+
+Suggested palette direction:
+
+- Deep charcoal or near-black for primary text.
+- White and cool light gray for backgrounds.
+- Safety/work accent such as controlled yellow, gold, or orange for CTAs if compatible with APS branding.
+- Secondary accent such as green for landscape/property maintenance if used sparingly.
+- Avoid a one-note green-only landscaping palette because APS is broader than landscaping.
+
+Typography:
+
+- Use a clean sans-serif type family.
+- Headings should be strong but not oversized inside content sections.
+- Body copy should prioritize readability and scanning.
+- Do not use negative letter spacing.
+
+## Responsive Behavior
+
+Desktop:
+
+- Sticky or stable top nav with visible CTA.
+- Service grid can use 3+2 or 5-card responsive arrangement.
+- Hero should keep content readable and image clear.
+
+Tablet:
+
+- Collapse card grid to two columns.
+- Keep phone and quote CTA visible.
+
+Mobile:
+
+- Single-column layout.
+- Header should make calling easy.
+- Service cards should not overflow or shift.
+- Form fields should be full width.
+- CTAs should be thumb-friendly.
+
+## Accessibility and Usability
+
+- Maintain strong color contrast.
+- Use visible focus states.
+- Use semantic headings in order.
+- Provide descriptive image alt text.
+- Make phone number a clickable link.
+- Use form labels, not placeholders only.
+- Avoid text embedded in images.
+
+## Recommendations
+
+- Build the demo around the homepage first, then service overview and a small set of service detail pages.
+- Use approved real photos if available; otherwise use clearly temporary placeholders for internal demo only.
+- Keep trust signals pending until APS confirms them.
+- Keep navigation lean and consistent with `sitemap.md`.
+- Design for fast comprehension by property managers and business owners.
+
+## Open Questions
+
+- Does APS have approved logo files and brand colors?
+- Which real photos can be used in the demo?
+- Should the hero image emphasize snow, parking lots, or general property maintenance?
+- Are trust badges/testimonials approved for display in the demo?
+- Should the demo visually prioritize commercial properties over residential examples?
+
+## Handoff Notes for the Next Agent
+
+- Build Agent should not start until the user approves moving from design spec to demo build.
+- Build Agent should use this spec with `sitemap.md`, `homepage-copy.md`, and `seo-package.md`.
+- QA Agent should later verify mobile layout, CTA visibility, form usability, image rendering, and text overlap.
+- Deployment Agent should not plan production deployment, DNS, or analytics changes without approval.
+
