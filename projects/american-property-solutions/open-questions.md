@@ -45,13 +45,14 @@ These questions should be resolved before final sitemap approval, final public c
 | High | Can APS use years-of-experience claims, and what exact wording is accurate? | Avoids inflated or ambiguous history claims. | Client/owner |
 | High | Is the draft homepage copy direction approved for a demo build? | Build work should not start from unapproved copy direction. | User/client |
 | High | Is the proposed sitemap approved for demo purposes? | The build should follow an approved structure. | User/client |
-| Medium | Is Snow & Ice Management the flagship service for the demo? | Determines page hierarchy, hero imagery, and SEO priority. | Client/owner or Nina context |
-| Medium | Which service-interest options should appear in the quote form? | Keeps lead capture aligned with operations. | Client/owner |
+| High | Is Property & Building Maintenance approved as the evergreen flagship page for the Phase Three demo? | Determines page hierarchy, hero imagery, SEO priority, and the first service page to build. | Client/owner or Nina context |
+| Medium | Which service-interest options should appear in the quote form, and should they follow the new service priority order? | Keeps lead capture aligned with operations. | Client/owner |
 | Medium | What happens after a quote form is submitted? | Affects form design, CTA language, and expectations. | Client/owner |
 | Medium | Is there an approved email address for public contact? | Contact page may need more than phone and form. | Client/owner |
 | Medium | Are there approved logo files, brand colors, and project photos? | Design quality and credibility depend on real visual assets. | Client/owner |
-| Medium | Should Service Partner Network remain visible on the public sales site? | It may support snow operations but distract from lead generation. | Client/owner |
+| Medium | Should Service Partner Network remain visible on the public sales site? | It may support seasonal snow operations but distract from evergreen lead generation. | Client/owner |
 | Medium | Should Careers be included in the demo or omitted from pilot v1? | Keeps the first concept focused. | Client/owner |
+| Medium | Is `Stacking and Hauling` the correct public wording, and should `Line Stripping` be corrected to `Line Striping` everywhere? | Prevents unclear service labels and public wording errors. | Client/owner |
 | Low | Should the weather widget be retained anywhere? | It adds clutter unless APS has a clear reason for it. | Client/owner |
 
 ## Assumptions
@@ -67,7 +68,7 @@ These questions should be resolved before final sitemap approval, final public c
 - Resolve the high-priority questions before final sitemap and final public copy.
 - Use the phase-two pitch summary to ask for a short validation pass rather than a long discovery process.
 - Treat trust signals as an approval checklist.
-- Confirm service priority before choosing hero imagery and homepage hierarchy.
+- Use the updated service priority order before choosing hero imagery, homepage hierarchy, and the first flagship service page.
 - Confirm service areas before writing final metadata or considering location pages.
 
 ## Open Questions
@@ -81,3 +82,4 @@ The open questions are listed in the priority table above. Keep this file active
 - Copywriting Agent should treat `homepage-copy.md` as draft copy pending client validation.
 - SEO Agent should treat `seo-package.md` as draft direction pending service-area validation.
 - Design Agent can use `design-spec.md` for demo planning but should keep trust badges/photos pending approval.
+

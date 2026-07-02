@@ -47,7 +47,7 @@ This decision log captures pilot-phase choices made from the intake, audit, disc
 | 2026-07-02 | Treat the sitemap as proposed, not final. | Working decision | AGENTS.md requires human approval before final sitemap. | Yes, before final sitemap |
 | 2026-07-02 | Use year-round property maintenance as the organizing concept for the pilot. | Working decision | Supported by current site language and intake hypothesis. | Yes, before final public copy |
 | 2026-07-02 | Lead the pilot strategy with commercial property maintenance while leaving residential audience scope unresolved until validated. | Working decision | Current site references commercial properties, but residential-only or mixed-service priority is not fully confirmed. | Yes |
-| 2026-07-02 | Group services into five core buckets: Snow & Ice Management, Parking Lot Maintenance, Excavation & Sitework, Landscaping & Hardscaping, Building Maintenance & Repairs. | Working decision | Reduces service clutter while preserving publicly listed services. | Yes, before final sitemap |
+| 2026-07-02 | Replace the original five-bucket service grouping with the updated Phase Three service priority led by Property & Building Maintenance. | Working decision | User corrected the demo direction so the first build emphasizes evergreen maintenance work while keeping seasonal and specialty services visible. | Yes, before final sitemap |
 | 2026-07-02 | Do not recommend location pages yet. | Working decision | Service areas are broad and not validated enough for low-risk location pages. | Yes, if location pages are later proposed |
 | 2026-07-02 | Do not reuse testimonials, trust badges, memberships, awards, certifications, guarantees, warranties, or years-of-experience claims as final public claims until approved. | Required rule | AGENTS.md requires approval for these public claims. | Yes |
 | 2026-07-02 | Keep Careers and Service Partner Network secondary for pilot v1. | Working decision | The pilot goal is a sales/conversion concept for the owner conversation. | Yes, if included publicly |
@@ -58,6 +58,9 @@ This decision log captures pilot-phase choices made from the intake, audit, disc
 | 2026-07-02 | Create a Vercel demo design spec only, with no website build yet. | Working decision | User explicitly asked not to build the website yet. | Yes, before build starts |
 | 2026-07-02 | Use real service imagery only if approved; otherwise keep visuals as placeholders for the demo. | Working decision | Avoids unsupported visual/trust implications. | Yes |
 | 2026-07-02 | Create a concise pitch summary for Nina/the owner. | Working decision | Supports the pilot goal of starting a practical owner conversation. | No |
+| 2026-07-02 | Use Property & Building Maintenance as the Phase Three flagship service page. | Working decision | User corrected the demo direction because snow plowing is seasonal and should not be the first flagship service page. | Yes, before final public copy |
+| 2026-07-02 | Keep Snow & Ice / Emergency Snow Plow Contractor content as a seasonal supporting service. | Working decision | Snow remains important but should not lead the first demo build. | Yes, before final public copy |
+| 2026-07-02 | Flag `Stacking and Hauling` and `Line Stripping` / `Line Striping` wording for client validation. | Working decision | User noted these labels may be uncertain and should be validated before final public copy. | Yes |
 
 ## Assumptions
 
@@ -66,7 +69,7 @@ This decision log captures pilot-phase choices made from the intake, audit, disc
 ## Recommendations
 - Review `pitch-summary.md` and `open-questions.md` before contacting Nina/the owner.
 - Approve or revise the proposed sitemap before any build work.
-- Confirm service priorities before deciding hero imagery and service order.
+- Use the updated service priority order before deciding hero imagery and service order.
 - Confirm service areas before final SEO metadata or any location-page work.
 - Keep the next phase focused on either approval gathering or a Vercel demo build, not production launch.
 
@@ -74,8 +77,8 @@ This decision log captures pilot-phase choices made from the intake, audit, disc
 
 - Which working decisions above should become approved client decisions?
 - Which decisions should be changed before demo build begins?
-- Should commercial property maintenance remain the lead positioning?
-- Should APS approve the five service buckets as the first sitemap structure?
+- Is Property & Building Maintenance approved as the evergreen flagship for Phase Three?
+- Should APS approve the updated service priority order and the Property & Building Maintenance flagship page?
 - Is phase-two homepage copy approved for demo use?
 - Is the design direction approved for demo build?
 
@@ -86,5 +89,7 @@ This decision log captures pilot-phase choices made from the intake, audit, disc
 - Copywriting Agent should treat homepage copy as draft until client validation.
 - SEO Agent should treat service-area and trust-signal decisions as unresolved.
 - Design Agent can use the working sitemap and design spec for layout planning after demo direction is approved.
+
+
 
 

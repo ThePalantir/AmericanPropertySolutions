@@ -35,7 +35,7 @@ The opportunity is to show the owner a practical before-and-after: same business
 - The service list is broad, but it can be organized into a simpler property maintenance story.
 - Repeated keyword blocks and spelling issues reduce credibility.
 - The current site has contact options, but the path to a quote is not as clean as it should be.
-- Snow and ice management appears to be one of the strongest service stories, but the overall site does not use it strategically enough.
+- Property and building maintenance should carry the evergreen demo story, while snow and ice management should remain visible as an important seasonal service.
 
 ## Before: What the Current Site Communicates
 
@@ -92,7 +92,7 @@ Show a simple Vercel demo with:
 ## Assumptions
 
 - Commercial property maintenance should lead the concept unless APS says otherwise.
-- Snow & Ice Management is likely a strong flagship service.
+- Property & Building Maintenance is the Phase Three flagship service; snow plowing should remain a supporting seasonal service.
 - Residential services should remain included carefully until APS clarifies priority.
 - Service areas should be confirmed before final public SEO work.
 - Trust badges, testimonials, awards, certifications, guarantees, warranties, and years-of-experience claims require approval before final use.
@@ -108,7 +108,7 @@ Show a simple Vercel demo with:
 
 - Would APS agree that property maintenance is the best umbrella position?
 - Does APS want commercial work to lead the site?
-- Which services are most important for future leads?
+- Is Property & Building Maintenance the correct evergreen flagship for the demo?
 - Which service areas are current and profitable?
 - Which trust signals can be shown publicly?
 
@@ -118,5 +118,6 @@ Show a simple Vercel demo with:
 - Build Agent should not start until the user explicitly approves demo build work.
 - Copywriting and SEO should remain marked as draft until client validation.
 - Design Agent can use this summary to keep the demo grounded in business value rather than visual polish alone.
+
 
 

@@ -40,22 +40,39 @@ This is not a final SEO launch package. Final service-area claims, trust claims,
 ## Assumptions
 
 - The homepage should target property maintenance searches around the Lehigh Valley/Walnutport area.
-- Snow & Ice Management is likely a priority SEO page.
+- Property & Building Maintenance is the evergreen flagship SEO page for the Phase Three demo; snow should remain an important seasonal supporting page.
 - Service pages should target service-category intent, not every sub-service as a separate page.
 - Residential and commercial audiences may both remain present until APS validates audience priority.
 - The demo should avoid location doorway pages.
 
+## Demo SEO Priority Order
+
+1. Property Maintenance
+2. Building Maintenance
+3. Stacking and Hauling, pending client validation of wording and scope
+4. Remodeling Contractor, pending client validation of scope
+5. Emergency Snow Plow Contractor as a seasonal supporting service
+6. Flowers and Shrubs
+7. Landscaping Contractor
+8. New Sod
+9. Paver Installer
+10. Patio & Deck Contractor
+11. Excavation Contractor
+12. Paving Contractor
+13. Concrete Contractor
+14. Crack Sealing and Sealcoating
+15. Line Striping, with `Line Stripping` treated as wording to validate/correct
 ## Page SEO Matrix
 
 | Page | URL Slug | Title Tag | Meta Description | H1 | H2 Direction | Internal Links |
 |---|---|---|---|---|---|---|
 | Home | `/` | American Property Solutions | Property Maintenance in Lehigh Valley | American Property Solutions provides year-round property maintenance services including snow and ice management, parking lot maintenance, sitework, landscaping, and repairs. | Year-Round Property Maintenance for Safer, Better-Kept Properties | Services overview, who APS helps, service area summary, trust signals pending approval, quote CTA | Services, Snow & Ice, Parking Lots, Sitework, Contact |
 | Services | `/services/` | Property Maintenance Services | American Property Solutions | Explore snow and ice management, parking lot maintenance, excavation, sitework, landscaping, hardscaping, and repair services from APS. | Property Maintenance Services | Service categories, seasonal property needs, commercial/residential fit pending validation, quote CTA | All service pages, Contact |
-| Snow & Ice Management | `/services/snow-ice-management/` | Snow & Ice Management | American Property Solutions | Snow plowing, de-icing, sidewalk clearing, snow relocation, and winter property support for commercial and managed properties. | Snow & Ice Management | Snow plowing, de-icing, sidewalks, hauling/relocation, winter response, approved technology/trust details | Services, Contact, Service Partner Network if approved |
+| Property & Building Maintenance | `/services/property-building-maintenance/` | Property & Building Maintenance | American Property Solutions | Property maintenance, building maintenance, repair support, stacking and hauling, and remodeling contractor services pending client validation. | Property & Building Maintenance | Property maintenance, building maintenance, repair support, stacking and hauling validation, remodeling scope validation, quote CTA | Services, Contact |
+| Seasonal Snow Plowing | `/services/seasonal-snow-plowing/` | Emergency Snow Plow Contractor | American Property Solutions | Seasonal snow plowing and winter property support for commercial and managed properties, pending service-area and operational validation. | Emergency Snow Plow Contractor | Snow plowing, de-icing, sidewalks, hauling/relocation, seasonal response, approved technology/trust details | Services, Contact |
 | Parking Lot Maintenance | `/services/parking-lot-maintenance/` | Parking Lot Maintenance | American Property Solutions | Parking lot maintenance services including asphalt repair, sealcoating, crack sealing, line striping, concrete repairs, sidewalks, and drainage support. | Parking Lot Maintenance | Asphalt repairs, sealcoating, crack sealing, line striping, concrete/sidewalk repair, drainage repairs | Services, Excavation & Sitework, Contact |
 | Excavation & Sitework | `/services/excavation-sitework/` | Excavation & Sitework | American Property Solutions | Excavation and sitework services including grading, drainage, material hauling, driveway stone, ditch digging, and driveway repair. | Excavation & Sitework | Grading, drainage, hauling/material delivery, driveway work, hardscape excavation, project-fit guidance | Services, Landscaping & Hardscaping, Parking Lot Maintenance, Contact |
 | Landscaping & Hardscaping | `/services/landscaping-hardscaping/` | Landscaping & Hardscaping | American Property Solutions | Lawn maintenance, landscape installation, drainage, hardscapes, retaining walls, patios, decks, and exterior property improvements. | Landscaping & Hardscaping | Lawn maintenance, mulching, sod/seeding, shrubs, drainage, hardscapes, patios/decks | Services, Excavation & Sitework, Contact |
-| Building Maintenance & Repairs | `/services/building-maintenance-repairs/` | Building Maintenance & Repairs | American Property Solutions | Building maintenance and repair services for property owners, businesses, and managed properties. | Building Maintenance & Repairs | Maintenance needs, repair request guidance, commercial/residential fit pending validation, quote CTA | Services, Contact |
 | About | `/about/` | About American Property Solutions | Learn about American Property Solutions, a property maintenance company serving publicly listed areas from its Walnutport, PA location. | About American Property Solutions | Company overview, approved history, service philosophy, approved trust signals, CTA | Services, Contact |
 | Contact | `/contact/` | Contact American Property Solutions | Call 610-760-0600 or request a quote from American Property Solutions for property maintenance services. | Contact American Property Solutions | Phone, quote form, locations, hours, service area note, form expectations | Services, core service pages |
 
@@ -80,7 +97,7 @@ Recommended local copy approach:
 
 ## Internal Linking Plan
 
-- Homepage should link to Services, Snow & Ice Management, Parking Lot Maintenance, Excavation & Sitework, and Contact.
+- Homepage should link to Services, Property & Building Maintenance, Contact, and supporting service groups.
 - Services page should link to every service page and explain the five service buckets.
 - Service pages should link to Contact and related overlapping services.
 - Parking Lot Maintenance should link to Excavation & Sitework for drainage, concrete, and site prep overlap.
@@ -123,15 +140,15 @@ Avoid:
 - Use the page matrix as the phase-two SEO direction for the demo.
 - Validate service areas before final metadata is launched.
 - Keep SEO copy useful and readable for property owners, managers, and businesses.
-- Treat Snow & Ice Management as a likely high-priority page pending client confirmation.
+- Treat Property & Building Maintenance as the Phase Three flagship page. Keep snow as an important seasonal service, not the main flagship page.
 - Defer testimonials, badges, certifications, awards, guarantees, and years-of-experience claims until approved.
 
 ## Open Questions
 
-- Which service categories are highest priority for organic search?
+- Are Property Maintenance and Building Maintenance approved as the top SEO priorities for the demo?
 - Which service areas should appear in title tags and meta descriptions?
 - Are both public locations current and SEO-relevant?
-- Should APS target commercial snow removal more aggressively than general property maintenance?
+- Which wording is correct for public copy: `Stacking and Hauling`, another hauling phrase, `Line Striping`, or the current-site variant `Line Stripping`?
 - Are there approved project photos for each service page?
 
 ## Handoff Notes for the Next Agent
@@ -140,3 +157,5 @@ Avoid:
 - Design Agent should leave room for clear H1/H2 hierarchy and service-card internal links.
 - Build Agent should implement metadata, accessible forms, responsive CTA behavior, and optimized images only after demo build is approved.
 - Analytics Agent should later define conversion events for phone clicks, quote form starts, and quote form submissions.
+
+

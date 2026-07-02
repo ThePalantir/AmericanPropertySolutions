@@ -40,7 +40,7 @@ The copy uses the phase-one working direction: year-round property maintenance, 
 ## Assumptions
 
 - Commercial property owners, property managers, local businesses, facilities/operations managers, and residential homeowners are potential audiences to validate.
-- Snow & Ice Management is a likely flagship service for the pilot.
+- Property & Building Maintenance is the evergreen flagship service for the Phase Three demo. Snow plowing remains an important seasonal service, not the main flagship page.
 - The Lehigh Valley/Walnutport area is the main local SEO anchor for the pilot concept.
 - The New York location should be listed on contact sections but not overemphasized until confirmed.
 - Testimonials, trust badges, certifications, awards, warranties, guarantees, and years-of-experience claims are not approved for use in final copy yet.
@@ -76,7 +76,7 @@ Lead copy:
 
 American Property Solutions helps commercial properties, local businesses, property managers, and homeowners keep exterior spaces safe, functional, and maintained through every season.
 
-From snow and ice management to parking lot maintenance, excavation, landscaping, hardscaping, and building repairs, APS gives property owners a practical place to start when property maintenance needs require a clear next step.
+From property and building maintenance to hauling, remodeling, landscaping, hardscaping, excavation, paving, concrete, line striping, and seasonal snow plowing, APS gives property owners a practical place to start when maintenance needs require a clear next step.
 
 Primary CTA:
 
@@ -102,15 +102,21 @@ A stronger site should not read like a unfocused service list. It should give cl
 
 Service cards:
 
-#### Snow & Ice Management
+#### Property & Building Maintenance
 
-Snow plowing, de-icing, sidewalk clearing, snow relocation, and winter property support for commercial and managed properties. Final service-area and operational claims should be confirmed before launch.
+Evergreen property maintenance, building maintenance, repair support, hauling, and remodeling-related service needs should lead the first demo. Specific repair, remodeling, stacking, and hauling wording should be validated with APS before final public copy.
 
-CTA: View Snow & Ice Services
+CTA: View Property & Building Maintenance
+
+#### Seasonal Snow Plowing
+
+Snow plowing, de-icing, sidewalk clearing, snow relocation, and winter property support should remain visible as an important seasonal service. It should not be the flagship service page for the first demo build.
+
+CTA: View Seasonal Snow Services
 
 #### Parking Lot Maintenance
 
-Asphalt repairs, overlays, patches, sealcoating, crack sealing, line striping, concrete repairs, sidewalk repairs, drainage repairs, and related lot maintenance services.
+Asphalt repairs, overlays, patches, sealcoating, crack sealing, line striping, concrete repairs, sidewalk repairs, drainage repairs, and related lot maintenance services. Confirm final line striping wording with APS before launch.
 
 CTA: View Parking Lot Services
 
@@ -122,15 +128,9 @@ CTA: View Sitework Services
 
 #### Landscaping & Hardscaping
 
-Lawn maintenance, mulching, bed maintenance, sod, seeding, shrubs, drainage, hardscapes, retaining walls, patios, decks, and related exterior property improvements.
+Lawn maintenance, flowers and shrubs, mulching, bed maintenance, new sod, seeding, drainage, pavers, retaining walls, patios, decks, and related exterior property improvements.
 
 CTA: View Landscaping & Hardscaping
-
-#### Building Maintenance & Repairs
-
-Building maintenance and repair support for property needs that should be reviewed, scoped, and quoted by APS before final public wording is expanded.
-
-CTA: Discuss Repair Needs
 
 ### Who APS Helps
 
@@ -269,7 +269,7 @@ Recommended service-interest options:
 ## Open Questions
 
 - Should the final hero say commercial-first, commercial and residential, or property managers first?
-- Which service should be emphasized most visually on the homepage?
+- Is Property & Building Maintenance approved as the visual and content focus for the first demo?
 - Which public service areas are accurate today?
 - Which trust signals are approved for final copy?
 - Should the New York location appear in the homepage footer only or also in the body copy?
@@ -280,5 +280,7 @@ Recommended service-interest options:
 - Design Agent should create a clean demo layout around service clarity, CTA visibility, and property-maintenance credibility.
 - Build Agent should not begin until sitemap, copy direction, and design direction are approved for demo build.
 - Final public copy still requires human/client approval.
+
+
 
 

@@ -71,12 +71,29 @@ Avoid:
 - Dense keyword text blocks.
 - Overly residential-home-improvement styling if commercial positioning remains primary.
 
+## Demo Service Priority
+
+1. Property Maintenance
+2. Building Maintenance
+3. Stacking and Hauling, pending client validation of wording and scope
+4. Remodeling Contractor, pending client validation of scope
+5. Emergency Snow Plow Contractor as a seasonal supporting service
+6. Flowers and Shrubs
+7. Landscaping Contractor
+8. New Sod
+9. Paver Installer
+10. Patio & Deck Contractor
+11. Excavation Contractor
+12. Paving Contractor
+13. Concrete Contractor
+14. Crack Sealing and Sealcoating
+15. Line Striping, with `Line Stripping` treated as wording to validate/correct
 ## Suggested Page Layout: Homepage
 
 ### Header
 
 - Left: APS logo or text wordmark.
-- Center/right navigation: Home, Services, Snow & Ice, Parking Lots, Sitework, About, Contact.
+- Center/right navigation: Home, Services, Property & Building Maintenance, About, Contact.
 - Right CTA cluster: phone link and `Request a Quote` button.
 - Mobile: compact menu, sticky phone/quote action if practical.
 
@@ -271,7 +288,7 @@ Mobile:
 
 ## Phase Three Build Readiness
 
-- Demo page priority: Home first, then Services, Contact, and one flagship service page.
+- Demo page priority: Home first, then Services, Contact, and the Property & Building Maintenance flagship service page.
 - Form states: loading, success, error, and required fields.
 - Asset plan: approved photos are preferred; placeholders are acceptable for demo only.
 - Acceptance criteria: mobile-first layout, visible CTAs, no unsupported trust claims, no fake reviews, and no invented certifications.
@@ -288,7 +305,7 @@ Mobile:
 
 - Does APS have approved logo files and brand colors?
 - Which real photos can be used in the demo?
-- Should the hero image emphasize snow, parking lots, or general property maintenance?
+- Should the hero image emphasize building maintenance, property upkeep, hauling, or a general maintained-property exterior?
 - Are trust badges/testimonials approved for display in the demo?
 - Should the demo visually prioritize commercial properties over residential examples?
 
@@ -298,6 +315,7 @@ Mobile:
 - Build Agent should use this spec with `sitemap.md`, `homepage-copy.md`, and `seo-package.md`.
 - QA Agent should later verify mobile layout, CTA visibility, form usability, image rendering, and text overlap.
 - Deployment Agent should not plan production deployment, DNS, or analytics changes without approval.
+
 
 
 
