@@ -387,6 +387,8 @@ a:focus-visible {
 
 .service-card {
   display: flex;
+  color: inherit;
+  text-decoration: none;
   min-height: 100%;
   flex-direction: column;
   padding: 1.25rem;

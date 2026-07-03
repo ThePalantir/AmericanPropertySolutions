@@ -68,7 +68,12 @@ export default function ServicesPage() {
         </div>
         <div className="service-directory-grid">
           {serviceCatalog.map((service) => (
-            <article className="directory-card" key={service.slug}>
+            <Link
+              className="directory-card"
+              href={`/services/${service.slug}`}
+              key={service.slug}
+              aria-label={`View ${service.title} services`}
+            >
               <p className="eyebrow">{service.eyebrow}</p>
               <h3>{service.title}</h3>
               <p>{service.summary}</p>
@@ -77,10 +82,10 @@ export default function ServicesPage() {
                   <li key={item}>{item}</li>
                 ))}
               </ul>
-              <Link className="text-link" href={`/services/${service.slug}`}>
+              <span className="text-link" aria-hidden="true">
                 View {service.title}
-              </Link>
-            </article>
+              </span>
+            </Link>
           ))}
         </div>
       </section>

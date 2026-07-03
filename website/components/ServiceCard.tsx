@@ -16,7 +16,7 @@ export function ServiceCard({
   href
 }: ServiceCardProps) {
   return (
-    <article className="service-card">
+    <Link className="service-card" href={href} aria-label={`View ${title} services`}>
       <p className="eyebrow">{eyebrow}</p>
       <h3>{title}</h3>
       <p>{summary}</p>
@@ -25,9 +25,9 @@ export function ServiceCard({
           <li key={item}>{item}</li>
         ))}
       </ul>
-      <Link className="text-link" href={href}>
+      <span className="text-link" aria-hidden="true">
         View service path
-      </Link>
-    </article>
+      </span>
+    </Link>
   );
 }
