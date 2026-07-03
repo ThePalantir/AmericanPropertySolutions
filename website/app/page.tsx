@@ -28,7 +28,7 @@ export default function HomePage() {
       <CinematicHero slides={homeHeroSlides}>
         <div className="hero-copy">
           <p className="eyebrow on-dark">Commercial property maintenance</p>
-          <h1>Four-Season Commercial Property Maintenance for the Lehigh Valley and Eastern Pennsylvania</h1>
+          <h1>Four-Season Commercial Property Maintenance</h1>
           <p className="lead">
             American Property Solutions is organized as a regional maintenance
             partner for property managers, facility teams, local businesses, and
@@ -49,8 +49,7 @@ export default function HomePage() {
             </Link>
           </div>
           <p className="location-note on-dark-note">
-            Walnutport-based APS with Lehigh Valley and regional Pennsylvania
-            service coverage to confirm during the walkthrough.
+            Start with a walkthrough to match the property need to the right APS service path.
           </p>
         </div>
       </CinematicHero>
