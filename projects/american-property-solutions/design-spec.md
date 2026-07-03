@@ -440,14 +440,16 @@ Approved files should be placed under `website/public/approved-aps-assets/` when
 
 Current approved filenames wired in the demo:
 
-- `CorporateBuildingExterior1.jpg` for the homepage hero.
-- `CorporateBuildingExterior2.jpg` for the homepage commercial exterior gallery slot and contact page visual.
-- `SnowPlowEquipment1.png` for the homepage crews/equipment gallery slot.
-- `Plowing1.png` for the homepage snow/plowing gallery slot.
+- `aps-pa-logo.png` for the header and footer logo.
+- `corporate-building-exterior-1.jpg` for the homepage hero.
+- `corporate-building-exterior-2.jpg` for the homepage commercial exterior gallery slot.
+- `snow-plow-equipment-1.png` for the homepage crews/equipment gallery slot.
+- `plowing-1.png` for the homepage snow/plowing gallery slot.
 - `sealcoating.png` for the homepage parking lot work gallery slot.
 - `buildingmaintenance.png` for the homepage building/facility maintenance gallery slot.
-- `Landscaping3.png` for the Services overview visual.
+- `landscaping-3.png` for the Services overview visual.
 - `aps-drywall.jpeg` for the Property & Building Maintenance page visual.
+- `location.png` for the Contact page visual.
 
 Remaining placeholder:
 
@@ -483,4 +485,7 @@ Images should render only after the asset has an approved `src` and `status: "ap
 ## Launch Approval Reference
 
 Before production launch planning, use `projects/american-property-solutions/launch-approval-checklist.md` to validate final service-area wording, service labels, approved asset usage, trust claims, form routing, SEO metadata, and legal/privacy needs.
+
+
+
 

@@ -403,13 +403,15 @@ The following must be validated before becoming final public copy:
 
 The current demo also includes approved local images wired for these page-level image slots:
 
-- `Landscaping3.png` on the Services page.
+- `landscaping-3.png` on the Services page.
 - `aps-drywall.jpeg` on the flagship Property & Building Maintenance page.
-- `CorporateBuildingExterior2.jpg` on the Contact page.
+- `location.png` on the Contact page.
 
-The concrete/sitework gallery slot remains a placeholder until APS provides or approves a clearly matching concrete or excavation image. Image usage rights, alt text, and any implied service/location context still require final launch approval.
+The header/footer logo uses `aps-pa-logo.png`. The concrete/sitework gallery slot remains a placeholder until APS provides or approves a clearly matching concrete or excavation image. Badge and affiliation-style graphics remain approval-pending and are not rendered as public trust claims. Image usage rights, alt text, and any implied service/location context still require final launch approval.
 
 ## Launch Approval Reference
 
 Before this copy becomes final public website copy, validate service-area wording, service labels, property types, trust claims, approved photos, form routing, SEO metadata, and legal/privacy needs in `projects/american-property-solutions/launch-approval-checklist.md`.
+
+
 

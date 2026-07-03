@@ -157,9 +157,9 @@ export const heroAsset: VisualAsset = {
   id: "hero-commercial-property",
   title: "Commercial property maintenance",
   alt: "Corporate building exterior used for APS commercial property maintenance positioning",
-  recommendedFile: "CorporateBuildingExterior1.jpg",
+  recommendedFile: "corporate-building-exterior-1.jpg",
   usage: "Homepage hero image showing a maintained commercial exterior, parking area, crew, or APS equipment.",
-  src: "/approved-aps-assets/CorporateBuildingExterior1.jpg",
+  src: "/approved-aps-assets/corporate-building-exterior-1.jpg",
   status: "approved"
 };
 
@@ -168,27 +168,27 @@ export const galleryAssets: VisualAsset[] = [
     id: "commercial-exterior",
     title: "Commercial exterior maintenance",
     alt: "Corporate building exterior used for APS commercial exterior maintenance context",
-    recommendedFile: "CorporateBuildingExterior2.jpg",
+    recommendedFile: "corporate-building-exterior-2.jpg",
     usage: "Commercial property exterior with maintained grounds and visible site context.",
-    src: "/approved-aps-assets/CorporateBuildingExterior2.jpg",
+    src: "/approved-aps-assets/corporate-building-exterior-2.jpg",
     status: "approved"
   },
   {
     id: "crew-equipment",
     title: "APS crews and equipment",
     alt: "APS snow plow equipment used for service equipment context",
-    recommendedFile: "SnowPlowEquipment1.png",
+    recommendedFile: "snow-plow-equipment-1.png",
     usage: "APS crew, truck, trailer, equipment, or work setup at an approved property.",
-    src: "/approved-aps-assets/SnowPlowEquipment1.png",
+    src: "/approved-aps-assets/snow-plow-equipment-1.png",
     status: "approved"
   },
   {
     id: "snow-cleared-lot",
     title: "Snow-cleared parking lot",
     alt: "APS plowing photo used for snow and ice management context",
-    recommendedFile: "Plowing1.png",
+    recommendedFile: "plowing-1.png",
     usage: "Commercial lot or access area after snow service, if APS approves the image and service context.",
-    src: "/approved-aps-assets/Plowing1.png",
+    src: "/approved-aps-assets/plowing-1.png",
     status: "approved"
   },
   {
@@ -224,9 +224,9 @@ export const serviceOverviewAsset: VisualAsset = {
   id: "services-overview",
   title: "Organized commercial service paths",
   alt: "APS landscaping and grounds maintenance photo used for the services overview",
-  recommendedFile: "Landscaping3.png",
+  recommendedFile: "landscaping-3.png",
   usage: "Service overview image showing APS work types, equipment, or commercial property context.",
-  src: "/approved-aps-assets/Landscaping3.png",
+  src: "/approved-aps-assets/landscaping-3.png",
   status: "approved"
 };
 
@@ -243,10 +243,20 @@ export const propertyMaintenanceAsset: VisualAsset = {
 export const contactAsset: VisualAsset = {
   id: "walkthrough-contact",
   title: "Property walkthrough request",
-  alt: "Corporate building exterior used for the APS contact and walkthrough request page",
-  recommendedFile: "CorporateBuildingExterior2.jpg",
+  alt: "APS location image used for the contact and service area page visual",
+  recommendedFile: "location.png",
   usage: "Contact page image showing a property walkthrough, APS representative, truck, or commercial site context if approved.",
-  src: "/approved-aps-assets/CorporateBuildingExterior2.jpg",
+  src: "/approved-aps-assets/location.png",
+  status: "approved"
+};
+
+export const logoAsset: VisualAsset = {
+  id: "aps-logo",
+  title: "American Property Solutions logo",
+  alt: "American Property Solutions logo",
+  recommendedFile: "aps-pa-logo.png",
+  usage: "Header and footer business logo.",
+  src: "/approved-aps-assets/aps-pa-logo.png",
   status: "approved"
 };
 export const recommendedAssetLocation = "/approved-aps-assets/";
@@ -263,4 +273,6 @@ export const validationNotes = [
   "Line Striping should be validated against the current-site variant Line Stripping.",
   "Trust badges, testimonials, awards, certifications, warranties, guarantees, emergency-response language, and years-in-business claims are intentionally omitted."
 ];
+
+
 

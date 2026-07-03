@@ -50,22 +50,30 @@ website/public/approved-aps-assets/
 
 Current approved filenames wired in `website/lib/siteData.ts`:
 
-- Homepage hero: `CorporateBuildingExterior1.jpg`
-- Homepage gallery commercial exterior: `CorporateBuildingExterior2.jpg`
-- Homepage gallery crews/equipment: `SnowPlowEquipment1.png`
-- Homepage gallery snow/plowing: `Plowing1.png`
+- Header/footer logo: `aps-pa-logo.png`
+- Homepage hero: `corporate-building-exterior-1.jpg`
+- Homepage gallery commercial exterior: `corporate-building-exterior-2.jpg`
+- Homepage gallery crews/equipment: `snow-plow-equipment-1.png`
+- Homepage gallery snow/plowing: `plowing-1.png`
 - Homepage gallery parking lot work: `sealcoating.png`
 - Homepage gallery building/facility maintenance: `buildingmaintenance.png`
-- Services page overview: `Landscaping3.png`
+- Services page overview: `landscaping-3.png`
 - Property & Building Maintenance page: `aps-drywall.jpeg`
-- Contact page visual: `CorporateBuildingExterior2.jpg`
+- Contact page visual: `location.png`
 
 Remaining placeholder:
 
 - Concrete and sitework: no clearly matching approved concrete or excavation image is currently wired.
 
-Approved files intentionally not wired in this pass include logos, badges, association marks, map/location graphics, and extra service photos that do not have a current matching slot.
+Approval-pending files intentionally not rendered as public trust claims:
 
+- `bbb-logo.webp`
+- `chamber-logo-transparent.png`
+- `ascalogo.png`
+- `simalogo-e1681671046844.png`
+- `aps-star.png`
+
+Extra approved local service images remain available for future matching slots, but are not rendered unless a current slot clearly fits.
 Replacement steps after APS approves assets:
 
 1. Add approved images to `website/public/approved-aps-assets/`.
@@ -81,4 +89,6 @@ Do not add photos that imply unapproved service areas, credentials, equipment ow
 ## Launch Approval Reference
 
 Before this demo moves toward public launch, use `../projects/american-property-solutions/launch-approval-checklist.md` as the validation gate for service-area wording, approved assets, public claims, form routing, SEO metadata, and legal/privacy needs.
+
+
 

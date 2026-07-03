@@ -1,12 +1,22 @@
+import Image from "next/image";
 import Link from "next/link";
-import { business, navItems, validationNotes } from "../lib/siteData";
+import { business, logoAsset, navItems, validationNotes } from "../lib/siteData";
 
 export function Footer() {
+  const hasApprovedLogo = Boolean(logoAsset.src && logoAsset.status === "approved");
+
   return (
     <footer className="site-footer">
       <div className="footer-grid">
         <div>
-          <p className="eyebrow">American Property Solutions</p>
+          <div className="footer-brand">
+            {hasApprovedLogo && logoAsset.src ? (
+              <span className="footer-logo" aria-hidden="true">
+                <Image src={logoAsset.src} alt="" fill sizes="150px" />
+              </span>
+            ) : null}
+            <p className="eyebrow">American Property Solutions</p>
+          </div>
           <h2>Property maintenance demo concept</h2>
           <p>
             This demo keeps the focus on clearer service organization, visible
@@ -44,4 +54,3 @@ export function Footer() {
     </footer>
   );
 }
-

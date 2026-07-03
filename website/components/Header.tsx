@@ -1,13 +1,22 @@
+import Image from "next/image";
 import Link from "next/link";
-import { business, navItems } from "../lib/siteData";
+import { business, logoAsset, navItems } from "../lib/siteData";
 
 export function Header() {
+  const hasApprovedLogo = Boolean(logoAsset.src && logoAsset.status === "approved");
+
   return (
     <header className="site-header">
       <div className="demo-ribbon">{business.demoNote}</div>
       <div className="nav-shell">
         <Link className="brand" href="/" aria-label="American Property Solutions home">
-          <span className="brand-mark">APS</span>
+          {hasApprovedLogo && logoAsset.src ? (
+            <span className="brand-logo" aria-hidden="true">
+              <Image src={logoAsset.src} alt="" fill sizes="96px" priority />
+            </span>
+          ) : (
+            <span className="brand-mark">APS</span>
+          )}
           <span>
             <strong>American Property Solutions</strong>
             <small>Demo concept</small>
@@ -32,4 +41,3 @@ export function Header() {
     </header>
   );
 }
-
