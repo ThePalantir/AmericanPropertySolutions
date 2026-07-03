@@ -2,120 +2,95 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CTASection } from "../../../components/CTASection";
 import { DemoVisual } from "../../../components/DemoVisual";
-import { business, propertyMaintenanceAsset } from "../../../lib/siteData";
+import {
+  getServiceBySlug,
+  serviceCatalog,
+  serviceOverviewAsset
+} from "../../../lib/siteData";
 
 export const metadata: Metadata = {
   title: "Property & Building Maintenance",
   description:
-    "Property and building maintenance service path for APS, including repair support, stacking and hauling, and remodeling-related service needs pending client validation."
+    "A compatibility page that routes APS property and building maintenance visitors to the expanded service directory."
 };
 
-const maintenanceItems = [
-  "Property Maintenance",
-  "Building Maintenance",
-  "Stacking and Hauling",
-  "Remodeling Contractor"
+const linkedSlugs = [
+  "property-maintenance",
+  "building-maintenance-repairs",
+  "remodeling-services"
 ];
 
-const supportingItems = [
-  "Seasonal snow support remains visible but secondary",
-  "Landscaping, shrubs, sod, pavers, patios, and decks can support exterior upkeep",
-  "Excavation, paving, concrete, sealcoating, and line striping remain grouped as related site services"
-];
+export default function PropertyBuildingMaintenanceCompatibilityPage() {
+  const linkedServices = linkedSlugs
+    .map((slug) => getServiceBySlug(slug))
+    .filter((service): service is NonNullable<ReturnType<typeof getServiceBySlug>> =>
+      Boolean(service)
+    );
 
-export default function PropertyBuildingMaintenancePage() {
   return (
     <>
-      <section className="page-hero section">
+      <section className="page-hero section compact-hero">
         <div>
-          <p className="eyebrow">Flagship service path</p>
+          <p className="eyebrow">Service path updated</p>
           <h1>Property & Building Maintenance</h1>
           <p className="lead">
-            This page leads with evergreen property and building maintenance
-            instead of making a seasonal snow page carry the first service path.
-          </p>
-          <p>
-            Specific repair, remodeling, stacking, and hauling wording should
-            be validated with APS before final public use.
+            This legacy service path now connects to the expanded APS service
+            directory, including property maintenance, building repairs, and
+            remodeling-related support.
           </p>
           <div className="hero-actions">
-            <Link className="button button-primary" href="/contact">
-              Request Property Maintenance Help
+            <Link className="button button-primary" href="/services/property-maintenance">
+              View Property Maintenance
             </Link>
-            <a className="button button-secondary" href={business.phoneHref}>
-              Call {business.phone}
-            </a>
+            <Link className="button button-secondary" href="/services">
+              Browse All Services
+            </Link>
           </div>
         </div>
-        <DemoVisual asset={propertyMaintenanceAsset} variant="property" />
+        <DemoVisual asset={serviceOverviewAsset} variant="services" />
       </section>
 
-      <section className="section split-band">
-        <div>
-          <p className="eyebrow">What this page clarifies</p>
-          <h2>Maintenance Work That Keeps a Property Usable</h2>
+      <section className="section directory-section">
+        <div className="section-heading wide-heading">
+          <p className="eyebrow">Related service paths</p>
+          <h2>Choose the Closest Maintenance Need</h2>
           <p>
-            A focused flagship page gives property owners and managers one
-            place to start for general property upkeep, repair support, hauling,
-            and remodeling-related needs without inventing unapproved claims.
+            The demo keeps this previous URL available while splitting the
+            content into clearer, more complete service pages.
           </p>
         </div>
-        <ul className="check-list">
-          {maintenanceItems.map((item) => (
-            <li key={item}>{item}</li>
+        <div className="service-directory-grid">
+          {linkedServices.map((service) => (
+            <article className="directory-card" key={service.slug}>
+              <p className="eyebrow">{service.eyebrow}</p>
+              <h3>{service.title}</h3>
+              <p>{service.summary}</p>
+              <Link className="text-link" href={`/services/${service.slug}`}>
+                View {service.title}
+              </Link>
+            </article>
           ))}
-        </ul>
-      </section>
-
-      <section className="section">
-        <div className="section-heading">
-          <p className="eyebrow">Service fit</p>
-          <h2>Use This Page as the Evergreen Service Anchor</h2>
-          <p>
-            The page makes the maintenance offer easier to evaluate quickly
-            while linking visitors back to related seasonal and site services.
-          </p>
-        </div>
-        <div className="feature-grid">
-          <article>
-            <h3>Property maintenance needs</h3>
-            <p>
-              Use practical language for exterior property upkeep, access,
-              repair coordination, and ongoing maintenance needs.
-            </p>
-          </article>
-          <article>
-            <h3>Building maintenance needs</h3>
-            <p>
-              Present repair support and building-related service requests
-              carefully, without overclaiming exact scopes that APS has not
-              approved for final copy.
-            </p>
-          </article>
-          <article>
-            <h3>Hauling and remodeling scope</h3>
-            <p>
-              Keep Stacking and Hauling plus Remodeling Contractor visible, but
-              mark the exact public wording and service scope for client
-              validation.
-            </p>
-          </article>
         </div>
       </section>
 
       <section className="section notes-panel">
-        <p className="eyebrow">Related support</p>
-        <h2>Snow Stays Important, But Seasonal</h2>
-        <ul className="plain-list">
-          {supportingItems.map((item) => (
-            <li key={item}>{item}</li>
+        <p className="eyebrow">Compatibility note</p>
+        <h2>Expanded Service Directory</h2>
+        <p>
+          APS source content supports a broader maintenance catalog. This page
+          preserves the older route while the new structure gives each major
+          service a clearer destination.
+        </p>
+        <div className="area-list" aria-label="Expanded APS service categories">
+          {serviceCatalog.slice(0, 9).map((service) => (
+            <span key={service.slug}>{service.title}</span>
           ))}
-        </ul>
+        </div>
       </section>
 
       <CTASection
-        title="Start with the property maintenance need."
-        body="Tell APS what is happening at the property, where it is located, and which service path seems closest."
+        title="Start with a property walkthrough."
+        body="Tell APS what is happening at the property, and the conversation can be routed to the right service path."
       />
     </>
   );

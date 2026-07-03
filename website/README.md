@@ -92,3 +92,23 @@ Before this demo moves toward public launch, use `../projects/american-property-
 
 
 
+
+## Expanded Service Architecture
+
+The demo now uses a centralized service catalog in `website/lib/siteData.ts` and dynamic service detail pages at `/services/[slug]`.
+
+Current service routes:
+
+- `/services/property-maintenance`
+- `/services/lawn-landscaping`
+- `/services/snow-ice-management`
+- `/services/parking-lot-maintenance`
+- `/services/concrete-services`
+- `/services/excavation-sitework`
+- `/services/building-maintenance-repairs`
+- `/services/decks-patios-hardscapes`
+- `/services/remodeling-services`
+
+The legacy demo route `/services/property-building-maintenance` redirects to `/services/property-maintenance` for compatibility.
+
+Source-derived partner and careers content is acknowledged in the services hub but does not render public intake forms or claims. Approval-needed source claims are documented in `../projects/american-property-solutions/launch-approval-checklist.md` and `../projects/american-property-solutions/source-content-inventory.md`.

@@ -142,3 +142,33 @@ Recommended future asset location after approval: `website/public/approved-aps-a
 
 
 
+
+## Expanded Service Architecture Approval Addendum
+
+### Summary
+
+The demo now represents a fuller APS service catalog through a services hub and dynamic service detail pages. The expansion uses source-derived content rewritten into demo-safe copy and keeps approval-needed claims documented instead of presenting them as final public proof.
+
+### New Source-Derived Claims Requiring Approval
+
+- Final service-area wording and active territory, including the Lehigh Valley communities/counties, Berks County, Schuylkill County, Eastern Pennsylvania, Western New Jersey, and Southern New York references from source content.
+- Any `Schedule an Appointment within 24 hrs`, emergency snow response, priority response, or availability language.
+- `Over 40 years` experience language from landscaping and snow content.
+- Weather alert system, refreeze monitoring, third-party weather station, Yeti/mobile app, real-time tracking, and technology/process claims.
+- Industrial complexes, commercial retail centers, and medical centers as snow-service target property types.
+- Deicing/salting materials and environmental/process claims.
+- Service Partner Network process, partner intake fields, equipment claims, and partner-service geography.
+- Careers/hiring status, resume handling, open roles, and application routing.
+- Electrical, construction, remodeling, concrete, sewer drain, and trade-sensitive service scopes.
+- Badge, rating, BBB, Chamber, ASCA, SIMA, star/rating-style assets, testimonials, reviews, certifications, awards, warranties, guarantees, and association claims.
+
+### Approval Status
+
+- These claims are source-derived and useful for review, but not final public copy.
+- Badge and affiliation graphics remain approval-pending and are not rendered as public trust claims.
+- Service-area references are displayed as source-derived preview content and require final APS confirmation.
+
+### Handoff Notes for the Next Agent
+
+- Use `source-content-inventory.md` to trace each expanded service back to its source.
+- Do not move partner, careers, testimonial, badge, or snow technology claims into final public copy without explicit approval.

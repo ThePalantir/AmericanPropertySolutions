@@ -489,3 +489,53 @@ Before production launch planning, use `projects/american-property-solutions/lau
 
 
 
+
+## Expanded Service Architecture Pass
+
+### Summary
+
+The demo has been expanded from a thin visual concept into a fuller APS service architecture while preserving the premium commercial homepage treatment. The service catalog now lives centrally in `website/lib/siteData.ts`, and the site uses a services hub plus dynamic service detail pages.
+
+### Inputs Reviewed
+
+- Current APS source website service pages documented in `source-content-inventory.md`
+- `website/lib/siteData.ts`
+- Current homepage, services, contact, header, footer, and visual asset components
+
+### Confirmed Facts
+
+- APS source content includes property maintenance, lawn/landscaping, snow plowing, parking lot maintenance, concrete, excavation/sitework, building maintenance/repairs, remodeling, decks/patios, partner network, and careers content.
+- The primary CTA remains `Request a Property Walkthrough`.
+- The primary positioning remains commercial four-season property maintenance for the Lehigh Valley and Eastern Pennsylvania as demo direction pending final approval.
+
+### Observations
+
+- The source site contains useful service breadth, but it is mixed with repetitive SEO text and unvalidated trust claims.
+- A services hub with detail pages is the cleanest way to represent the full APS offer without bloating the homepage.
+- Badge, rating, association, testimonial, 24-hour, emergency, years-experience, and technology/process claims remain launch approval items.
+
+### Assumptions
+
+- Source-derived services can be represented as demo-safe rewritten content when approval-needed claims are documented.
+- Existing approved local APS image assets are suitable for demo use where they match the service category.
+- Partner and careers content should be acknowledged but not promoted as active public workflows until APS approves intake routing.
+
+### Recommendations
+
+- Keep navigation lean: Home, Services, Contact, with service links exposed on the services hub and footer.
+- Keep the homepage image-rich and concise, linking users into service detail pages for depth.
+- Use the dynamic service route for future service additions.
+- Treat the service-area list as source-derived until APS confirms final territory.
+
+### Open Questions
+
+- Which service areas and property types should become final public claims?
+- Which snow operations details are approved for public copy?
+- Should partner and careers pages become public launch pages?
+- Which trust badges, testimonials, or association marks are approved for display?
+
+### Handoff Notes for the Next Agent
+
+- QA should verify all service routes, CTA paths, mobile layouts, and image rendering.
+- Copy or SEO agents should use `source-content-inventory.md` to avoid reintroducing keyword stuffing.
+- Launch planning should use `launch-approval-checklist.md` before public deployment.

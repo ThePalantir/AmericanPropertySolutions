@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import { business, logoAsset, navItems, validationNotes } from "../lib/siteData";
+import { business, logoAsset, navItems, serviceCatalog, validationNotes } from "../lib/siteData";
 
 export function Footer() {
   const hasApprovedLogo = Boolean(logoAsset.src && logoAsset.status === "approved");
 
   return (
     <footer className="site-footer">
-      <div className="footer-grid">
+      <div className="footer-grid expanded-footer-grid">
         <div>
           <div className="footer-brand">
             {hasApprovedLogo && logoAsset.src ? (
@@ -19,9 +19,9 @@ export function Footer() {
           </div>
           <h2>Property maintenance demo concept</h2>
           <p>
-            This demo keeps the focus on clearer service organization, visible
-            phone and walkthrough paths, and draft copy that still requires client
-            approval before public launch.
+            A commercial-first service structure for APS property maintenance,
+            snow and ice, parking lots, concrete, sitework, landscaping,
+            building repairs, remodeling, decks, patios, and hardscapes.
           </p>
         </div>
         <div>
@@ -30,6 +30,16 @@ export function Footer() {
             {navItems.map((item) => (
               <li key={item.href}>
                 <Link href={item.href}>{item.label}</Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <ul className="footer-list footer-service-list">
+            {serviceCatalog.slice(0, 9).map((service) => (
+              <li key={service.slug}>
+                <Link href={`/services/${service.slug}`}>{service.title}</Link>
               </li>
             ))}
           </ul>

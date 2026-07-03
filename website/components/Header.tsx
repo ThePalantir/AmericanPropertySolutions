@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { business, logoAsset, navItems } from "../lib/siteData";
+import { business, logoAsset, navItems, serviceGroups } from "../lib/siteData";
 
 export function Header() {
   const hasApprovedLogo = Boolean(logoAsset.src && logoAsset.status === "approved");
@@ -30,9 +30,9 @@ export function Header() {
           ))}
         </nav>
         <div className="nav-actions">
-          <a className="button button-secondary" href={business.phoneHref}>
-            Call {business.phone}
-          </a>
+          <Link className="button button-secondary" href="/services">
+            {serviceGroups.length} Service Groups
+          </Link>
           <Link className="button button-primary" href="/contact">
             Request a Property Walkthrough
           </Link>

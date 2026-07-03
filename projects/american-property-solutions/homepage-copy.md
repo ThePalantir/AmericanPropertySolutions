@@ -415,3 +415,48 @@ Before this copy becomes final public website copy, validate service-area wordin
 
 
 
+
+## Expanded Homepage and Service Copy Direction
+
+### Summary
+
+The homepage now supports the broader APS service catalog without becoming a service encyclopedia. It keeps the premium commercial hero and uses grouped service cards, a service-directory preview, a four-season coverage section, regional service-area preview, and approval-gated source-claim notes.
+
+### Inputs Reviewed
+
+- Current APS source service pages documented in `source-content-inventory.md`
+- `website/lib/siteData.ts`
+- Current homepage and services hub implementation
+
+### Confirmed Facts Used
+
+- APS source content includes major services across property maintenance, lawn/landscaping, snow, parking lots, concrete, excavation/sitework, building maintenance/repairs, remodeling, decks/patios, service partner network, and careers.
+- Public contact facts remain phone, addresses, and hours already documented in project files.
+
+### Observations
+
+- Homepage copy should show breadth, not every sub-service.
+- Service detail pages should carry the deeper bullet lists and related-service links.
+- Service-area language should stay natural and source-derived, not repeated as keyword blocks.
+
+### Assumptions
+
+- All source-derived claims still require APS approval before final public launch.
+- The primary CTA should remain `Request a Property Walkthrough` across homepage and service pages.
+
+### Recommendations
+
+- Keep homepage service groups limited to six broad families: Grounds & Landscape, Snow & Ice, Parking Lots & Pavement, Concrete & Sitework, Building & Interior Repairs, and Decks, Patios & Hardscapes.
+- Use service detail pages for complete sub-service lists.
+- Keep testimonials, badges, ratings, and years-experience claims out until approved.
+
+### Open Questions
+
+- Which source-derived service areas are active and priority?
+- Which service details should be shortened, removed, or prioritized for launch?
+- Should partner/careers content receive standalone public pages later?
+
+### Handoff Notes for the Next Agent
+
+- SEO should build titles and metadata around the new service route structure.
+- Final copy approval should review the service catalog in `website/lib/siteData.ts` and the approval gates in `launch-approval-checklist.md`.

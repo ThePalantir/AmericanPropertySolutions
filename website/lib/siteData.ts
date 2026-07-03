@@ -12,81 +12,541 @@ export const business = {
 export const navItems = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
-  {
-    label: "Property & Building Maintenance",
-    href: "/services/property-building-maintenance"
-  },
   { label: "Contact", href: "/contact" }
 ];
 
-export const servicePriority = [
-  "Property Maintenance",
-  "Building Maintenance",
-  "Stacking and Hauling",
-  "Remodeling Contractor",
-  "Emergency Snow Plow Contractor",
-  "Flowers and Shrubs",
-  "Landscaping Contractor",
-  "New Sod",
-  "Paver Installer",
-  "Patio & Deck Contractor",
-  "Excavation Contractor",
-  "Paving Contractor",
-  "Concrete Contractor",
-  "Crack Sealing and Sealcoating",
-  "Line Striping"
+export type VisualAsset = {
+  id: string;
+  title: string;
+  alt: string;
+  recommendedFile: string;
+  usage: string;
+  src?: string;
+  status: "pending-approval" | "approved";
+};
+
+export type ServiceDetail = {
+  slug: string;
+  title: string;
+  eyebrow: string;
+  group: string;
+  summary: string;
+  intro: string;
+  sourceUrl: string;
+  sourceNote: string;
+  image: VisualAsset;
+  handles: string[];
+  needs: string[];
+  related: string[];
+  approvalNotes?: string[];
+};
+
+export const recommendedAssetLocation = "/approved-aps-assets/";
+
+export const logoAsset: VisualAsset = {
+  id: "aps-logo",
+  title: "American Property Solutions logo",
+  alt: "American Property Solutions logo",
+  recommendedFile: "aps-pa-logo.png",
+  usage: "Header and footer business logo.",
+  src: "/approved-aps-assets/aps-pa-logo.png",
+  status: "approved"
+};
+
+export const heroAsset: VisualAsset = {
+  id: "hero-commercial-property",
+  title: "Commercial property maintenance",
+  alt: "Corporate building exterior used for APS commercial property maintenance positioning",
+  recommendedFile: "corporate-building-exterior-1.jpg",
+  usage: "Homepage hero image showing a maintained commercial exterior, parking area, crew, or APS equipment.",
+  src: "/approved-aps-assets/corporate-building-exterior-1.jpg",
+  status: "approved"
+};
+
+export const serviceOverviewAsset: VisualAsset = {
+  id: "services-overview",
+  title: "Organized commercial service paths",
+  alt: "APS landscaping and grounds maintenance photo used for the services overview",
+  recommendedFile: "landscaping-3.png",
+  usage: "Service overview image showing APS work types, equipment, or commercial property context.",
+  src: "/approved-aps-assets/landscaping-3.png",
+  status: "approved"
+};
+
+export const contactAsset: VisualAsset = {
+  id: "walkthrough-contact",
+  title: "Property walkthrough request",
+  alt: "APS location image used for the contact and service area page visual",
+  recommendedFile: "location.png",
+  usage: "Contact page image showing a property walkthrough, APS representative, truck, or commercial site context if approved.",
+  src: "/approved-aps-assets/location.png",
+  status: "approved"
+};
+
+export const galleryAssets: VisualAsset[] = [
+  {
+    id: "commercial-exterior",
+    title: "Commercial exterior maintenance",
+    alt: "Corporate building exterior used for APS commercial exterior maintenance context",
+    recommendedFile: "corporate-building-exterior-2.jpg",
+    usage: "Commercial property exterior with maintained grounds and visible site context.",
+    src: "/approved-aps-assets/corporate-building-exterior-2.jpg",
+    status: "approved"
+  },
+  {
+    id: "grounds-landscape",
+    title: "Grounds and landscaping",
+    alt: "APS landscaping photo used for grounds maintenance context",
+    recommendedFile: "landscaping.png",
+    usage: "Landscape, turf, shrub, bed maintenance, and exterior grounds context.",
+    src: "/approved-aps-assets/landscaping.png",
+    status: "approved"
+  },
+  {
+    id: "snow-equipment",
+    title: "Snow and ice equipment",
+    alt: "APS snow plow equipment used for snow and ice management context",
+    recommendedFile: "snow-plow-equipment-1.png",
+    usage: "Snow service equipment context without adding response-time claims.",
+    src: "/approved-aps-assets/snow-plow-equipment-1.png",
+    status: "approved"
+  },
+  {
+    id: "parking-lot-work",
+    title: "Parking lot work",
+    alt: "APS sealcoating photo used for parking lot maintenance context",
+    recommendedFile: "sealcoating.png",
+    usage: "Paving, sealcoating, crack sealing, or line striping work shown clearly.",
+    src: "/approved-aps-assets/sealcoating.png",
+    status: "approved"
+  },
+  {
+    id: "building-maintenance",
+    title: "Building / facility maintenance",
+    alt: "APS building maintenance photo used for facility maintenance context",
+    recommendedFile: "buildingmaintenance.png",
+    usage: "Building maintenance, repair support, hauling, or special-project context approved by APS.",
+    src: "/approved-aps-assets/buildingmaintenance.png",
+    status: "approved"
+  },
+  {
+    id: "property-coverage",
+    title: "Regional service coverage",
+    alt: "APS location image used for regional service coverage context",
+    recommendedFile: "location.png",
+    usage: "Contact and service-area context pending final territory approval.",
+    src: "/approved-aps-assets/location.png",
+    status: "approved"
+  }
+];
+
+const pendingConcreteAsset: VisualAsset = {
+  id: "concrete-sitework",
+  title: "Concrete and sitework",
+  alt: "Approved APS concrete or excavation photo pending",
+  recommendedFile: "concrete-sitework.jpg",
+  usage: "Concrete, excavation, drainage, or sitework photo approved for public use.",
+  status: "pending-approval"
+};
+
+export const serviceCatalog: ServiceDetail[] = [
+  {
+    slug: "property-maintenance",
+    title: "Property Maintenance",
+    eyebrow: "Four-season support",
+    group: "One Call, Full Property Coverage",
+    summary: "A cleaner service path for commercial property maintenance, exterior upkeep, parking-area support, sitework, and repair coordination.",
+    intro:
+      "APS publicly positions itself around four-season property maintenance. This demo turns that broad offer into a practical starting point for owners and managers who need one conversation about several property needs.",
+    sourceUrl: "https://aps-pa.com/",
+    sourceNote: "Homepage service list and four-season property maintenance positioning.",
+    image: heroAsset,
+    handles: [
+      "Commercial property maintenance",
+      "Four-season property support",
+      "Grading and excavation coordination",
+      "Driveways and access areas",
+      "Building pads and site preparation",
+      "Concrete flatwork",
+      "Blacktop repairs",
+      "Crack sealing, sealcoating, and line striping",
+      "Building maintenance and repair support"
+    ],
+    needs: [
+      "A property has multiple exterior and building issues and needs a single place to start.",
+      "A manager needs recurring seasonal upkeep without sorting through a scattered contractor list.",
+      "A business owner needs a practical walkthrough before choosing the right service path."
+    ],
+    related: ["parking-lot-maintenance", "building-maintenance-repairs", "excavation-sitework"]
+  },
+  {
+    slug: "lawn-landscaping",
+    title: "Lawn & Landscaping",
+    eyebrow: "Grounds & Landscape",
+    group: "Grounds & Landscape",
+    summary: "Grounds maintenance, lawn care, planting, drainage, turf, hardscape, and landscape installation services organized for commercial and property-maintenance use.",
+    intro:
+      "The current APS site lists lawn care, landscaping, planting, sod, drainage, hardscape, and seasonal maintenance work. The demo keeps the service clear and avoids turning it into residential lawn-care clutter.",
+    sourceUrl: "https://aps-pa.com/american-property-solutions-lawn-and-landscaping-services/",
+    sourceNote: "Lawn and landscaping page service bullets and landscape installation copy.",
+    image: {
+      id: "lawn-landscaping-visual",
+      title: "Lawn and landscaping",
+      alt: "APS landscaping photo used for lawn and landscape maintenance context",
+      recommendedFile: "landscaping.png",
+      usage: "Lawn, landscape, shrub, bed, and grounds maintenance context.",
+      src: "/approved-aps-assets/landscaping.png",
+      status: "approved"
+    },
+    handles: [
+      "Shrubs",
+      "Sod installation",
+      "Seeding",
+      "Fertilization",
+      "Lawn maintenance",
+      "Mulching and bed maintenance",
+      "Water systems and drainage",
+      "Hardscapes and retaining walls",
+      "Tree planting",
+      "Shrub and flower planting",
+      "Grading and new lawn installation"
+    ],
+    needs: [
+      "Commercial grounds need routine upkeep, seasonal cleanup, or planting refreshes.",
+      "A property needs drainage, grading, sod, or new lawn installation after site work.",
+      "Exterior areas need a cleaner, better-maintained first impression."
+    ],
+    related: ["decks-patios-hardscapes", "excavation-sitework", "property-maintenance"],
+    approvalNotes: ["Over 40 years of experience appears on the source page and remains approval-needed before public use."]
+  },
+  {
+    slug: "snow-ice-management",
+    title: "Snow & Ice Management",
+    eyebrow: "Seasonal operations",
+    group: "Snow & Ice",
+    summary: "Commercial snow plowing, parking-lot winter service, deicing, sidewalk clearing, snow relocation, and storm-readiness content kept approval-gated where needed.",
+    intro:
+      "APS has extensive snow and ice content on the current site. This demo keeps snow visible as a major seasonal service while avoiding unapproved emergency, response-time, technology, or experience claims.",
+    sourceUrl: "https://aps-pa.com/snow-plowing-company/",
+    sourceNote: "Snow plowing page winter-service details, service-area claims, deicing, sidewalks, hauling/relocating, weather system, and service partner content.",
+    image: {
+      id: "snow-ice-visual",
+      title: "Snow and ice management",
+      alt: "APS plowing photo used for snow and ice management context",
+      recommendedFile: "plowing-1.png",
+      usage: "Snow plowing and winter property service context.",
+      src: "/approved-aps-assets/plowing-1.png",
+      status: "approved"
+    },
+    handles: [
+      "Snow plowing",
+      "Snow and ice management",
+      "Parking lot snow service",
+      "Deicing and salting as source-derived scope",
+      "Sidewalk clearing support",
+      "Snow hauling and relocating",
+      "Winter service partner coordination as source-derived scope"
+    ],
+    needs: [
+      "A commercial property needs winter access for customers, staff, and deliveries.",
+      "Snow piles are reducing usable parking and may need relocation or hauling.",
+      "Walkways and parking areas need planned winter service before storms arrive."
+    ],
+    related: ["parking-lot-maintenance", "property-maintenance", "service-partner-network"],
+    approvalNotes: [
+      "Eastern PA, Western New Jersey, and Southern NY snow coverage is source-derived and approval-needed.",
+      "Over 40 years of snow and ice experience is source-derived and approval-needed.",
+      "Weather alert, refreeze monitoring, Yeti/mobile app, and technology-process claims are source-derived and approval-needed.",
+      "Any emergency, 24-hour, or priority response wording remains approval-needed."
+    ]
+  },
+  {
+    slug: "parking-lot-maintenance",
+    title: "Parking Lot Maintenance",
+    eyebrow: "Lots & pavement",
+    group: "Parking Lots & Pavement",
+    summary: "Parking lot and driveway maintenance, asphalt repairs, sealcoating, crack sealing, line striping, drainage, sidewalk repair, and related site support.",
+    intro:
+      "The current APS parking lot page includes a useful maintenance list. The demo reframes it around property access, appearance, drainage, and upkeep rather than keyword-heavy paving copy.",
+    sourceUrl: "https://aps-pa.com/parking-lot-maintenance/",
+    sourceNote: "Parking lot maintenance page service list.",
+    image: {
+      id: "parking-lot-visual",
+      title: "Parking lot maintenance",
+      alt: "APS sealcoating photo used for parking lot maintenance context",
+      recommendedFile: "sealcoating.png",
+      usage: "Parking lot maintenance and sealcoating context.",
+      src: "/approved-aps-assets/sealcoating.png",
+      status: "approved"
+    },
+    handles: [
+      "Driveway and parking lot services",
+      "Asphalt repairs and overlays",
+      "Asphalt patches",
+      "Sealcoating",
+      "Crack sealing",
+      "Line striping",
+      "Concrete repairs and flatwork",
+      "Excavation and sitework",
+      "Drainage repairs",
+      "Sinkhole remediation",
+      "Sidewalk repairs"
+    ],
+    needs: [
+      "Parking areas need better appearance, safer access, or clearer striping.",
+      "Cracks, patches, drainage issues, or sidewalk damage are creating maintenance concerns.",
+      "A property needs pavement, concrete, and sitework evaluated together."
+    ],
+    related: ["concrete-services", "excavation-sitework", "snow-ice-management"]
+  },
+  {
+    slug: "concrete-services",
+    title: "Concrete Services",
+    eyebrow: "Concrete & flatwork",
+    group: "Concrete & Sitework",
+    summary: "Concrete driveways, sidewalks, patios, slabs, floors, decorative concrete, retaining walls, curbing, repairs, staining, sealing, excavation, and grading.",
+    intro:
+      "APS lists concrete services across driveways, parking areas, sidewalks, patios, slabs, repairs, and related grading. The demo groups those services into one clean concrete path.",
+    sourceUrl: "https://aps-pa.com/concrete-contractor/",
+    sourceNote: "Concrete contractor page service list.",
+    image: pendingConcreteAsset,
+    handles: [
+      "Concrete driveways and parking lots",
+      "Concrete sidewalks and pathways",
+      "Concrete patios and outdoor living spaces",
+      "Concrete foundations and slabs",
+      "Concrete flooring",
+      "Decorative concrete",
+      "Retaining walls",
+      "Concrete repairs",
+      "Concrete curbing and sewer drains",
+      "Concrete staining and sealing",
+      "Excavation and grading"
+    ],
+    needs: [
+      "A property needs concrete repair, replacement, or new flatwork.",
+      "Sidewalks, patios, or curbing need attention as part of exterior maintenance.",
+      "Concrete work needs grading or excavation support before installation."
+    ],
+    related: ["parking-lot-maintenance", "excavation-sitework", "decks-patios-hardscapes"],
+    approvalNotes: ["No clearly matching approved local concrete image is currently available, so this service uses a placeholder."]
+  },
+  {
+    slug: "excavation-sitework",
+    title: "Excavation & Sitework",
+    eyebrow: "Site support",
+    group: "Concrete & Sitework",
+    summary: "Drainage design, grading, hauling, driveway stone, ditch digging, hardscape excavation, driveway repair, building pads, and site preparation.",
+    intro:
+      "The excavation content on the current APS site is useful but thin. This demo keeps it practical and ties sitework to drainage, access, grading, and prep for other exterior improvements.",
+    sourceUrl: "https://aps-pa.com/excavation-and-sitework/",
+    sourceNote: "Excavation and sitework page service list.",
+    image: {
+      id: "excavation-sitework-visual",
+      title: "Excavation and sitework",
+      alt: "APS paving and site work photo used for excavation and property support context",
+      recommendedFile: "paving1.jpg",
+      usage: "Sitework-adjacent image used until a more direct excavation image is approved.",
+      src: "/approved-aps-assets/paving1.jpg",
+      status: "approved"
+    },
+    handles: [
+      "Drainage design",
+      "Grading",
+      "Hauling away and delivering material",
+      "Driveway stone",
+      "Ditch digging",
+      "Hardscape excavation",
+      "Driveway repair",
+      "Building pads",
+      "Site preparation"
+    ],
+    needs: [
+      "Water, grading, or access issues are affecting property use.",
+      "A site needs preparation before concrete, hardscape, driveway, or building-pad work.",
+      "Material needs to be delivered, moved, or hauled away as part of a property project."
+    ],
+    related: ["concrete-services", "parking-lot-maintenance", "property-maintenance"]
+  },
+  {
+    slug: "building-maintenance-repairs",
+    title: "Building Maintenance & Repairs",
+    eyebrow: "Building support",
+    group: "Building & Interior Repairs",
+    summary: "Interior repair and maintenance support including drywall, construction, painting, lighting, flooring, electrical, remodeling, and general repairs.",
+    intro:
+      "APS lists building maintenance and repair services alongside remodeling and interior construction support. The demo positions this as a practical facility-support path, with final scope still requiring owner validation.",
+    sourceUrl: "https://aps-pa.com/building-maintenance/",
+    sourceNote: "Building maintenance and repairs page interior services list.",
+    image: {
+      id: "building-maintenance-visual",
+      title: "Building maintenance and repairs",
+      alt: "APS building maintenance photo used for repair support context",
+      recommendedFile: "buildingmaintenance.png",
+      usage: "Building maintenance and facility repair context.",
+      src: "/approved-aps-assets/buildingmaintenance.png",
+      status: "approved"
+    },
+    handles: [
+      "Remodeling services",
+      "Drywall repairs and installs",
+      "Construction services",
+      "Painting services",
+      "Lighting installation and repairs",
+      "Tile, laminate, and hardwood installation and refinishing",
+      "Electrical",
+      "General building repairs"
+    ],
+    needs: [
+      "A commercial or managed property needs interior repair support.",
+      "Maintenance issues cross between construction, painting, drywall, lighting, or flooring.",
+      "A property manager needs a building-repair conversation before defining final scope."
+    ],
+    related: ["remodeling-services", "property-maintenance", "concrete-services"],
+    approvalNotes: ["Exact electrical and construction scopes should be confirmed before final public copy."]
+  },
+  {
+    slug: "decks-patios-hardscapes",
+    title: "Decks, Patios & Hardscapes",
+    eyebrow: "Outdoor improvements",
+    group: "Decks, Patios & Hardscapes",
+    summary: "Deck building, patio installation, paver installation, hardscapes, retaining walls, walkways, railings, and outdoor living spaces.",
+    intro:
+      "APS includes decks, patios, pavers, hardscapes, walkways, railings, and related outdoor improvements. The demo keeps this service present without letting it overpower the commercial maintenance positioning.",
+    sourceUrl: "https://aps-pa.com/decks-and-patios/",
+    sourceNote: "Decks and patios page service list.",
+    image: {
+      id: "hardscapes-visual",
+      title: "Decks, patios, and hardscapes",
+      alt: "APS hardscape and landscape photo used for decks and patio context",
+      recommendedFile: "turf.png",
+      usage: "Hardscape and outdoor improvement context.",
+      src: "/approved-aps-assets/turf.png",
+      status: "approved"
+    },
+    handles: [
+      "Deck building",
+      "Deck composite installation",
+      "Staircase construction",
+      "Patio installation",
+      "Paver installation",
+      "Stone walkways",
+      "Railings",
+      "Hardscape services",
+      "Retaining walls",
+      "Outdoor living spaces"
+    ],
+    needs: [
+      "A property needs an outdoor gathering, walkway, or hardscape improvement.",
+      "A patio, deck, paver, or railing project needs a practical contractor conversation.",
+      "Landscape and hardscape work need to coordinate with grading or drainage."
+    ],
+    related: ["lawn-landscaping", "concrete-services", "excavation-sitework"]
+  },
+  {
+    slug: "remodeling-services",
+    title: "Remodeling Services",
+    eyebrow: "Special projects",
+    group: "Building & Interior Repairs",
+    summary: "Remodeling and special-project support connected to building maintenance, drywall, painting, flooring, lighting, construction, and general repairs.",
+    intro:
+      "The current APS site links remodeling with building maintenance and interior services. The demo keeps remodeling visible as a special-project path while requiring APS to validate exact scope before launch.",
+    sourceUrl: "https://aps-pa.com/building-maintenance/",
+    sourceNote: "Building maintenance page and navigation label for Remodeling Services.",
+    image: {
+      id: "remodeling-visual",
+      title: "Remodeling services",
+      alt: "APS drywall repair photo used for remodeling service context",
+      recommendedFile: "aps-drywall.jpeg",
+      usage: "Drywall and interior repair context for remodeling service path.",
+      src: "/approved-aps-assets/aps-drywall.jpeg",
+      status: "approved"
+    },
+    handles: [
+      "Remodeling services",
+      "Drywall repairs and installs",
+      "Construction services",
+      "Painting services",
+      "Lighting installation and repairs",
+      "Flooring installation and refinishing",
+      "Electrical coordination",
+      "General building repairs"
+    ],
+    needs: [
+      "A property needs a special repair or improvement project scoped clearly.",
+      "Interior maintenance work has grown into a larger remodeling need.",
+      "A business owner needs practical next steps before selecting the right repair path."
+    ],
+    related: ["building-maintenance-repairs", "property-maintenance", "decks-patios-hardscapes"],
+    approvalNotes: ["Final remodeling scope, licensing-sensitive trades, and customer-facing wording require APS approval."]
+  }
+];
+
+export const supplementalPages = [
+  {
+    title: "Service Partner Network",
+    href: "/contact",
+    summary:
+      "Source-derived partner-network content supports winter and non-winter service coordination, but the demo routes interest through the safe contact path until APS approves a partner form.",
+    sourceUrl: "https://aps-pa.com/american-property-solutions-service-partner-network/",
+    approvalNeeded: "Partner claims, form fields, and service partner process require APS approval before public launch."
+  },
+  {
+    title: "Careers / Hiring",
+    href: "/contact",
+    summary:
+      "Source-derived careers content says APS is looking for experienced workers in construction, paving/concrete, landscaping/hardscaping, lawncare, snow plowing, and building maintenance.",
+    sourceUrl: "https://aps-pa.com/careers/",
+    approvalNeeded: "Hiring status, open roles, resume handling, and form routing require APS approval before public launch."
+  }
 ];
 
 export const serviceGroups = [
   {
-    title: "Landscape & Grounds Maintenance",
-    href: "/services",
+    title: "Grounds & Landscape",
+    href: "/services/lawn-landscaping",
     eyebrow: "Grounds",
-    summary:
-      "Landscape maintenance, flowers and shrubs, new sod, and exterior grounds work presented as part of commercial property upkeep.",
-    items: ["Flowers and Shrubs", "Landscaping Contractor", "New Sod"]
+    summary: "Lawn, landscaping, planting, turf, drainage, and hardscape support for maintained exterior spaces.",
+    items: ["Lawn & Landscaping", "Sod / seeding", "Mulch and bed maintenance"]
   },
   {
-    title: "Snow & Ice Management",
-    href: "/services",
+    title: "Snow & Ice",
+    href: "/services/snow-ice-management",
     eyebrow: "Seasonal",
-    summary:
-      "Emergency Snow Plow Contractor remains an important seasonal service, not the flagship service page.",
-    items: ["Emergency Snow Plow Contractor"]
+    summary: "Snow plowing, deicing, sidewalk support, parking-lot winter service, and snow relocation as source-derived scope.",
+    items: ["Snow plowing", "Deicing", "Snow hauling / relocating"]
   },
   {
-    title: "Paving, Sealcoating & Parking Lots",
-    href: "/services",
-    eyebrow: "Parking areas",
-    summary:
-      "Paving, crack sealing, sealcoating, and line striping grouped around access, appearance, and parking-lot upkeep.",
-    items: ["Paving Contractor", "Crack Sealing and Sealcoating", "Line Striping"]
+    title: "Parking Lots & Pavement",
+    href: "/services/parking-lot-maintenance",
+    eyebrow: "Access areas",
+    summary: "Parking lot maintenance, asphalt repairs, sealcoating, crack sealing, line striping, and sidewalks.",
+    items: ["Asphalt repairs", "Sealcoating", "Line striping"]
   },
   {
     title: "Concrete & Sitework",
-    href: "/services",
+    href: "/services/concrete-services",
     eyebrow: "Site support",
-    summary:
-      "Concrete and excavation services framed as practical site maintenance and exterior property support.",
-    items: ["Excavation Contractor", "Concrete Contractor"]
+    summary: "Concrete services, grading, excavation, drainage, driveway stone, building pads, and site preparation.",
+    items: ["Concrete flatwork", "Excavation", "Drainage and grading"]
   },
   {
-    title: "Building / Facility Maintenance",
-    href: "/services/property-building-maintenance",
-    eyebrow: "Flagship page",
-    summary:
-      "The evergreen flagship path for property maintenance, building maintenance, repair support, and hauling needs.",
-    items: ["Property Maintenance", "Building Maintenance", "Stacking and Hauling"]
+    title: "Building & Interior Repairs",
+    href: "/services/building-maintenance-repairs",
+    eyebrow: "Facility support",
+    summary: "Drywall, painting, flooring, lighting, electrical, remodeling, construction, and general repairs pending scope validation.",
+    items: ["Building repairs", "Drywall / painting", "Remodeling"]
   },
   {
-    title: "Remodeling / Special Projects",
-    href: "/services",
-    eyebrow: "Validate scope",
-    summary:
-      "Remodeling, pavers, patios, and decks remain visible as special-project services pending final scope validation.",
-    items: ["Remodeling Contractor", "Paver Installer", "Patio & Deck Contractor"]
+    title: "Decks, Patios & Hardscapes",
+    href: "/services/decks-patios-hardscapes",
+    eyebrow: "Outdoor projects",
+    summary: "Decks, patios, pavers, walkways, retaining walls, railings, and outdoor living improvements.",
+    items: ["Decks", "Patios", "Pavers / hardscapes"]
   }
 ];
+
+export const servicePriority = serviceCatalog.map((service) => service.title);
 
 export const audienceLabels = [
   "Commercial property owners",
@@ -117,162 +577,57 @@ export const trustBarItems = [
 
 export const propertyTypes = [
   { label: "Commercial properties", status: "Supported by current site language" },
-  { label: "Retail centers", status: "Audience to validate" },
-  { label: "Office parks", status: "Audience to validate" },
-  { label: "Industrial sites", status: "Audience to validate" },
-  { label: "Multi-family communities", status: "Audience to validate" },
-  { label: "HOAs", status: "Audience to validate" }
+  { label: "Office and business properties", status: "Audience to validate" },
+  { label: "Retail centers", status: "Source-derived snow context; validate" },
+  { label: "Industrial complexes", status: "Source-derived snow context; validate" },
+  { label: "Medical centers", status: "Source-derived snow context; validate" },
+  { label: "Residential exterior projects", status: "Supported in several service pages; validate priority" }
 ];
 
 export const serviceAreas = [
   "Lehigh Valley",
-  "Walnutport",
   "Allentown",
   "Bethlehem",
   "Easton",
-  "Nazareth",
-  "Whitehall",
-  "Emmaus",
-  "Macungie",
-  "Bath",
+  "Walnutport",
   "Palmerton",
   "Lehighton",
-  "Northeast Pennsylvania",
+  "Nazareth",
+  "Whitehall",
+  "Fogelsville",
+  "Emmaus",
+  "Breinigsville",
+  "Macungie",
+  "Bath",
   "Northampton County",
   "Lehigh County",
-  "Carbon County"
+  "Carbon County",
+  "Berks County",
+  "Schuylkill County"
 ];
 
-export type VisualAsset = {
-  id: string;
-  title: string;
-  alt: string;
-  recommendedFile: string;
-  usage: string;
-  src?: string;
-  status: "pending-approval" | "approved";
-};
-
-export const heroAsset: VisualAsset = {
-  id: "hero-commercial-property",
-  title: "Commercial property maintenance",
-  alt: "Corporate building exterior used for APS commercial property maintenance positioning",
-  recommendedFile: "corporate-building-exterior-1.jpg",
-  usage: "Homepage hero image showing a maintained commercial exterior, parking area, crew, or APS equipment.",
-  src: "/approved-aps-assets/corporate-building-exterior-1.jpg",
-  status: "approved"
-};
-
-export const galleryAssets: VisualAsset[] = [
-  {
-    id: "commercial-exterior",
-    title: "Commercial exterior maintenance",
-    alt: "Corporate building exterior used for APS commercial exterior maintenance context",
-    recommendedFile: "corporate-building-exterior-2.jpg",
-    usage: "Commercial property exterior with maintained grounds and visible site context.",
-    src: "/approved-aps-assets/corporate-building-exterior-2.jpg",
-    status: "approved"
-  },
-  {
-    id: "crew-equipment",
-    title: "APS crews and equipment",
-    alt: "APS snow plow equipment used for service equipment context",
-    recommendedFile: "snow-plow-equipment-1.png",
-    usage: "APS crew, truck, trailer, equipment, or work setup at an approved property.",
-    src: "/approved-aps-assets/snow-plow-equipment-1.png",
-    status: "approved"
-  },
-  {
-    id: "snow-cleared-lot",
-    title: "Snow-cleared parking lot",
-    alt: "APS plowing photo used for snow and ice management context",
-    recommendedFile: "plowing-1.png",
-    usage: "Commercial lot or access area after snow service, if APS approves the image and service context.",
-    src: "/approved-aps-assets/plowing-1.png",
-    status: "approved"
-  },
-  {
-    id: "parking-lot-work",
-    title: "Parking lot work",
-    alt: "APS sealcoating photo used for parking lot maintenance context",
-    recommendedFile: "sealcoating.png",
-    usage: "Paving, sealcoating, crack sealing, or line striping work shown clearly.",
-    src: "/approved-aps-assets/sealcoating.png",
-    status: "approved"
-  },
-  {
-    id: "concrete-sitework",
-    title: "Concrete and sitework",
-    alt: "Approved APS concrete or sitework photo pending",
-    recommendedFile: "concrete-sitework.jpg",
-    usage: "Concrete, excavation, drainage, or sitework photo approved for public use.",
-    status: "pending-approval"
-  },
-  {
-    id: "building-maintenance",
-    title: "Building / facility maintenance",
-    alt: "APS building maintenance photo used for facility maintenance context",
-    recommendedFile: "buildingmaintenance.png",
-    usage: "Building maintenance, repair support, hauling, or special-project context approved by APS.",
-    src: "/approved-aps-assets/buildingmaintenance.png",
-    status: "approved"
-  }
-];
-
-
-export const serviceOverviewAsset: VisualAsset = {
-  id: "services-overview",
-  title: "Organized commercial service paths",
-  alt: "APS landscaping and grounds maintenance photo used for the services overview",
-  recommendedFile: "landscaping-3.png",
-  usage: "Service overview image showing APS work types, equipment, or commercial property context.",
-  src: "/approved-aps-assets/landscaping-3.png",
-  status: "approved"
-};
-
-export const propertyMaintenanceAsset: VisualAsset = {
-  id: "property-building-maintenance",
-  title: "Property and building maintenance",
-  alt: "APS drywall repair photo used for property and building maintenance context",
-  recommendedFile: "aps-drywall.jpeg",
-  usage: "Flagship service image for property maintenance, building maintenance, hauling, or repair-support context.",
-  src: "/approved-aps-assets/aps-drywall.jpeg",
-  status: "approved"
-};
-
-export const contactAsset: VisualAsset = {
-  id: "walkthrough-contact",
-  title: "Property walkthrough request",
-  alt: "APS location image used for the contact and service area page visual",
-  recommendedFile: "location.png",
-  usage: "Contact page image showing a property walkthrough, APS representative, truck, or commercial site context if approved.",
-  src: "/approved-aps-assets/location.png",
-  status: "approved"
-};
-
-export const logoAsset: VisualAsset = {
-  id: "aps-logo",
-  title: "American Property Solutions logo",
-  alt: "American Property Solutions logo",
-  recommendedFile: "aps-pa-logo.png",
-  usage: "Header and footer business logo.",
-  src: "/approved-aps-assets/aps-pa-logo.png",
-  status: "approved"
-};
-export const recommendedAssetLocation = "/approved-aps-assets/";
-
-export const managerReasons = [
-  "Clear service routing instead of a long contractor list.",
-  "One walkthrough path for recurring maintenance and special projects.",
-  "Seasonal services stay visible without overpowering evergreen maintenance.",
-  "Unapproved testimonials, badges, and claims stay out until APS validates them."
+export const approvalNeededClaims = [
+  "Final service-area wording and active territory, including Eastern Pennsylvania, Western New Jersey, Southern New York, Berks County, and Schuylkill County.",
+  "Any 24-hour appointment wording or emergency-response language.",
+  "Over 40 years of experience language on landscaping and snow pages.",
+  "Weather alert system, refreeze monitoring, third-party weather station, Yeti/mobile app, real-time tracking, and technology/process claims.",
+  "Industrial complexes, commercial retail centers, and medical centers as target snow-service property types.",
+  "BBB, Chamber, ASCA, SIMA, star/rating-style graphics, badges, affiliations, ratings, certifications, awards, warranties, guarantees, testimonials, and reviews.",
+  "Exact electrical, construction, remodeling, partner-network, hiring, and form-routing scope."
 ];
 
 export const validationNotes = [
   "Stacking and Hauling wording requires client validation before final public copy.",
   "Line Striping should be validated against the current-site variant Line Stripping.",
-  "Trust badges, testimonials, awards, certifications, warranties, guarantees, emergency-response language, and years-in-business claims are intentionally omitted."
+  "Source-derived service areas, snow operations claims, trust badges, testimonials, awards, certifications, warranties, guarantees, emergency-response language, and years-in-business claims require APS approval."
 ];
 
+export function getServiceBySlug(slug: string) {
+  return serviceCatalog.find((service) => service.slug === slug);
+}
 
-
+export function getRelatedServices(service: ServiceDetail) {
+  return service.related
+    .map((slug) => getServiceBySlug(slug))
+    .filter((item): item is ServiceDetail => Boolean(item));
+}
