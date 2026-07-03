@@ -2001,3 +2001,62 @@ textarea {
     font-size: 1.06rem;
   }
 }
+
+/* Mobile sticky header compaction */
+@media (max-width: 720px) {
+  .site-header {
+    position: sticky;
+  }
+
+  .demo-ribbon {
+    padding: 0.45rem 1rem;
+    font-size: 0.72rem;
+    line-height: 1.35;
+  }
+
+  .nav-shell {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.55rem;
+    padding: 0.55rem 1rem 0.65rem;
+  }
+
+  .brand {
+    width: auto;
+    gap: 0.65rem;
+  }
+
+  .brand-logo {
+    width: 94px;
+    height: 44px;
+  }
+
+  .brand strong {
+    font-size: 0.95rem;
+    line-height: 1.1;
+  }
+
+  .brand small {
+    font-size: 0.72rem;
+    line-height: 1.2;
+  }
+
+  .main-nav {
+    order: 2;
+    width: 100%;
+    gap: 0.45rem;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 0;
+  }
+
+  .main-nav a {
+    flex: 0 0 auto;
+    padding: 0.25rem 0.2rem;
+    font-size: 0.92rem;
+  }
+
+  .nav-actions {
+    display: none;
+  }
+}
