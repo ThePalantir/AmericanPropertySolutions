@@ -66,21 +66,20 @@ The current demo intentionally avoids unsupported trust claims, unapproved photo
 
 Recommended future asset location after approval: `website/public/approved-aps-assets/`.
 
-| Asset slot | Recommended filename | Page/section where used | Required image type | Approval status | Notes |
+| Asset slot | Current approved filename | Page/section where used | Required image type | Approval status | Notes |
 | --- | --- | --- | --- | --- | --- |
-| Homepage hero commercial property | `commercial-property-exterior.jpg` | Home hero | Maintained commercial exterior, parking area, crew, or APS equipment | Pending approval | Update `heroAsset.src` and status in `website/lib/siteData.ts` only after approval. |
-| Commercial exterior maintenance | `commercial-exterior-maintenance.jpg` | Home featured work/gallery | Commercial property exterior with maintained grounds and visible site context | Pending approval | Avoid photos that imply unapproved service areas or property types. |
-| APS crews and equipment | `aps-crew-equipment.jpg` | Home featured work/gallery | APS crew, truck, trailer, equipment, or work setup at an approved property | Pending approval | Confirm permission for people, vehicle markings, and jobsite visibility. |
-| Snow-cleared parking lot | `snow-cleared-parking-lot.jpg` | Home featured work/gallery; future snow section | Commercial lot or access area after snow service | Pending approval | Do not imply 24-hour or emergency availability unless separately approved. |
-| Parking lot work | `parking-lot-sealcoating-striping.jpg` | Home featured work/gallery; parking lot service content | Paving, sealcoating, crack sealing, or line striping work | Pending approval | Confirm final `Line Striping` wording before captions/alt text. |
-| Concrete and sitework | `concrete-sitework.jpg` | Home featured work/gallery; sitework content | Concrete, excavation, drainage, or sitework photo | Pending approval | Caption should describe only what the photo actually shows. |
-| Building / facility maintenance | `building-facility-maintenance.jpg` | Home featured work/gallery; flagship service support | Building maintenance, repair support, hauling, or special-project context | Pending approval | Validate whether the photo supports commercial positioning. |
-| Services overview visual | `aps-service-overview.jpg` | `/services` page hero/visual area | APS work types, equipment, or commercial property context | Pending approval | Centralized as `serviceOverviewAsset` in `siteData.ts`. |
-| Property & Building Maintenance flagship visual | `property-building-maintenance.jpg` | `/services/property-building-maintenance` hero/visual area | Property maintenance, building maintenance, hauling, or repair-support context | Pending approval | This is the flagship service page image. |
-| Contact / walkthrough visual | `property-walkthrough-contact.jpg` | `/contact` page visual area | Property walkthrough, APS representative, truck, or commercial site context | Pending approval | Should support the `Request a Property Walkthrough` CTA. |
-| Before/after project example | `before-after-project-example.jpg` | Future gallery or case study section | Approved before/after image pair or composite | Not currently used | Use only when APS confirms the job context and permission. |
+| Homepage hero commercial property | `CorporateBuildingExterior1.jpg` | Home hero | Maintained commercial exterior, parking area, crew, or APS equipment | Wired as approved | Uses root-relative `src` in `website/lib/siteData.ts`. |
+| Commercial exterior maintenance | `CorporateBuildingExterior2.jpg` | Home featured work/gallery | Commercial property exterior with maintained grounds and visible site context | Wired as approved | Also reused for the Contact page visual. |
+| APS crews and equipment | `SnowPlowEquipment1.png` | Home featured work/gallery | APS crew, truck, trailer, equipment, or work setup at an approved property | Wired as approved | Alt text stays factual and does not imply response time or service area. |
+| Snow-cleared parking lot | `Plowing1.png` | Home featured work/gallery; future snow section | Commercial lot or access area after snow service | Wired as approved | Does not add 24-hour or emergency availability claims. |
+| Parking lot work | `sealcoating.png` | Home featured work/gallery; parking lot service content | Paving, sealcoating, crack sealing, or line striping work | Wired as approved | Does not change pending `Line Striping` wording validation. |
+| Concrete and sitework | `concrete-sitework.jpg` | Home featured work/gallery; sitework content | Concrete, excavation, drainage, or sitework photo | Pending approval | No clearly matching approved concrete or excavation image is currently wired. |
+| Building / facility maintenance | `buildingmaintenance.png` | Home featured work/gallery; flagship service support | Building maintenance, repair support, hauling, or special-project context | Wired as approved | Validate whether the photo supports final commercial positioning. |
+| Services overview visual | `Landscaping3.png` | `/services` page hero/visual area | APS work types, equipment, or commercial property context | Wired as approved | Centralized as `serviceOverviewAsset` in `siteData.ts`. |
+| Property & Building Maintenance flagship visual | `aps-drywall.jpeg` | `/services/property-building-maintenance` hero/visual area | Property maintenance, building maintenance, hauling, or repair-support context | Wired as approved | This is the flagship service page image. |
+| Contact / walkthrough visual | `CorporateBuildingExterior2.jpg` | `/contact` page visual area | Property walkthrough, APS representative, truck, or commercial site context | Wired as approved | Supports the `Request a Property Walkthrough` CTA without adding a new claim. |
+| Before/after project example | `before-after-project-example.jpg` | Future gallery or case study section | Approved before/after image pair or composite | Not currently used | No existing current slot was wired for this pass. |
 | Local/regional context | `local-regional-context.jpg` | Future service-area section | Local APS-relevant property, worksite, or regional context | Not currently used | Avoid implying a service area beyond approved wording. |
-
 ## Recommendations
 
 - Treat this checklist as a required owner/client review before public launch planning.
@@ -134,3 +133,4 @@ Recommended future asset location after approval: `website/public/approved-aps-a
 - Build or deployment agents should not add public claims from this checklist unless APS has supplied approval.
 - Deployment Agent must treat this checklist as a launch gate before production deployment, DNS changes, analytics changes, or public trust-claim updates.
 - QA Agent should re-check the site after approved assets and final wording are added.
+

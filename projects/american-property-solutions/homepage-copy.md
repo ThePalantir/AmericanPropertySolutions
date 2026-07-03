@@ -401,14 +401,15 @@ The following must be validated before becoming final public copy:
 
 ### Additional Page-Level Asset Slots
 
-The current demo also includes replacement-ready image slots for:
+The current demo also includes approved local images wired for these page-level image slots:
 
-- `aps-service-overview.jpg` on the Services page.
-- `property-building-maintenance.jpg` on the flagship service page.
-- `property-walkthrough-contact.jpg` on the Contact page.
+- `Landscaping3.png` on the Services page.
+- `aps-drywall.jpeg` on the flagship Property & Building Maintenance page.
+- `CorporateBuildingExterior2.jpg` on the Contact page.
 
-These images should remain placeholders until APS approves the image, usage rights, alt text, and any implied service/location context.
+The concrete/sitework gallery slot remains a placeholder until APS provides or approves a clearly matching concrete or excavation image. Image usage rights, alt text, and any implied service/location context still require final launch approval.
 
 ## Launch Approval Reference
 
 Before this copy becomes final public website copy, validate service-area wording, service labels, property types, trust claims, approved photos, form routing, SEO metadata, and legal/privacy needs in `projects/american-property-solutions/launch-approval-checklist.md`.
+

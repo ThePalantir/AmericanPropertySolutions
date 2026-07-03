@@ -48,20 +48,23 @@ Recommended future location:
 website/public/approved-aps-assets/
 ```
 
-Recommended filenames:
+Current approved filenames wired in `website/lib/siteData.ts`:
 
-- `commercial-property-exterior.jpg`
-- `commercial-exterior-maintenance.jpg`
-- `aps-crew-equipment.jpg`
-- `snow-cleared-parking-lot.jpg`
-- `parking-lot-sealcoating-striping.jpg`
-- `concrete-sitework.jpg`
-- `building-facility-maintenance.jpg`
-- `aps-service-overview.jpg`
-- `property-building-maintenance.jpg`
-- `property-walkthrough-contact.jpg`
-- `before-after-project-example.jpg`
-- `local-regional-context.jpg`
+- Homepage hero: `CorporateBuildingExterior1.jpg`
+- Homepage gallery commercial exterior: `CorporateBuildingExterior2.jpg`
+- Homepage gallery crews/equipment: `SnowPlowEquipment1.png`
+- Homepage gallery snow/plowing: `Plowing1.png`
+- Homepage gallery parking lot work: `sealcoating.png`
+- Homepage gallery building/facility maintenance: `buildingmaintenance.png`
+- Services page overview: `Landscaping3.png`
+- Property & Building Maintenance page: `aps-drywall.jpeg`
+- Contact page visual: `CorporateBuildingExterior2.jpg`
+
+Remaining placeholder:
+
+- Concrete and sitework: no clearly matching approved concrete or excavation image is currently wired.
+
+Approved files intentionally not wired in this pass include logos, badges, association marks, map/location graphics, and extra service photos that do not have a current matching slot.
 
 Replacement steps after APS approves assets:
 
@@ -78,3 +81,4 @@ Do not add photos that imply unapproved service areas, credentials, equipment ow
 ## Launch Approval Reference
 
 Before this demo moves toward public launch, use `../projects/american-property-solutions/launch-approval-checklist.md` as the validation gate for service-area wording, approved assets, public claims, form routing, SEO metadata, and legal/privacy needs.
+

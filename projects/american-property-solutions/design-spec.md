@@ -438,17 +438,20 @@ The demo now has centralized asset slots in `website/lib/siteData.ts` so approve
 
 Approved files should be placed under `website/public/approved-aps-assets/` when available. That folder is not required until real approved photos exist.
 
-Recommended filenames:
+Current approved filenames wired in the demo:
 
-- `commercial-property-exterior.jpg`
-- `commercial-exterior-maintenance.jpg`
-- `aps-crew-equipment.jpg`
-- `snow-cleared-parking-lot.jpg`
-- `parking-lot-sealcoating-striping.jpg`
-- `concrete-sitework.jpg`
-- `building-facility-maintenance.jpg`
-- `before-after-project-example.jpg`
-- `local-regional-context.jpg`
+- `CorporateBuildingExterior1.jpg` for the homepage hero.
+- `CorporateBuildingExterior2.jpg` for the homepage commercial exterior gallery slot and contact page visual.
+- `SnowPlowEquipment1.png` for the homepage crews/equipment gallery slot.
+- `Plowing1.png` for the homepage snow/plowing gallery slot.
+- `sealcoating.png` for the homepage parking lot work gallery slot.
+- `buildingmaintenance.png` for the homepage building/facility maintenance gallery slot.
+- `Landscaping3.png` for the Services overview visual.
+- `aps-drywall.jpeg` for the Property & Building Maintenance page visual.
+
+Remaining placeholder:
+
+- Concrete and sitework remains pending because no clearly matching approved concrete or excavation image was identified in `website/public/approved-aps-assets/`.
 
 ### Replacement Workflow
 
@@ -480,3 +483,4 @@ Images should render only after the asset has an approved `src` and `status: "ap
 ## Launch Approval Reference
 
 Before production launch planning, use `projects/american-property-solutions/launch-approval-checklist.md` to validate final service-area wording, service labels, approved asset usage, trust claims, form routing, SEO metadata, and legal/privacy needs.
+

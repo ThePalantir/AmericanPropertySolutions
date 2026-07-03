@@ -156,44 +156,49 @@ export type VisualAsset = {
 export const heroAsset: VisualAsset = {
   id: "hero-commercial-property",
   title: "Commercial property maintenance",
-  alt: "Approved APS commercial property maintenance photo pending",
-  recommendedFile: "commercial-property-exterior.jpg",
+  alt: "Corporate building exterior used for APS commercial property maintenance positioning",
+  recommendedFile: "CorporateBuildingExterior1.jpg",
   usage: "Homepage hero image showing a maintained commercial exterior, parking area, crew, or APS equipment.",
-  status: "pending-approval"
+  src: "/approved-aps-assets/CorporateBuildingExterior1.jpg",
+  status: "approved"
 };
 
 export const galleryAssets: VisualAsset[] = [
   {
     id: "commercial-exterior",
     title: "Commercial exterior maintenance",
-    alt: "Approved APS commercial exterior maintenance photo pending",
-    recommendedFile: "commercial-exterior-maintenance.jpg",
+    alt: "Corporate building exterior used for APS commercial exterior maintenance context",
+    recommendedFile: "CorporateBuildingExterior2.jpg",
     usage: "Commercial property exterior with maintained grounds and visible site context.",
-    status: "pending-approval"
+    src: "/approved-aps-assets/CorporateBuildingExterior2.jpg",
+    status: "approved"
   },
   {
     id: "crew-equipment",
     title: "APS crews and equipment",
-    alt: "Approved APS crew or equipment photo pending",
-    recommendedFile: "aps-crew-equipment.jpg",
+    alt: "APS snow plow equipment used for service equipment context",
+    recommendedFile: "SnowPlowEquipment1.png",
     usage: "APS crew, truck, trailer, equipment, or work setup at an approved property.",
-    status: "pending-approval"
+    src: "/approved-aps-assets/SnowPlowEquipment1.png",
+    status: "approved"
   },
   {
     id: "snow-cleared-lot",
     title: "Snow-cleared parking lot",
-    alt: "Approved APS snow-cleared commercial parking lot photo pending",
-    recommendedFile: "snow-cleared-parking-lot.jpg",
+    alt: "APS plowing photo used for snow and ice management context",
+    recommendedFile: "Plowing1.png",
     usage: "Commercial lot or access area after snow service, if APS approves the image and service context.",
-    status: "pending-approval"
+    src: "/approved-aps-assets/Plowing1.png",
+    status: "approved"
   },
   {
     id: "parking-lot-work",
     title: "Parking lot work",
-    alt: "Approved APS paving, sealcoating, or line striping photo pending",
-    recommendedFile: "parking-lot-sealcoating-striping.jpg",
+    alt: "APS sealcoating photo used for parking lot maintenance context",
+    recommendedFile: "sealcoating.png",
     usage: "Paving, sealcoating, crack sealing, or line striping work shown clearly.",
-    status: "pending-approval"
+    src: "/approved-aps-assets/sealcoating.png",
+    status: "approved"
   },
   {
     id: "concrete-sitework",
@@ -206,10 +211,11 @@ export const galleryAssets: VisualAsset[] = [
   {
     id: "building-maintenance",
     title: "Building / facility maintenance",
-    alt: "Approved APS building or facility maintenance photo pending",
-    recommendedFile: "building-facility-maintenance.jpg",
+    alt: "APS building maintenance photo used for facility maintenance context",
+    recommendedFile: "buildingmaintenance.png",
     usage: "Building maintenance, repair support, hauling, or special-project context approved by APS.",
-    status: "pending-approval"
+    src: "/approved-aps-assets/buildingmaintenance.png",
+    status: "approved"
   }
 ];
 
@@ -217,28 +223,31 @@ export const galleryAssets: VisualAsset[] = [
 export const serviceOverviewAsset: VisualAsset = {
   id: "services-overview",
   title: "Organized commercial service paths",
-  alt: "Approved APS service overview photo pending",
-  recommendedFile: "aps-service-overview.jpg",
+  alt: "APS landscaping and grounds maintenance photo used for the services overview",
+  recommendedFile: "Landscaping3.png",
   usage: "Service overview image showing APS work types, equipment, or commercial property context.",
-  status: "pending-approval"
+  src: "/approved-aps-assets/Landscaping3.png",
+  status: "approved"
 };
 
 export const propertyMaintenanceAsset: VisualAsset = {
   id: "property-building-maintenance",
   title: "Property and building maintenance",
-  alt: "Approved APS property and building maintenance photo pending",
-  recommendedFile: "property-building-maintenance.jpg",
+  alt: "APS drywall repair photo used for property and building maintenance context",
+  recommendedFile: "aps-drywall.jpeg",
   usage: "Flagship service image for property maintenance, building maintenance, hauling, or repair-support context.",
-  status: "pending-approval"
+  src: "/approved-aps-assets/aps-drywall.jpeg",
+  status: "approved"
 };
 
 export const contactAsset: VisualAsset = {
   id: "walkthrough-contact",
   title: "Property walkthrough request",
-  alt: "Approved APS contact or walkthrough photo pending",
-  recommendedFile: "property-walkthrough-contact.jpg",
+  alt: "Corporate building exterior used for the APS contact and walkthrough request page",
+  recommendedFile: "CorporateBuildingExterior2.jpg",
   usage: "Contact page image showing a property walkthrough, APS representative, truck, or commercial site context if approved.",
-  status: "pending-approval"
+  src: "/approved-aps-assets/CorporateBuildingExterior2.jpg",
+  status: "approved"
 };
 export const recommendedAssetLocation = "/approved-aps-assets/";
 
@@ -254,5 +263,4 @@ export const validationNotes = [
   "Line Striping should be validated against the current-site variant Line Stripping.",
   "Trust badges, testimonials, awards, certifications, warranties, guarantees, emergency-response language, and years-in-business claims are intentionally omitted."
 ];
-
 
