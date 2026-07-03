@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { CTASection } from "../components/CTASection";
-import { DemoVisual } from "../components/DemoVisual";
+import { CinematicHero } from "../components/CinematicHero";
 import { ServiceCard } from "../components/ServiceCard";
 import {
   galleryAssets,
-  heroAsset,
+  homeHeroSlides,
   propertyTypes,
   serviceAreas,
   serviceCatalog,
@@ -25,7 +25,7 @@ const featuredServices = serviceCatalog.slice(0, 6);
 export default function HomePage() {
   return (
     <>
-      <section className="commercial-hero section">
+      <CinematicHero slides={homeHeroSlides}>
         <div className="hero-copy">
           <p className="eyebrow on-dark">Commercial property maintenance</p>
           <h1>Four-Season Commercial Property Maintenance for the Lehigh Valley and Eastern Pennsylvania</h1>
@@ -53,8 +53,7 @@ export default function HomePage() {
             service coverage to confirm during the walkthrough.
           </p>
         </div>
-        <DemoVisual asset={heroAsset} variant="property" />
-      </section>
+      </CinematicHero>
 
       <section className="trust-bar" aria-label="Trust and positioning notes">
         {trustBarItems.map((item) => (

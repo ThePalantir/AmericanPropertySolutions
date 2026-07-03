@@ -63,6 +63,46 @@ export const heroAsset: VisualAsset = {
   status: "approved"
 };
 
+
+export const homeHeroSlides: VisualAsset[] = [
+  heroAsset,
+  {
+    id: "hero-commercial-exterior-alt",
+    title: "Commercial exterior maintenance",
+    alt: "Corporate building exterior used for APS homepage motion background",
+    recommendedFile: "corporate-building-exterior-2.jpg",
+    usage: "Homepage cinematic hero background slide.",
+    src: "/approved-aps-assets/corporate-building-exterior-2.jpg",
+    status: "approved"
+  },
+  {
+    id: "hero-landscape-grounds",
+    title: "Grounds maintenance",
+    alt: "APS landscaping photo used for homepage motion background",
+    recommendedFile: "landscaping-3.png",
+    usage: "Homepage cinematic hero background slide.",
+    src: "/approved-aps-assets/landscaping-3.png",
+    status: "approved"
+  },
+  {
+    id: "hero-snow-service",
+    title: "Snow and ice management",
+    alt: "APS plowing photo used for homepage motion background",
+    recommendedFile: "plowing-1.png",
+    usage: "Homepage cinematic hero background slide.",
+    src: "/approved-aps-assets/plowing-1.png",
+    status: "approved"
+  },
+  {
+    id: "hero-parking-lot-work",
+    title: "Parking lot maintenance",
+    alt: "APS sealcoating photo used for homepage motion background",
+    recommendedFile: "sealcoating.png",
+    usage: "Homepage cinematic hero background slide.",
+    src: "/approved-aps-assets/sealcoating.png",
+    status: "approved"
+  }
+];
 export const serviceOverviewAsset: VisualAsset = {
   id: "services-overview",
   title: "Organized commercial service paths",
