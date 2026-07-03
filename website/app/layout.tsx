@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     template: "%s | American Property Solutions Demo"
   },
   description:
-    "Demo concept for American Property Solutions, showing clearer property maintenance positioning, service organization, and quote paths.",
+    "Demo concept for American Property Solutions, showing clearer property maintenance positioning, service organization, and walkthrough paths.",
   robots: {
     index: false,
     follow: false
@@ -36,3 +36,4 @@ export default function RootLayout({
     </html>
   );
 }
+

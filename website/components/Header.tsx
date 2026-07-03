@@ -25,10 +25,11 @@ export function Header() {
             Call {business.phone}
           </a>
           <Link className="button button-primary" href="/contact">
-            Request a Quote
+            Request a Property Walkthrough
           </Link>
         </div>
       </div>
     </header>
   );
 }
+

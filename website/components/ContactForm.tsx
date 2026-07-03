@@ -169,8 +169,9 @@ export function ContactForm() {
       </label>
 
       <button className="button button-primary" type="submit" disabled={status === "loading"}>
-        {status === "loading" ? "Sending Demo Request..." : "Request a Quote"}
+        {status === "loading" ? "Sending Demo Request..." : "Request a Property Walkthrough"}
       </button>
     </form>
   );
 }
+

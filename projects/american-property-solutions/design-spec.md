@@ -319,3 +319,164 @@ Mobile:
 
 
 
+
+## Phase Three Commercial Aesthetic Refinement
+
+### Summary
+
+The current demo aesthetic should move further away from a soft residential lawn-care feel and toward a serious commercial property maintenance provider: commercial, regional, dependable, four-season, and operational.
+
+Competitor references are used only as directional inspiration for polish, structure, service grouping, commercial photography quality, and conversion flow. Do not copy competitor text, layouts exactly, images, logos, or proprietary assets.
+
+### Inputs Reviewed
+
+- User-provided Phase Three aesthetic direction dated 2026-07-03
+- `projects/american-property-solutions/homepage-copy.md`
+- `projects/american-property-solutions/seo-package.md`
+- Current `website/` demo homepage implementation
+
+### Confirmed Facts
+
+- APS publicly references commercial properties.
+- APS publicly positions itself as a four-season property maintenance company.
+- APS publicly lists services that support landscape/grounds, snow, paving/parking lots, concrete/sitework, building maintenance, and special-project grouping.
+- APS publicly lists Walnutport, PA and Lehigh Valley/Pennsylvania service-area references.
+
+### Observations
+
+- The homepage should feel more like a commercial maintenance operator than a small residential landscaping company.
+- Strong dark/neutral sections, operational spacing, commercial-style service grouping, and clear CTA hierarchy help support that shift.
+- The current repo does not confirm final BBB A+ accreditation wording or 24-hour/emergency-response language for broad homepage use, so those should remain omitted or pending approval.
+
+### Refined Visual Direction
+
+- Dark commercial hero with strong typography and practical CTA buttons.
+- CSS-based commercial property placeholders until APS approves real images.
+- Service cards grouped by operational category rather than a long contractor directory.
+- A trust/positioning bar that uses safe facts and approval-gate language.
+- A one-call maintenance section that reinforces year-round property support.
+- A property-type section that clearly marks unconfirmed property segments as demo audiences to validate.
+- A gallery placeholder section with a recommended shot list instead of random stock imagery.
+- A neutral credibility section titled `Why Property Managers Choose APS` instead of unapproved testimonials.
+
+### Homepage Section Order
+
+1. Hero: `Four-Season Commercial Property Maintenance for the Lehigh Valley and Eastern Pennsylvania`.
+2. Trust/positioning bar with only safe demo claims.
+3. Service categories:
+   - Landscape & Grounds Maintenance
+   - Snow & Ice Management
+   - Paving, Sealcoating & Parking Lots
+   - Concrete & Sitework
+   - Building / Facility Maintenance
+   - Remodeling / Special Projects
+4. One-call four-season maintenance section.
+5. Property types served / to validate.
+6. Featured work/gallery placeholders.
+7. Neutral property-manager credibility section.
+8. Local service-area block.
+9. Final CTA.
+
+### CTA Direction
+
+- Primary: `Request a Property Walkthrough`
+- Secondary: `View Services`
+
+### Image and Asset Plan
+
+Approved photos are preferred. Until available, use CSS-based placeholders only.
+
+Recommended image shot list:
+
+- Commercial exterior maintenance.
+- Snow-cleared commercial lot.
+- Paving, sealcoating, or line striping.
+- Concrete and sitework.
+- Landscape and grounds maintenance.
+- Building/facility maintenance work.
+
+### Assumptions
+
+- `Eastern Pennsylvania` remains demo positioning until APS confirms final service-area wording.
+- Retail centers, office parks, industrial sites, multi-family communities, and HOAs are useful commercial audience examples but require validation before final public copy.
+- BBB A+ accreditation, 24-hour response, emergency response beyond listed service labels, testimonials, awards, certifications, warranties, guarantees, and years-in-business claims require approval before use.
+
+### Recommendations
+
+- Keep the homepage dense, scannable, and commercial-first.
+- Avoid residential lawn-care visual cues as the dominant look.
+- Use real APS work photos as soon as approved.
+- Keep trust claims conservative until the owner validates them.
+- Preserve the Phase Three flagship direction: Property & Building Maintenance is the evergreen flagship page; Snow & Ice remains seasonal/supporting.
+
+### Handoff Notes for the Next Agent
+
+- QA should verify the revised homepage at mobile, tablet, and desktop widths.
+- Build or deployment agents should not add external imagery or unsupported trust claims.
+- Final public copy still requires APS approval.
+
+## Production Asset Readiness
+
+### Summary
+
+The demo now has centralized asset slots in `website/lib/siteData.ts` so approved APS photos can replace CSS placeholders without rewriting homepage markup.
+
+### Recommended Image Needs
+
+- Commercial property exterior.
+- APS crews at work.
+- Trucks and equipment.
+- Landscape maintenance.
+- Snow-cleared parking lot.
+- Paving, sealcoating, crack sealing, or parking lot line striping.
+- Concrete and sitework.
+- Building or facility maintenance.
+- Before/after project examples.
+- Local/regional context where appropriate.
+
+### Recommended Future Location and Filenames
+
+Approved files should be placed under `website/public/approved-aps-assets/` when available. That folder is not required until real approved photos exist.
+
+Recommended filenames:
+
+- `commercial-property-exterior.jpg`
+- `commercial-exterior-maintenance.jpg`
+- `aps-crew-equipment.jpg`
+- `snow-cleared-parking-lot.jpg`
+- `parking-lot-sealcoating-striping.jpg`
+- `concrete-sitework.jpg`
+- `building-facility-maintenance.jpg`
+- `before-after-project-example.jpg`
+- `local-regional-context.jpg`
+
+### Replacement Workflow
+
+1. Confirm the photo is APS-owned, licensed, or approved for public use.
+2. Confirm the photo does not imply unsupported service areas, credentials, emergency response, awards, warranties, guarantees, testimonials, or years in business.
+3. Add the file to `website/public/approved-aps-assets/`.
+4. Update the related asset object in `website/lib/siteData.ts` with `src: "/approved-aps-assets/<filename>"`.
+5. Change `status` from `pending-approval` to `approved`.
+6. Verify alt text describes the actual image.
+7. Run lint and build before deployment.
+
+### Launch Approval Blockers
+
+- Final service-area wording, including `Eastern Pennsylvania`.
+- Any BBB, badge, rating, affiliation, certification, award, warranty, guarantee, testimonial, review, emergency-response, 24-hour, or years-in-business claim.
+- Property-type targeting beyond confirmed commercial-property language.
+- Final image approvals and image usage rights.
+
+### Additional Implementation Asset Slots
+
+The current `website/lib/siteData.ts` asset config also includes these page-level slots:
+
+- `aps-service-overview.jpg` for the Services page hero.
+- `property-building-maintenance.jpg` for the flagship Property & Building Maintenance page.
+- `property-walkthrough-contact.jpg` for the Contact page walkthrough request visual.
+
+Images should render only after the asset has an approved `src` and `status: "approved"` in `siteData.ts`.
+
+## Launch Approval Reference
+
+Before production launch planning, use `projects/american-property-solutions/launch-approval-checklist.md` to validate final service-area wording, service labels, approved asset usage, trust claims, form routing, SEO metadata, and legal/privacy needs.

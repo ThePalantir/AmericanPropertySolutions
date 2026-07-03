@@ -10,7 +10,7 @@ export function Footer() {
           <h2>Property maintenance demo concept</h2>
           <p>
             This demo keeps the focus on clearer service organization, visible
-            phone and quote paths, and draft copy that still requires client
+            phone and walkthrough paths, and draft copy that still requires client
             approval before public launch.
           </p>
         </div>
@@ -44,3 +44,4 @@ export function Footer() {
     </footer>
   );
 }
+

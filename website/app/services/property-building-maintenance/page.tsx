@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CTASection } from "../../../components/CTASection";
 import { DemoVisual } from "../../../components/DemoVisual";
-import { business } from "../../../lib/siteData";
+import { business, propertyMaintenanceAsset } from "../../../lib/siteData";
 
 export const metadata: Metadata = {
   title: "Property & Building Maintenance",
   description:
-    "Demo flagship service page for APS property maintenance, building maintenance, repair support, stacking and hauling, and remodeling-related service needs pending client validation."
+    "Property and building maintenance service path for APS, including repair support, stacking and hauling, and remodeling-related service needs pending client validation."
 };
 
 const maintenanceItems = [
@@ -28,17 +28,15 @@ export default function PropertyBuildingMaintenancePage() {
     <>
       <section className="page-hero section">
         <div>
-          <p className="eyebrow">Flagship demo service</p>
+          <p className="eyebrow">Flagship service path</p>
           <h1>Property & Building Maintenance</h1>
           <p className="lead">
-            This page shows how APS can lead with evergreen property and
-            building maintenance instead of making a seasonal snow page carry
-            the first demo build.
+            This page leads with evergreen property and building maintenance
+            instead of making a seasonal snow page carry the first service path.
           </p>
           <p>
-            The copy is demo direction only. Specific repair, remodeling,
-            stacking, and hauling wording should be validated with APS before
-            final public use.
+            Specific repair, remodeling, stacking, and hauling wording should
+            be validated with APS before final public use.
           </p>
           <div className="hero-actions">
             <Link className="button button-primary" href="/contact">
@@ -49,15 +47,12 @@ export default function PropertyBuildingMaintenancePage() {
             </a>
           </div>
         </div>
-        <DemoVisual
-          label="Property and building maintenance placeholder for APS demo"
-          variant="property"
-        />
+        <DemoVisual asset={propertyMaintenanceAsset} variant="property" />
       </section>
 
       <section className="section split-band">
         <div>
-          <p className="eyebrow">What this page should clarify</p>
+          <p className="eyebrow">What this page clarifies</p>
           <h2>Maintenance Work That Keeps a Property Usable</h2>
           <p>
             A focused flagship page gives property owners and managers one
@@ -77,9 +72,8 @@ export default function PropertyBuildingMaintenancePage() {
           <p className="eyebrow">Service fit</p>
           <h2>Use This Page as the Evergreen Service Anchor</h2>
           <p>
-            The page should make the maintenance offer easier to evaluate
-            quickly while linking visitors back to related seasonal and site
-            services.
+            The page makes the maintenance offer easier to evaluate quickly
+            while linking visitors back to related seasonal and site services.
           </p>
         </div>
         <div className="feature-grid">

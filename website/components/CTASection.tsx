@@ -7,7 +7,7 @@ type CTASectionProps = {
 };
 
 export function CTASection({
-  title = "Need property maintenance help?",
+  title = "Need commercial property maintenance help?",
   body = "Start with a direct conversation about the property, the service needed, and the best next step."
 }: CTASectionProps) {
   return (
@@ -19,7 +19,7 @@ export function CTASection({
       </div>
       <div className="cta-actions">
         <Link className="button button-primary" href="/contact">
-          Request a Quote
+          Request a Property Walkthrough
         </Link>
         <a className="button button-secondary dark" href={business.phoneHref}>
           Call {business.phone}
@@ -28,3 +28,4 @@ export function CTASection({
     </section>
   );
 }
+

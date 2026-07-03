@@ -3,12 +3,12 @@ import Link from "next/link";
 import { CTASection } from "../../components/CTASection";
 import { DemoVisual } from "../../components/DemoVisual";
 import { ServiceCard } from "../../components/ServiceCard";
-import { serviceGroups, servicePriority, validationNotes } from "../../lib/siteData";
+import { serviceGroups, serviceOverviewAsset, servicePriority, validationNotes } from "../../lib/siteData";
 
 export const metadata: Metadata = {
   title: "Property Maintenance Services",
   description:
-    "Explore the APS demo service structure for property maintenance, building maintenance, seasonal snow, landscaping, hardscaping, sitework, paving, concrete, and line striping."
+    "Explore the APS property maintenance service structure for building maintenance, seasonal snow, landscaping, hardscaping, sitework, paving, concrete, and line striping."
 };
 
 export default function ServicesPage() {
@@ -25,22 +25,22 @@ export default function ServicesPage() {
           </p>
           <div className="hero-actions">
             <Link className="button button-primary" href="/contact">
-              Request a Quote
+              Request a Property Walkthrough
             </Link>
             <Link className="button button-secondary" href="/services/property-building-maintenance">
               View Flagship Service
             </Link>
           </div>
         </div>
-        <DemoVisual label="Organized APS service paths placeholder" variant="services" />
+        <DemoVisual asset={serviceOverviewAsset} variant="services" />
       </section>
 
       <section className="section">
         <div className="section-heading">
-          <p className="eyebrow">Demo service order</p>
-          <h2>Priority Order for the First Demo Build</h2>
+          <p className="eyebrow">Service priority</p>
+          <h2>Service Order for Approval and Validation</h2>
           <p>
-            This list follows the planning direction exactly. Wording for
+            This list follows the current planning direction. Wording for
             Stacking and Hauling plus Line Striping should be validated before
             final public copy.
           </p>
@@ -55,7 +55,7 @@ export default function ServicesPage() {
       <section className="section">
         <div className="section-heading">
           <p className="eyebrow">Service paths</p>
-          <h2>Grouped for Scanning, Quoting, and Future SEO</h2>
+          <h2>Grouped for Scanning, Routing, and Future SEO</h2>
         </div>
         <div className="card-grid">
           {serviceGroups.map((service) => (
@@ -65,8 +65,8 @@ export default function ServicesPage() {
       </section>
 
       <section className="section notes-panel">
-        <p className="eyebrow">Demo-only notes</p>
-        <h2>What Stays Out Until Approved</h2>
+        <p className="eyebrow">Approval notes</p>
+        <h2>Claims That Stay Out Until Approved</h2>
         <ul className="plain-list">
           {validationNotes.map((note) => (
             <li key={note}>{note}</li>
@@ -76,8 +76,9 @@ export default function ServicesPage() {
 
       <CTASection
         title="Have a property issue that spans more than one service?"
-        body="The demo quote path lets a visitor choose the closest service interest or select multiple needs."
+        body="The walkthrough path lets a visitor choose the closest service interest or select multiple needs."
       />
     </>
   );
 }
+
