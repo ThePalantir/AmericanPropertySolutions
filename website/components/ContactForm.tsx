@@ -72,11 +72,11 @@ export function ContactForm() {
   return (
     <form className="quote-form" onSubmit={handleSubmit} noValidate>
       <div className="form-status" aria-live="polite">
-        {status === "idle" && "Safe mock form. No email, CRM, API, or backend is connected."}
-        {status === "loading" && "Preparing demo confirmation..."}
+        {status === "idle" && "Preview form: no message is sent from this demo."}
+        {status === "loading" && "Preparing confirmation..."}
         {status === "success" &&
-          "Demo success state: a real build would route this request only after APS approves the form process."}
-        {status === "error" && "Please complete the required fields before sending the demo request."}
+          "Success state preview: final request routing can be connected before launch."}
+        {status === "error" && "Please complete the required fields before requesting a walkthrough."}
       </div>
 
       <div className="form-grid">
@@ -169,9 +169,8 @@ export function ContactForm() {
       </label>
 
       <button className="button button-primary" type="submit" disabled={status === "loading"}>
-        {status === "loading" ? "Sending Demo Request..." : "Request a Property Walkthrough"}
+        {status === "loading" ? "Preparing Request..." : "Request a Property Walkthrough"}
       </button>
     </form>
   );
 }
-

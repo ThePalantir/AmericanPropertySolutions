@@ -11,7 +11,7 @@ import {
 export const metadata: Metadata = {
   title: "Property & Building Maintenance",
   description:
-    "A compatibility page that routes APS property and building maintenance visitors to the expanded service directory."
+    "Connects APS property and building maintenance visitors to the expanded service directory."
 };
 
 const linkedSlugs = [
@@ -31,12 +31,11 @@ export default function PropertyBuildingMaintenanceCompatibilityPage() {
     <>
       <section className="page-hero section compact-hero">
         <div>
-          <p className="eyebrow">Service path updated</p>
+          <p className="eyebrow">Service guide</p>
           <h1>Property & Building Maintenance</h1>
           <p className="lead">
-            This legacy service path now connects to the expanded APS service
-            directory, including property maintenance, building repairs, and
-            remodeling-related support.
+            Use this path to choose between property maintenance, building
+            repairs, and remodeling-related support.
           </p>
           <div className="hero-actions">
             <Link className="button button-primary" href="/services/property-maintenance">
@@ -55,8 +54,9 @@ export default function PropertyBuildingMaintenanceCompatibilityPage() {
           <p className="eyebrow">Related service paths</p>
           <h2>Choose the Closest Maintenance Need</h2>
           <p>
-            The demo keeps this previous URL available while splitting the
-            content into clearer, more complete service pages.
+            This page keeps the previous property and building maintenance path
+            available while directing visitors to the clearest service detail
+            page.
           </p>
         </div>
         <div className="service-directory-grid">
@@ -74,12 +74,12 @@ export default function PropertyBuildingMaintenanceCompatibilityPage() {
       </section>
 
       <section className="section notes-panel">
-        <p className="eyebrow">Compatibility note</p>
-        <h2>Expanded Service Directory</h2>
+        <p className="eyebrow">Service directory</p>
+        <h2>Expanded APS Service Paths</h2>
         <p>
-          APS source content supports a broader maintenance catalog. This page
-          preserves the older route while the new structure gives each major
-          service a clearer destination.
+          The expanded service structure gives each major APS service a clearer
+          destination while keeping property maintenance as the main starting
+          point.
         </p>
         <div className="area-list" aria-label="Expanded APS service categories">
           {serviceCatalog.slice(0, 9).map((service) => (

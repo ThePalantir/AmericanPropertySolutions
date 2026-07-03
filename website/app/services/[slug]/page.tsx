@@ -68,9 +68,8 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
             <p className="eyebrow">What we handle</p>
             <h2>Service Scope</h2>
             <p>
-              This list is rewritten from APS source content and organized for
-              easier scanning. Final public wording and service scope still
-              require APS approval.
+              A practical overview of the work visitors can discuss during a
+              property walkthrough.
             </p>
           </div>
           <div className="detail-list-grid">
@@ -83,12 +82,15 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
           </div>
         </div>
         <aside className="source-note-panel">
-          <p className="eyebrow">Source basis</p>
-          <h2>Derived From APS Source Content</h2>
-          <p>{service.sourceNote}</p>
-          <a className="text-link" href={service.sourceUrl} target="_blank" rel="noreferrer">
-            View source page
-          </a>
+          <p className="eyebrow">Walkthrough fit</p>
+          <h2>Start With the Property Need</h2>
+          <p>
+            APS can use the walkthrough conversation to confirm the exact site,
+            service category, timing, and next step for this work.
+          </p>
+          <Link className="text-link" href="/contact">
+            Request a Property Walkthrough
+          </Link>
         </aside>
       </section>
 
@@ -97,8 +99,8 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
           <p className="eyebrow">Common needs we solve</p>
           <h2>When This Service Path Fits</h2>
           <p>
-            The demo speaks to real property maintenance situations instead of
-            repeating keyword lists from the old site.
+            These examples help visitors choose the right service path without
+            sorting through a long contractor list.
           </p>
         </div>
         <ul className="check-list service-need-list">
@@ -129,15 +131,14 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
           <p className="eyebrow">Service-area note</p>
           <h2>Ask About Availability in Your Area</h2>
           <p>
-            APS source content references the Lehigh Valley and surrounding
-            Pennsylvania communities. Final launch copy should confirm the exact
-            cities, counties, and service radius APS wants to promote.
+            APS can confirm availability for the property location, requested
+            service, and timing during the walkthrough conversation.
           </p>
           <Link className="text-link" href="/contact">
             Ask About Service Coverage
           </Link>
         </div>
-        <div className="area-list" aria-label="Source-derived service areas requiring final approval">
+        <div className="area-list" aria-label="Service areas to confirm during walkthrough">
           {serviceAreas.slice(0, 12).map((area) => (
             <span key={area}>{area}</span>
           ))}
@@ -151,4 +152,3 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
     </>
   );
 }
-

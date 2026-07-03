@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { business, logoAsset, navItems, serviceCatalog, validationNotes } from "../lib/siteData";
+import { business, logoAsset, navItems, serviceCatalog } from "../lib/siteData";
 
 export function Footer() {
   const hasApprovedLogo = Boolean(logoAsset.src && logoAsset.status === "approved");
@@ -17,7 +17,7 @@ export function Footer() {
             ) : null}
             <p className="eyebrow">American Property Solutions</p>
           </div>
-          <h2>Property maintenance demo concept</h2>
+          <h2>Four-season property maintenance support</h2>
           <p>
             A commercial-first service structure for APS property maintenance,
             snow and ice, parking lots, concrete, sitework, landscaping,
@@ -57,9 +57,8 @@ export function Footer() {
         </div>
       </div>
       <div className="footer-note">
-        {validationNotes.map((note) => (
-          <span key={note}>{note}</span>
-        ))}
+        <span>Owner-review concept</span>
+        <span>Final launch copy and service-area wording require APS approval.</span>
       </div>
     </footer>
   );

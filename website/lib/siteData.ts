@@ -6,7 +6,7 @@ export const business = {
   nyAddress: "3209 Steward Road, Vestal, NY 13850",
   hours: "M-F 9AM-4PM",
   demoNote:
-    "Concept site: final public copy, photos, service areas, trust claims, and emergency-response language require APS approval."
+    "Owner-review concept: final launch copy, service areas, forms, and trust claims require APS approval."
 };
 
 export const navItems = [
@@ -157,7 +157,7 @@ export const serviceCatalog: ServiceDetail[] = [
     group: "One Call, Full Property Coverage",
     summary: "A cleaner service path for commercial property maintenance, exterior upkeep, parking-area support, sitework, and repair coordination.",
     intro:
-      "APS publicly positions itself around four-season property maintenance. This demo turns that broad offer into a practical starting point for owners and managers who need one conversation about several property needs.",
+      "APS brings several property needs into one practical starting point for owners and managers who want a clearer path from issue to next step.",
     sourceUrl: "https://aps-pa.com/",
     sourceNote: "Homepage service list and four-season property maintenance positioning.",
     image: heroAsset,
@@ -186,7 +186,7 @@ export const serviceCatalog: ServiceDetail[] = [
     group: "Grounds & Landscape",
     summary: "Grounds maintenance, lawn care, planting, drainage, turf, hardscape, and landscape installation services organized for commercial and property-maintenance use.",
     intro:
-      "The current APS site lists lawn care, landscaping, planting, sod, drainage, hardscape, and seasonal maintenance work. The demo keeps the service clear and avoids turning it into residential lawn-care clutter.",
+      "APS lawn and landscaping work is organized around grounds maintenance, planting, drainage, turf, hardscape, and seasonal property needs.",
     sourceUrl: "https://aps-pa.com/american-property-solutions-lawn-and-landscaping-services/",
     sourceNote: "Lawn and landscaping page service bullets and landscape installation copy.",
     image: {
@@ -224,9 +224,9 @@ export const serviceCatalog: ServiceDetail[] = [
     title: "Snow & Ice Management",
     eyebrow: "Seasonal operations",
     group: "Snow & Ice",
-    summary: "Commercial snow plowing, parking-lot winter service, deicing, sidewalk clearing, snow relocation, and storm-readiness content kept approval-gated where needed.",
+    summary: "Commercial snow plowing, parking-lot winter service, deicing, sidewalk clearing, snow relocation, and storm-readiness support.",
     intro:
-      "APS has extensive snow and ice content on the current site. This demo keeps snow visible as a major seasonal service while avoiding unapproved emergency, response-time, technology, or experience claims.",
+      "Snow and ice management stays visible as a major seasonal service while the page keeps the public message focused on practical winter property needs.",
     sourceUrl: "https://aps-pa.com/snow-plowing-company/",
     sourceNote: "Snow plowing page winter-service details, service-area claims, deicing, sidewalks, hauling/relocating, weather system, and service partner content.",
     image: {
@@ -242,10 +242,10 @@ export const serviceCatalog: ServiceDetail[] = [
       "Snow plowing",
       "Snow and ice management",
       "Parking lot snow service",
-      "Deicing and salting as source-derived scope",
+      "Deicing and salting",
       "Sidewalk clearing support",
       "Snow hauling and relocating",
-      "Winter service partner coordination as source-derived scope"
+      "Winter service partner coordination"
     ],
     needs: [
       "A commercial property needs winter access for customers, staff, and deliveries.",
@@ -267,7 +267,7 @@ export const serviceCatalog: ServiceDetail[] = [
     group: "Parking Lots & Pavement",
     summary: "Parking lot and driveway maintenance, asphalt repairs, sealcoating, crack sealing, line striping, drainage, sidewalk repair, and related site support.",
     intro:
-      "The current APS parking lot page includes a useful maintenance list. The demo reframes it around property access, appearance, drainage, and upkeep rather than keyword-heavy paving copy.",
+      "Parking lot maintenance is framed around property access, appearance, drainage, and upkeep rather than a scattered list of pavement terms.",
     sourceUrl: "https://aps-pa.com/parking-lot-maintenance/",
     sourceNote: "Parking lot maintenance page service list.",
     image: {
@@ -306,7 +306,7 @@ export const serviceCatalog: ServiceDetail[] = [
     group: "Concrete & Sitework",
     summary: "Concrete driveways, sidewalks, patios, slabs, floors, decorative concrete, retaining walls, curbing, repairs, staining, sealing, excavation, and grading.",
     intro:
-      "APS lists concrete services across driveways, parking areas, sidewalks, patios, slabs, repairs, and related grading. The demo groups those services into one clean concrete path.",
+      "Concrete services are grouped into one clear path across driveways, parking areas, sidewalks, patios, slabs, repairs, and related grading.",
     sourceUrl: "https://aps-pa.com/concrete-contractor/",
     sourceNote: "Concrete contractor page service list.",
     image: pendingConcreteAsset,
@@ -338,7 +338,7 @@ export const serviceCatalog: ServiceDetail[] = [
     group: "Concrete & Sitework",
     summary: "Drainage design, grading, hauling, driveway stone, ditch digging, hardscape excavation, driveway repair, building pads, and site preparation.",
     intro:
-      "The excavation content on the current APS site is useful but thin. This demo keeps it practical and ties sitework to drainage, access, grading, and prep for other exterior improvements.",
+      "Excavation and sitework are tied to drainage, access, grading, and prep for other exterior improvements.",
     sourceUrl: "https://aps-pa.com/excavation-and-sitework/",
     sourceNote: "Excavation and sitework page service list.",
     image: {
@@ -375,7 +375,7 @@ export const serviceCatalog: ServiceDetail[] = [
     group: "Building & Interior Repairs",
     summary: "Interior repair and maintenance support including drywall, construction, painting, lighting, flooring, electrical, remodeling, and general repairs.",
     intro:
-      "APS lists building maintenance and repair services alongside remodeling and interior construction support. The demo positions this as a practical facility-support path, with final scope still requiring owner validation.",
+      "Building maintenance and repair services are positioned as a practical facility-support path for interior and building-related needs.",
     sourceUrl: "https://aps-pa.com/building-maintenance/",
     sourceNote: "Building maintenance and repairs page interior services list.",
     image: {
@@ -412,7 +412,7 @@ export const serviceCatalog: ServiceDetail[] = [
     group: "Decks, Patios & Hardscapes",
     summary: "Deck building, patio installation, paver installation, hardscapes, retaining walls, walkways, railings, and outdoor living spaces.",
     intro:
-      "APS includes decks, patios, pavers, hardscapes, walkways, railings, and related outdoor improvements. The demo keeps this service present without letting it overpower the commercial maintenance positioning.",
+      "Decks, patios, pavers, hardscapes, walkways, railings, and related outdoor improvements stay visible without overpowering the commercial maintenance positioning.",
     sourceUrl: "https://aps-pa.com/decks-and-patios/",
     sourceNote: "Decks and patios page service list.",
     image: {
@@ -450,7 +450,7 @@ export const serviceCatalog: ServiceDetail[] = [
     group: "Building & Interior Repairs",
     summary: "Remodeling and special-project support connected to building maintenance, drywall, painting, flooring, lighting, construction, and general repairs.",
     intro:
-      "The current APS site links remodeling with building maintenance and interior services. The demo keeps remodeling visible as a special-project path while requiring APS to validate exact scope before launch.",
+      "Remodeling stays visible as a special-project path connected to building maintenance and interior service needs.",
     sourceUrl: "https://aps-pa.com/building-maintenance/",
     sourceNote: "Building maintenance page and navigation label for Remodeling Services.",
     image: {
@@ -487,7 +487,7 @@ export const supplementalPages = [
     title: "Service Partner Network",
     href: "/contact",
     summary:
-      "Source-derived partner-network content supports winter and non-winter service coordination, but the demo routes interest through the safe contact path until APS approves a partner form.",
+      "Partner-network interest can be routed through the contact path until APS chooses the final public workflow.",
     sourceUrl: "https://aps-pa.com/american-property-solutions-service-partner-network/",
     approvalNeeded: "Partner claims, form fields, and service partner process require APS approval before public launch."
   },
@@ -495,7 +495,7 @@ export const supplementalPages = [
     title: "Careers / Hiring",
     href: "/contact",
     summary:
-      "Source-derived careers content says APS is looking for experienced workers in construction, paving/concrete, landscaping/hardscaping, lawncare, snow plowing, and building maintenance.",
+      "Hiring interest can be routed through the contact path until APS chooses the final public workflow.",
     sourceUrl: "https://aps-pa.com/careers/",
     approvalNeeded: "Hiring status, open roles, resume handling, and form routing require APS approval before public launch."
   }
@@ -513,7 +513,7 @@ export const serviceGroups = [
     title: "Snow & Ice",
     href: "/services/snow-ice-management",
     eyebrow: "Seasonal",
-    summary: "Snow plowing, deicing, sidewalk support, parking-lot winter service, and snow relocation as source-derived scope.",
+    summary: "Snow plowing, deicing, sidewalk support, parking-lot winter service, and snow relocation.",
     items: ["Snow plowing", "Deicing", "Snow hauling / relocating"]
   },
   {
@@ -559,7 +559,7 @@ export const audienceLabels = [
 export const trustBarItems = [
   {
     label: "Commercial property focus",
-    note: "Supported by current site language referencing commercial properties."
+    note: "Commercial service focus referencing commercial properties."
   },
   {
     label: "Four-season maintenance",
@@ -570,18 +570,18 @@ export const trustBarItems = [
     note: "Walnutport, PA location and Lehigh Valley references are public facts."
   },
   {
-    label: "Credentials pending approval",
-    note: "Badges, affiliations, or ratings can be added only after APS validates them."
+    label: "Straightforward review path",
+    note: "Visitors can request a walkthrough instead of sorting through a scattered contractor list."
   }
 ];
 
 export const propertyTypes = [
-  { label: "Commercial properties", status: "Supported by current site language" },
-  { label: "Office and business properties", status: "Audience to validate" },
-  { label: "Retail centers", status: "Source-derived snow context; validate" },
-  { label: "Industrial complexes", status: "Source-derived snow context; validate" },
-  { label: "Medical centers", status: "Source-derived snow context; validate" },
-  { label: "Residential exterior projects", status: "Supported in several service pages; validate priority" }
+  { label: "Commercial properties", status: "Commercial service focus" },
+  { label: "Office and business properties", status: "Confirm service fit" },
+  { label: "Retail centers", status: "Confirm service fit" },
+  { label: "Industrial complexes", status: "Confirm service fit" },
+  { label: "Medical centers", status: "Confirm service fit" },
+  { label: "Residential exterior projects", status: "Confirm service fit" }
 ];
 
 export const serviceAreas = [

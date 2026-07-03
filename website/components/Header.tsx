@@ -19,7 +19,7 @@ export function Header() {
           )}
           <span>
             <strong>American Property Solutions</strong>
-            <small>Demo concept</small>
+            <small>Commercial property maintenance</small>
           </span>
         </Link>
         <nav className="main-nav" aria-label="Primary navigation">

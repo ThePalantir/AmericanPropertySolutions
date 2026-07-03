@@ -30,15 +30,14 @@ export default function HomePage() {
           <p className="eyebrow on-dark">Commercial property maintenance</p>
           <h1>Four-Season Commercial Property Maintenance for the Lehigh Valley and Eastern Pennsylvania</h1>
           <p className="lead">
-            American Property Solutions is presented as a dependable regional
-            maintenance partner for property managers, facility teams, local
-            businesses, and owners responsible for keeping sites safe,
-            accessible, and presentable year-round.
+            American Property Solutions is organized as a regional maintenance
+            partner for property managers, facility teams, local businesses, and
+            owners responsible for keeping sites safe, accessible, and
+            presentable year-round.
           </p>
           <p>
-            The expanded demo keeps the premium visual direction while making
-            the service structure more complete: grounds, snow, parking lots,
-            concrete, sitework, building repairs, remodeling, decks, patios, and
+            The service structure covers grounds, snow, parking lots, concrete,
+            sitework, building repairs, remodeling, decks, patios, and
             partner-supported seasonal operations.
           </p>
           <div className="hero-actions">
@@ -50,9 +49,8 @@ export default function HomePage() {
             </Link>
           </div>
           <p className="location-note on-dark-note">
-            Walnutport-based APS concept serving source-derived Lehigh Valley
-            and Pennsylvania service-area references. Final service-area
-            language requires APS approval.
+            Walnutport-based APS with Lehigh Valley and regional Pennsylvania
+            service coverage to confirm during the walkthrough.
           </p>
         </div>
         <DemoVisual asset={heroAsset} variant="property" />
@@ -72,10 +70,8 @@ export default function HomePage() {
           <p className="eyebrow">Complete property maintenance services</p>
           <h2>One Service Hub Instead of a Scattered Contractor List</h2>
           <p>
-            The old site includes a wide range of useful APS services, but the
-            content is spread across repetitive pages. This homepage now shows
-            the breadth without becoming a giant encyclopedia; each service path
-            links to a fuller detail page.
+            The homepage shows the breadth of APS services without becoming a
+            giant encyclopedia; each service path links to a fuller detail page.
           </p>
         </div>
         <div className="commercial-card-grid">
@@ -90,9 +86,9 @@ export default function HomePage() {
           <p className="eyebrow on-dark">Service directory preview</p>
           <h2 id="service-mosaic-heading">The Core APS Service Paths</h2>
           <p>
-            The demo organizes APS around clear customer problems: maintaining
+            APS services are organized around clear property needs: maintaining
             grounds, keeping lots open, repairing buildings, improving outdoor
-            spaces, and coordinating seasonal property needs.
+            spaces, and coordinating seasonal work.
           </p>
         </div>
         <div className="mosaic-grid">
@@ -133,11 +129,11 @@ export default function HomePage() {
       <section className="section property-types-section">
         <div className="section-heading">
           <p className="eyebrow">Property types</p>
-          <h2>Commercial-First, With Service Scope to Validate</h2>
+          <h2>Commercial-First, With Flexible Property Support</h2>
           <p>
-            Commercial property language is supported by the current APS site.
-            More specific property-type examples are source-derived or audience
-            assumptions and remain approval-needed before public launch.
+            The structure keeps commercial maintenance at the center while
+            giving visitors a natural place to ask about the exact property type
+            and service fit.
           </p>
         </div>
         <div className="property-grid">
@@ -155,9 +151,8 @@ export default function HomePage() {
           <p className="eyebrow">Approved local visuals</p>
           <h2>APS Photo Slots That Support the Service Story</h2>
           <p>
-            The demo uses local APS assets only. Badge, rating, and affiliation
-            graphics remain out of public rendering until APS validates exact
-            claims and usage rules.
+            This concept uses local APS visual assets only. Badge, rating, and
+            affiliation graphics are not shown in the public page experience.
           </p>
         </div>
         <div className="gallery-grid">
@@ -178,7 +173,7 @@ export default function HomePage() {
                 />
               ) : null}
               <span>{asset.title}</span>
-              <small>{asset.status === "approved" ? "Approved APS photo" : "Photo pending APS approval"}</small>
+              <small>{asset.status === "approved" ? "Service visual" : "Visual pending"}</small>
             </div>
           ))}
         </div>
@@ -187,17 +182,17 @@ export default function HomePage() {
       <section className="section service-area commercial-area">
         <div>
           <p className="eyebrow">Regional service coverage</p>
-          <h2>Source-Derived Lehigh Valley and Regional References</h2>
+          <h2>Lehigh Valley and Regional Service Coverage</h2>
           <p>
-            The current APS site references communities and counties across the
-            Lehigh Valley and surrounding Pennsylvania areas. The demo keeps the
-            list readable and marks final territory wording for approval.
+            APS can use this section to present service coverage clearly.
+            Visitors should ask about availability for their exact location and
+            service need.
           </p>
           <Link className="text-link" href="/contact">
             Ask About Service in Your Area
           </Link>
         </div>
-        <div className="area-list" aria-label="Source-derived service areas requiring final approval">
+        <div className="area-list" aria-label="Service areas to confirm during walkthrough">
           {serviceAreas.map((area) => (
             <span key={area}>{area}</span>
           ))}
@@ -211,5 +206,3 @@ export default function HomePage() {
     </>
   );
 }
-
-

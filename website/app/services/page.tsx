@@ -7,8 +7,7 @@ import {
   serviceCatalog,
   serviceGroups,
   serviceOverviewAsset,
-  supplementalPages,
-  validationNotes
+  supplementalPages
 } from "../../lib/siteData";
 
 export const metadata: Metadata = {
@@ -25,9 +24,9 @@ export default function ServicesPage() {
           <p className="eyebrow">Services</p>
           <h1>Property Maintenance Services</h1>
           <p className="lead">
-            A stronger services hub turns APS&apos;s broad service list into clear,
-            professional paths for property managers, business owners, facility
-            teams, and homeowners with exterior or building-related needs.
+            APS services are organized into clear, professional paths for
+            property managers, business owners, facility teams, and homeowners
+            with exterior or building-related needs.
           </p>
           <div className="hero-actions">
             <Link className="button button-primary" href="/contact">
@@ -46,8 +45,9 @@ export default function ServicesPage() {
           <p className="eyebrow">Grouped service families</p>
           <h2>Scan by Property Need</h2>
           <p>
-            These groups preserve the premium, commercial-first direction while
-            representing the full APS service mix from the source site.
+            The hub keeps the premium commercial direction while giving visitors
+            a fast way to find the service family that matches their property
+            need.
           </p>
         </div>
         <div className="commercial-card-grid">
@@ -62,8 +62,8 @@ export default function ServicesPage() {
           <p className="eyebrow">Service directory</p>
           <h2>Detailed Service Paths</h2>
           <p>
-            Each path rewrites source-derived APS content into scannable service
-            pages with related services and walkthrough CTAs.
+            Each path gives visitors a concise overview, practical scope list,
+            related services, and a walkthrough CTA.
           </p>
         </div>
         <div className="service-directory-grid">
@@ -87,13 +87,12 @@ export default function ServicesPage() {
 
       <section className="section split-band source-band">
         <div>
-          <p className="eyebrow">Source-derived additions</p>
-          <h2>Partner and Hiring Content Is Present, But Approval-Gated</h2>
+          <p className="eyebrow">Additional APS paths</p>
+          <h2>Partner and Hiring Conversations Stay Routed Through Contact</h2>
           <p>
-            The existing APS site includes a Service Partner Network and Careers
-            content. This demo acknowledges both without adding public forms,
-            hiring claims, or partner-process commitments that still need APS
-            approval.
+            Service partner and careers interest can stay visible without
+            creating extra public forms or distracting from the main walkthrough
+            path.
           </p>
         </div>
         <div className="source-card-stack">
@@ -101,20 +100,10 @@ export default function ServicesPage() {
             <article key={page.title}>
               <h3>{page.title}</h3>
               <p>{page.summary}</p>
-              <small>{page.approvalNeeded}</small>
+              <small>Start with the APS contact path.</small>
             </article>
           ))}
         </div>
-      </section>
-
-      <section className="section notes-panel">
-        <p className="eyebrow">Approval notes</p>
-        <h2>Claims That Stay Out Until Approved</h2>
-        <ul className="plain-list">
-          {validationNotes.map((note) => (
-            <li key={note}>{note}</li>
-          ))}
-        </ul>
       </section>
 
       <CTASection
@@ -124,5 +113,3 @@ export default function ServicesPage() {
     </>
   );
 }
-
-

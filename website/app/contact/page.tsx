@@ -17,8 +17,8 @@ export default function ContactPage() {
           <p className="eyebrow">Contact</p>
           <h1>Contact American Property Solutions</h1>
           <p className="lead">
-            Make the phone number and walkthrough request path obvious while
-            keeping final form handling subject to APS approval.
+            Call APS directly or use the walkthrough request path to start a
+            practical conversation about your property.
           </p>
           <div className="contact-actions">
             <a className="button button-primary" href={business.phoneHref}>
@@ -37,8 +37,8 @@ export default function ContactPage() {
           <p className="eyebrow">Walkthrough request</p>
           <h2>Request a Property Walkthrough</h2>
           <p>
-            Required fields, loading, success, and error states are included.
-            This sample form is not connected to email, a CRM, an API, or a backend.
+            Share the property location, service need, and best contact details
+            so APS can route the request to the right service conversation.
           </p>
           <ContactForm />
         </div>
@@ -66,12 +66,11 @@ export default function ContactPage() {
             </div>
           </dl>
           <p className="small-note">
-            Locations, service areas, and final walkthrough handling should be
-            confirmed with APS before public launch.
+            Ask about service availability, scheduling, and the best next step
+            for your property.
           </p>
         </aside>
       </section>
     </>
   );
 }
-
