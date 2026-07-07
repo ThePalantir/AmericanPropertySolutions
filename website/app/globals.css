@@ -148,7 +148,7 @@ main {
   display: flex;
   flex: 1;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.4rem;
 }
 
 .main-nav a,
@@ -256,8 +256,9 @@ a:focus-visible {
 .eyebrow {
   margin-bottom: 0.65rem;
   color: var(--green);
-  font-weight: 900;
-  letter-spacing: 0;
+  font-weight: 800;
+  font-size: 0.78rem;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
 }
 
@@ -507,7 +508,7 @@ a:focus-visible {
 
 .cta-band p,
 .cta-band .eyebrow {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.88);
 }
 
 .contact-layout {
@@ -607,7 +608,7 @@ textarea {
 .site-footer li,
 .site-footer a,
 .site-footer .eyebrow {
-  color: rgba(255, 255, 255, 0.76);
+  color: rgba(255, 255, 255, 0.86);
 }
 
 .footer-grid {
@@ -635,9 +636,9 @@ textarea {
 }
 
 .footer-note span {
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 999px;
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(255, 255, 255, 0.82);
   padding: 0.45rem 0.7rem;
   font-size: 0.82rem;
 }
@@ -783,8 +784,11 @@ textarea {
   color: rgba(255, 255, 255, 0.74);
 }
 
+/* Light steel-blue for small labels on navy — brand red at this size fails
+   contrast (~3.3:1) and vibrates against the dark blue. Red stays in rules,
+   buttons, and accents where it sits on light ground or reads as decoration. */
 .on-dark {
-  color: var(--accent);
+  color: #c7d8f6;
 }
 
 .on-dark-note {
@@ -868,7 +872,7 @@ textarea {
 }
 
 .one-call-band p {
-  color: rgba(255, 255, 255, 0.78);
+  color: rgba(255, 255, 255, 0.87);
 }
 
 .ops-panel {
@@ -1100,7 +1104,7 @@ textarea {
   width: 100%;
   padding: 0 1rem 1rem;
   background: rgba(11, 31, 68, 0.88);
-  color: rgba(255, 255, 255, 0.74);
+  color: rgba(255, 255, 255, 0.84);
   font-size: 0.82rem;
   font-weight: 700;
 }
@@ -1139,11 +1143,16 @@ textarea {
   margin-bottom: 0.75rem;
 }
 
+/* The flat APS mark ships on a white ground, so the footer mounts it as a
+   rounded white tile rather than floating a white square on navy. */
 .footer-logo {
   position: relative;
   display: block;
-  width: 150px;
-  height: 52px;
+  width: 84px;
+  height: 84px;
+  border-radius: 0.5rem;
+  background: #ffffff;
+  overflow: hidden;
 }
 
 /* Content architecture expansion */
@@ -1163,7 +1172,7 @@ textarea {
 }
 
 .service-mosaic .section-heading p:not(.eyebrow) {
-  color: rgba(255, 255, 255, 0.78);
+  color: rgba(255, 255, 255, 0.87);
 }
 
 .mosaic-grid,
@@ -1188,9 +1197,10 @@ textarea {
 .mosaic-tile {
   min-height: 230px;
   padding: 1.25rem;
+  border-top: 3px solid var(--accent);
   background:
-    linear-gradient(155deg, rgba(220, 38, 38, 0.22), transparent 44%),
-    rgba(255, 255, 255, 0.08);
+    linear-gradient(155deg, rgba(31, 78, 170, 0.3), transparent 46%),
+    rgba(255, 255, 255, 0.07);
   color: var(--paper);
   display: flex;
   flex-direction: column;
@@ -1199,9 +1209,10 @@ textarea {
 
 .mosaic-tile span,
 .related-service-grid span {
-  color: var(--accent);
-  font-size: 0.78rem;
-  font-weight: 900;
+  color: #c7d8f6;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
@@ -1218,7 +1229,7 @@ textarea {
 .source-card-stack small {
   display: block;
   margin-top: 0.65rem;
-  color: rgba(255, 255, 255, 0.74);
+  color: rgba(255, 255, 255, 0.85);
   line-height: 1.5;
 }
 
@@ -1231,6 +1242,7 @@ textarea {
   flex-direction: column;
   min-height: 100%;
   padding: 1.25rem;
+  border-top: 4px solid var(--green);
   background: var(--paper);
   box-shadow: 0 8px 26px rgba(23, 32, 27, 0.06);
 }
@@ -1324,12 +1336,13 @@ textarea {
 .related-service-grid a {
   min-height: 180px;
   padding: 1.1rem;
+  border-top: 3px solid var(--accent);
   background: var(--green-dark);
   color: var(--paper);
 }
 
 .related-service-grid small {
-  color: rgba(255, 255, 255, 0.74);
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .service-detail-area {
@@ -1389,9 +1402,16 @@ textarea {
   min-width: 310px;
 }
 
+/* Square slot for the flat APS star mark; the name text carries the lockup. */
 .brand-logo {
-  width: 142px;
-  height: 68px;
+  width: 64px;
+  height: 64px;
+}
+
+.brand strong {
+  font-size: 1.06rem;
+  font-weight: 800;
+  line-height: 1.15;
 }
 
 .brand-mark {
@@ -1460,8 +1480,10 @@ textarea {
   .related-service-grid a:hover,
   .related-service-grid a:focus-visible {
     background:
-      linear-gradient(155deg, rgba(220, 38, 38, 0.24), transparent 48%),
-      rgba(255, 255, 255, 0.13);
+      linear-gradient(155deg, rgba(31, 78, 170, 0.38), transparent 50%),
+      rgba(255, 255, 255, 0.12);
+    /* Keep the red top rule; the shared hover sets all border sides blue. */
+    border-top-color: var(--accent);
   }
 
   .directory-card:hover .text-link,
@@ -1489,8 +1511,8 @@ textarea {
   }
 
   .brand-logo {
-    width: 122px;
-    height: 58px;
+    width: 56px;
+    height: 56px;
   }
 }
 
@@ -1501,8 +1523,8 @@ textarea {
   }
 
   .brand-logo {
-    width: 108px;
-    height: 50px;
+    width: 48px;
+    height: 48px;
   }
 
   .brand-mark {
@@ -1573,16 +1595,18 @@ textarea {
   background: var(--green-dark);
 }
 
+/* Timing is tuned for exactly 3 slides: 21s cycle at 7s stagger with the
+   crossfade window (5%–41%) wide enough that adjacent slides always overlap. */
 .cinematic-hero-slide {
   opacity: 0;
-  animation: heroCrossfade 35s infinite;
+  animation: heroCrossfade 21s infinite;
   will-change: opacity;
 }
 
 .cinematic-hero-slide img {
   object-fit: cover;
   transform: scale(1.04) translate3d(0, 0, 0);
-  animation: heroKenBurns 35s infinite;
+  animation: heroKenBurns 21s infinite;
   will-change: transform;
 }
 
@@ -1594,16 +1618,6 @@ textarea {
 .cinematic-hero-slide:nth-child(3),
 .cinematic-hero-slide:nth-child(3) img {
   animation-delay: 14s;
-}
-
-.cinematic-hero-slide:nth-child(4),
-.cinematic-hero-slide:nth-child(4) img {
-  animation-delay: 21s;
-}
-
-.cinematic-hero-slide:nth-child(5),
-.cinematic-hero-slide:nth-child(5) img {
-  animation-delay: 28s;
 }
 
 .cinematic-hero-overlay {
@@ -1639,13 +1653,13 @@ textarea {
   0% {
     opacity: 0;
   }
-  4% {
+  5% {
     opacity: 1;
   }
-  20% {
+  33% {
     opacity: 1;
   }
-  28% {
+  41% {
     opacity: 0;
   }
   100% {
@@ -1658,7 +1672,7 @@ textarea {
     transform: scale(1.04) translate3d(-0.8%, 0.6%, 0);
   }
   50% {
-    transform: scale(1.09) translate3d(1.1%, -0.8%, 0);
+    transform: scale(1.07) translate3d(1%, -0.7%, 0);
   }
   100% {
     transform: scale(1.04) translate3d(-0.8%, 0.6%, 0);
@@ -1787,11 +1801,20 @@ textarea {
   filter: saturate(1.04) contrast(1.02);
 }
 
+/* Copy is bottom-anchored, so the overlay guarantees a dark floor behind the
+   text zone on every slide (including bright ones) while the upper two-thirds
+   of the photo stays clear. */
 .cinematic-hero-overlay {
   background:
-    radial-gradient(circle at 50% 54%, rgba(7, 23, 47, 0.18), transparent 34%),
-    radial-gradient(circle at 50% 50%, transparent 36%, rgba(7, 23, 47, 0.2) 100%),
-    linear-gradient(180deg, rgba(7, 23, 47, 0.22) 0%, rgba(7, 23, 47, 0.08) 42%, rgba(7, 23, 47, 0.32) 100%);
+    radial-gradient(circle at 50% 40%, transparent 34%, rgba(7, 23, 47, 0.26) 100%),
+    linear-gradient(
+      180deg,
+      rgba(7, 23, 47, 0.44) 0%,
+      rgba(7, 23, 47, 0.14) 26%,
+      rgba(7, 23, 47, 0.2) 44%,
+      rgba(7, 23, 47, 0.62) 68%,
+      rgba(7, 23, 47, 0.86) 100%
+    );
 }
 
 .cinematic-hero-content {
@@ -1841,7 +1864,7 @@ textarea {
   max-width: 780px;
   margin-right: auto;
   margin-left: auto;
-  color: rgba(255, 255, 255, 0.82);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .cinematic-hero .hero-actions {
@@ -1852,7 +1875,7 @@ textarea {
   max-width: 760px;
   margin-right: auto;
   margin-left: auto;
-  color: rgba(255, 255, 255, 0.76);
+  color: rgba(255, 255, 255, 0.88);
 }
 
 .cinematic-hero .on-dark-note {
@@ -1861,9 +1884,10 @@ textarea {
   padding-left: 0;
 }
 
+/* Dark glass so the white label stays legible over any slide brightness. */
 .cinematic-hero .button-secondary.dark {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.54);
+  background: rgba(7, 23, 47, 0.42);
+  border-color: rgba(255, 255, 255, 0.66);
   backdrop-filter: blur(8px);
 }
 
@@ -1883,9 +1907,15 @@ textarea {
 
   .cinematic-hero-overlay {
     background:
-      radial-gradient(circle at 50% 52%, rgba(7, 23, 47, 0.24), transparent 40%),
-      radial-gradient(circle at 50% 50%, transparent 34%, rgba(7, 23, 47, 0.24) 100%),
-      linear-gradient(180deg, rgba(7, 23, 47, 0.24), rgba(7, 23, 47, 0.28));
+      radial-gradient(circle at 50% 36%, transparent 30%, rgba(7, 23, 47, 0.3) 100%),
+      linear-gradient(
+        180deg,
+        rgba(7, 23, 47, 0.5) 0%,
+        rgba(7, 23, 47, 0.26) 24%,
+        rgba(7, 23, 47, 0.34) 46%,
+        rgba(7, 23, 47, 0.72) 72%,
+        rgba(7, 23, 47, 0.88) 100%
+      );
   }
 }
 
@@ -2027,7 +2057,7 @@ textarea {
   }
 
   .brand-logo {
-    width: 94px;
+    width: 44px;
     height: 44px;
   }
 

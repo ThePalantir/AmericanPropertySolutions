@@ -12,7 +12,7 @@ export function Header() {
         <Link className="brand" href="/" aria-label="American Property Solutions home">
           {hasApprovedLogo && logoAsset.src ? (
             <span className="brand-logo" aria-hidden="true">
-              <Image src={logoAsset.src} alt="" fill sizes="142px" priority />
+              <Image src={logoAsset.src} alt="" fill sizes="64px" priority />
             </span>
           ) : (
             <span className="brand-mark">APS</span>

@@ -47,9 +47,9 @@ export const logoAsset: VisualAsset = {
   id: "aps-logo",
   title: "American Property Solutions logo",
   alt: "American Property Solutions logo",
-  recommendedFile: "aps-pa-logo.png",
-  usage: "Header and footer business logo.",
-  src: "/approved-aps-assets/aps-pa-logo.png",
+  recommendedFile: "aps-3letter-logo.png",
+  usage: "Header and footer brand mark (square APS star lockup).",
+  src: "/approved-aps-assets/aps-3letter-logo.png",
   status: "approved"
 };
 
@@ -64,8 +64,21 @@ export const heroAsset: VisualAsset = {
 };
 
 
+/* Hero rotation is limited to the high-resolution approved assets (>=2048px)
+   so full-bleed display with the Ken Burns zoom stays sharp. The ~1077px
+   landscaping/snow/sealcoating photos read soft at hero scale; they remain in
+   service pages and the gallery where their display size fits the source. */
 export const homeHeroSlides: VisualAsset[] = [
   heroAsset,
+  {
+    id: "hero-paving-equipment",
+    title: "Paving and site equipment",
+    alt: "APS roller equipment during paving work used for homepage motion background",
+    recommendedFile: "aps-roller-scaled.jpeg",
+    usage: "Homepage cinematic hero background slide.",
+    src: "/approved-aps-assets/aps-roller-scaled.jpeg",
+    status: "approved"
+  },
   {
     id: "hero-commercial-exterior-alt",
     title: "Commercial exterior maintenance",
@@ -73,33 +86,6 @@ export const homeHeroSlides: VisualAsset[] = [
     recommendedFile: "corporate-building-exterior-2.jpg",
     usage: "Homepage cinematic hero background slide.",
     src: "/approved-aps-assets/corporate-building-exterior-2.jpg",
-    status: "approved"
-  },
-  {
-    id: "hero-landscape-grounds",
-    title: "Grounds maintenance",
-    alt: "APS landscaping photo used for homepage motion background",
-    recommendedFile: "landscaping-3.png",
-    usage: "Homepage cinematic hero background slide.",
-    src: "/approved-aps-assets/landscaping-3.png",
-    status: "approved"
-  },
-  {
-    id: "hero-snow-service",
-    title: "Snow and ice management",
-    alt: "APS plowing photo used for homepage motion background",
-    recommendedFile: "plowing-1.png",
-    usage: "Homepage cinematic hero background slide.",
-    src: "/approved-aps-assets/plowing-1.png",
-    status: "approved"
-  },
-  {
-    id: "hero-parking-lot-work",
-    title: "Parking lot maintenance",
-    alt: "APS sealcoating photo used for homepage motion background",
-    recommendedFile: "sealcoating.png",
-    usage: "Homepage cinematic hero background slide.",
-    src: "/approved-aps-assets/sealcoating.png",
     status: "approved"
   }
 ];
@@ -385,9 +371,9 @@ export const serviceCatalog: ServiceDetail[] = [
       id: "excavation-sitework-visual",
       title: "Excavation and sitework",
       alt: "APS paving and site work photo used for excavation and property support context",
-      recommendedFile: "paving1.jpg",
+      recommendedFile: "aps-roller-scaled.jpeg",
       usage: "Sitework-adjacent image used until a more direct excavation image is approved.",
-      src: "/approved-aps-assets/paving1.jpg",
+      src: "/approved-aps-assets/aps-roller-scaled.jpeg",
       status: "approved"
     },
     handles: [

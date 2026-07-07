@@ -12,7 +12,7 @@ export function Footer() {
           <div className="footer-brand">
             {hasApprovedLogo && logoAsset.src ? (
               <span className="footer-logo" aria-hidden="true">
-                <Image src={logoAsset.src} alt="" fill sizes="150px" />
+                <Image src={logoAsset.src} alt="" fill sizes="84px" />
               </span>
             ) : null}
             <p className="eyebrow">American Property Solutions</p>
