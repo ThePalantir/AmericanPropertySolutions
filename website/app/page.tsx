@@ -9,7 +9,6 @@ import {
   homeHeroSlides,
   propertyTypes,
   serviceAreas,
-  serviceCatalog,
   serviceGroups,
   trustBarItems
 } from "../lib/siteData";
@@ -19,8 +18,6 @@ export const metadata: Metadata = {
   description:
     "American Property Solutions commercial property maintenance concept for the Lehigh Valley, with complete four-season service organization and a property walkthrough path."
 };
-
-const featuredServices = serviceCatalog.slice(0, 6);
 
 export default function HomePage() {
   return (
@@ -75,27 +72,6 @@ export default function HomePage() {
         <div className="commercial-card-grid">
           {serviceGroups.map((service) => (
             <ServiceCard key={service.title} {...service} />
-          ))}
-        </div>
-      </section>
-
-      <section className="service-mosaic section" aria-labelledby="service-mosaic-heading">
-        <div className="section-heading wide-heading">
-          <p className="eyebrow on-dark">Service directory preview</p>
-          <h2 id="service-mosaic-heading">The Core APS Service Paths</h2>
-          <p>
-            APS services are organized around clear property needs: maintaining
-            grounds, keeping lots open, repairing buildings, improving outdoor
-            spaces, and coordinating seasonal work.
-          </p>
-        </div>
-        <div className="mosaic-grid">
-          {featuredServices.map((service) => (
-            <Link className="mosaic-tile" href={`/services/${service.slug}`} key={service.slug}>
-              <span>{service.eyebrow}</span>
-              <strong>{service.title}</strong>
-              <small>{service.summary}</small>
-            </Link>
           ))}
         </div>
       </section>
