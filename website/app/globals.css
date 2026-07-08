@@ -2401,3 +2401,65 @@ textarea {
     opacity: 0;
   }
 }
+/* Static operations panel: capability summary, not button grid. */
+.ops-panel {
+  gap: 0;
+  align-self: stretch;
+  padding: 0.85rem 1.1rem;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.ops-panel span {
+  display: flex;
+  min-height: auto;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.65rem;
+  padding: 0.8rem 0;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 0.96rem;
+  line-height: 1.2;
+  text-align: left;
+  transition: none;
+}
+
+.ops-panel span:nth-last-child(-n + 2) {
+  border-bottom: 0;
+}
+
+.ops-panel span::before {
+  display: block;
+  width: 0.42rem;
+  height: 0.42rem;
+  flex: 0 0 auto;
+  border-radius: 999px;
+  background: var(--accent);
+  content: "";
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .ops-panel span:hover {
+    border-color: rgba(255, 255, 255, 0.12);
+    background: transparent;
+    box-shadow: none;
+    transform: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .ops-panel span:nth-last-child(-n + 2) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .ops-panel span:last-child {
+    border-bottom: 0;
+  }
+}
