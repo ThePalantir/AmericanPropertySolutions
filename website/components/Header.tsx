@@ -30,9 +30,6 @@ export function Header() {
           ))}
         </nav>
         <div className="nav-actions">
-          <Link className="button button-secondary" href="/services">
-            View Services
-          </Link>
           <Link className="button button-primary" href="/contact">
             Request a Property Walkthrough
           </Link>
