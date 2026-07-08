@@ -140,15 +140,17 @@ export default function HomePage() {
               aria-label={asset.alt}
               data-has-image={asset.src && asset.status === "approved" ? "true" : "false"}
             >
-              {asset.src && asset.status === "approved" ? (
-                <Image
-                  src={asset.src}
-                  alt=""
-                  fill
-                  sizes="(max-width: 720px) 100vw, (max-width: 1040px) 50vw, 33vw"
-                />
-              ) : null}
-              <span>{asset.title}</span>
+              <span className="gallery-image" aria-hidden="true">
+                {asset.src && asset.status === "approved" ? (
+                  <Image
+                    src={asset.src}
+                    alt=""
+                    fill
+                    sizes="(max-width: 720px) 100vw, (max-width: 1040px) 50vw, 33vw"
+                  />
+                ) : null}
+              </span>
+              <span className="gallery-title">{asset.title}</span>
             </div>
           ))}
         </div>
