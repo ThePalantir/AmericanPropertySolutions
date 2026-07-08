@@ -2,10 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CTASection } from "../../components/CTASection";
 import { DemoVisual } from "../../components/DemoVisual";
-import { ServiceCard } from "../../components/ServiceCard";
 import {
-  serviceCatalog,
-  serviceGroups,
+  serviceDirectoryGroups,
   serviceOverviewAsset,
   supplementalPages
 } from "../../lib/siteData";
@@ -40,52 +38,50 @@ export default function ServicesPage() {
         <DemoVisual asset={serviceOverviewAsset} variant="services" />
       </section>
 
-      <section className="section services-section">
-        <div className="section-heading wide-heading">
-          <p className="eyebrow">Grouped service families</p>
-          <h2>Scan by Property Need</h2>
-          <p>
-            The hub keeps the premium commercial direction while giving visitors
-            a fast way to find the service family that matches their property
-            need.
-          </p>
-        </div>
-        <div className="commercial-card-grid">
-          {serviceGroups.map((service) => (
-            <ServiceCard key={service.title} {...service} />
-          ))}
-        </div>
-      </section>
-
-      <section className="section directory-section">
+      <section className="section directory-section grouped-services-section">
         <div className="section-heading wide-heading">
           <p className="eyebrow">Service directory</p>
-          <h2>Detailed Service Paths</h2>
+          <h2>One Clear Directory by Property Need</h2>
           <p>
-            Each path gives visitors a concise overview, practical scope list,
-            related services, and a walkthrough CTA.
+            Each APS service path appears once, grouped by how a visitor is
+            likely to think about the property issue: maintenance, exterior
+            upkeep, access areas, sitework, building repairs, or outdoor
+            improvements.
           </p>
         </div>
-        <div className="service-directory-grid">
-          {serviceCatalog.map((service) => (
-            <Link
-              className="directory-card"
-              href={`/services/${service.slug}`}
-              key={service.slug}
-              aria-label={`View ${service.title} services`}
-            >
-              <p className="eyebrow">{service.eyebrow}</p>
-              <h3>{service.title}</h3>
-              <p>{service.summary}</p>
-              <ul className="plain-list compact-list">
-                {service.handles.slice(0, 4).map((item) => (
-                  <li key={item}>{item}</li>
+        <div className="grouped-directory-grid">
+          {serviceDirectoryGroups.map((group) => (
+            <article className="service-family-card" key={group.title}>
+              <div className="service-family-heading">
+                <p className="eyebrow">{group.eyebrow}</p>
+                <h3>{group.title}</h3>
+                <p>{group.summary}</p>
+              </div>
+              <div className="service-path-list">
+                {group.services.map((service) => (
+                  <Link
+                    className="service-path-row"
+                    href={`/services/${service.slug}`}
+                    key={service.slug}
+                    aria-label={`View ${service.title} services`}
+                  >
+                    <div>
+                      <p className="eyebrow">{service.eyebrow}</p>
+                      <h4>{service.title}</h4>
+                      <p>{service.summary}</p>
+                    </div>
+                    <ul className="plain-list compact-list">
+                      {service.handles.slice(0, 3).map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                    <span className="text-link" aria-hidden="true">
+                      View service path
+                    </span>
+                  </Link>
                 ))}
-              </ul>
-              <span className="text-link" aria-hidden="true">
-                View {service.title}
-              </span>
-            </Link>
+              </div>
+            </article>
           ))}
         </div>
       </section>

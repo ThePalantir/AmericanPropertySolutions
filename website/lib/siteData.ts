@@ -572,6 +572,50 @@ export const serviceGroups = [
   }
 ];
 
+const serviceDirectoryGroupBlueprints = [
+  {
+    title: "Full Property Maintenance",
+    eyebrow: "One call",
+    summary:
+      "A starting point for properties with several exterior, access, sitework, or repair needs.",
+    serviceSlugs: ["property-maintenance"]
+  },
+  {
+    title: "Grounds & Seasonal Exterior Care",
+    eyebrow: "Exterior upkeep",
+    summary:
+      "Routine grounds care and winter operations grouped around keeping exterior spaces usable and maintained.",
+    serviceSlugs: ["lawn-landscaping", "snow-ice-management"]
+  },
+  {
+    title: "Pavement, Concrete & Sitework",
+    eyebrow: "Access and site support",
+    summary:
+      "Parking areas, flatwork, drainage, grading, excavation, and related site preparation in one practical family.",
+    serviceSlugs: ["parking-lot-maintenance", "concrete-services", "excavation-sitework"]
+  },
+  {
+    title: "Building & Interior Support",
+    eyebrow: "Facility repairs",
+    summary:
+      "Building repair, maintenance, remodeling, and special-project conversations routed together.",
+    serviceSlugs: ["building-maintenance-repairs", "remodeling-services"]
+  },
+  {
+    title: "Outdoor Improvements",
+    eyebrow: "Exterior projects",
+    summary:
+      "Decks, patios, pavers, walkways, retaining walls, and related outdoor improvement work.",
+    serviceSlugs: ["decks-patios-hardscapes"]
+  }
+];
+
+export const serviceDirectoryGroups = serviceDirectoryGroupBlueprints.map((group) => ({
+  ...group,
+  services: group.serviceSlugs
+    .map((slug) => serviceCatalog.find((service) => service.slug === slug))
+    .filter((service): service is ServiceDetail => Boolean(service))
+}));
 export const servicePriority = serviceCatalog.map((service) => service.title);
 
 export const audienceLabels = [
