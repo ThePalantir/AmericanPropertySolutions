@@ -156,12 +156,12 @@ export const galleryAssets: VisualAsset[] = [
     status: "approved"
   },
   {
-    id: "property-coverage",
-    title: "Regional service coverage",
-    alt: "APS location image used for regional service coverage context",
-    recommendedFile: "location.png",
-    usage: "Contact and service-area context pending final territory approval.",
-    src: "/approved-aps-assets/location.png",
+    id: "paving-site-equipment",
+    title: "Paving and site equipment",
+    alt: "APS paving and site equipment used for property work context",
+    recommendedFile: "aps-roller-scaled.jpeg",
+    usage: "Paving, access-area, and site-support equipment context.",
+    src: "/approved-aps-assets/aps-roller-scaled.jpeg",
     status: "approved"
   }
 ];

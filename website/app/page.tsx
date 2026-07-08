@@ -62,7 +62,6 @@ export default function HomePage() {
 
       <section className="section services-section">
         <div className="section-heading wide-heading">
-          <p className="eyebrow">Services</p>
           <h2>Property Services Organized Around the Work You Need</h2>
           <p>
             Choose the closest service below. APS can confirm the
@@ -123,7 +122,6 @@ export default function HomePage() {
 
       <section className="section gallery-section">
         <div className="section-heading wide-heading">
-          <p className="eyebrow">APS work photos</p>
           <h2>Property Work in the Field</h2>
           <p>
             Photos from APS service categories show the range of exterior,

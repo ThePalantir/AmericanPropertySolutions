@@ -539,3 +539,47 @@ The demo has been expanded from a thin visual concept into a fuller APS service 
 - QA should verify all service routes, CTA paths, mobile layouts, and image rendering.
 - Copy or SEO agents should use `source-content-inventory.md` to avoid reintroducing keyword stuffing.
 - Launch planning should use `launch-approval-checklist.md` before public deployment.
+## Exceptional Refinement Interaction Rule
+
+### Summary
+
+Premium interaction design should make affordance obvious. If a card, tile, or image moves on hover, the visitor should reasonably expect it to open, filter, select, or reveal something useful.
+
+### Inputs reviewed
+
+- Homepage service grid, trust bar, property-type tiles, operations tiles, photo gallery, and primary CTAs.
+- Current APS demo goal: owner-facing credibility without invented claims or noisy presentation effects.
+
+### Confirmed facts
+
+- The homepage includes clickable service cards, buttons, and text links.
+- The trust bar, property-type tiles, operations tiles, and work-photo gallery are informational surfaces in the current demo.
+
+### Observations
+
+- Hover lift on static informational tiles creates a false clickable affordance.
+- Repeated eyebrow labels such as "Services" above a services heading add visual noise when the heading already provides the context.
+- Mixed image sizing and placeholder-style visuals reduce perceived polish on an owner-facing demo.
+
+### Assumptions
+
+- Gallery images are meant to support credibility and scanning, not act as navigation in the current version.
+- Future versions may make photo cards clickable if there is a real destination such as a case study, service page, or filtered gallery.
+
+### Recommendations
+
+- Reserve hover lift, zoom, and animated emphasis for clickable cards, buttons, links, form states, and controls.
+- Keep informational cards static; use spacing, type hierarchy, borders, and subtle shadow for refinement instead of motion.
+- Remove redundant section eyebrows when the headline already names the section clearly.
+- Use consistent image aspect ratios with centered cropping, and avoid broken or map-style placeholders inside work-photo grids.
+- If a visual tile animates in a future version, give it a destination or an explicit interactive function.
+
+### Open questions
+
+- Should future photo cards link to service pages or remain a non-clickable credibility gallery?
+- Which APS-owned work photos should replace the remaining stock-like or less direct category images before owner approval?
+
+### Handoff notes for the next agent
+
+- Apply this rule during QA: every animated surface needs an interaction reason.
+- Treat static owner-facing evidence panels as composed information, not pseudo-buttons.
