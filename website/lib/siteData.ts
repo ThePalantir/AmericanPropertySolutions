@@ -141,9 +141,9 @@ export const galleryAssets: VisualAsset[] = [
     id: "parking-lot-work",
     title: "Parking lot work",
     alt: "APS sealcoating photo used for parking lot maintenance context",
-    recommendedFile: "sealcoating.png",
+    recommendedFile: "parking_lot_sealcoating.png",
     usage: "Paving, sealcoating, crack sealing, or line striping work shown clearly.",
-    src: "/approved-aps-assets/sealcoating.png",
+    src: "/approved-aps-assets/parking_lot_sealcoating.png",
     status: "approved"
   },
   {
@@ -153,15 +153,6 @@ export const galleryAssets: VisualAsset[] = [
     recommendedFile: "buildingmaintenance.png",
     usage: "Building maintenance, repair support, hauling, or special-project context approved by APS.",
     src: "/approved-aps-assets/buildingmaintenance.png",
-    status: "approved"
-  },
-  {
-    id: "paving-site-equipment",
-    title: "Paving and site equipment",
-    alt: "APS paving and site equipment used for property work context",
-    recommendedFile: "aps-roller-scaled.jpeg",
-    usage: "Paving, access-area, and site-support equipment context.",
-    src: "/approved-aps-assets/aps-roller-scaled.jpeg",
     status: "approved"
   }
 ];
@@ -300,9 +291,9 @@ export const serviceCatalog: ServiceDetail[] = [
       id: "parking-lot-visual",
       title: "Parking lot maintenance",
       alt: "APS sealcoating photo used for parking lot maintenance context",
-      recommendedFile: "sealcoating.png",
+      recommendedFile: "parking_lot_sealcoating.png",
       usage: "Parking lot maintenance and sealcoating context.",
-      src: "/approved-aps-assets/sealcoating.png",
+      src: "/approved-aps-assets/parking_lot_sealcoating.png",
       status: "approved"
     },
     handles: [

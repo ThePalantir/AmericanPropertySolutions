@@ -2395,7 +2395,11 @@ textarea {
     transform: none;
   }
 
-  .gallery-placeholder:hover img,
+  .gallery-placeholder:hover img {
+    transform: none;
+    opacity: 1;
+  }
+
   .gallery-placeholder:hover::after {
     transform: none;
     opacity: 0;

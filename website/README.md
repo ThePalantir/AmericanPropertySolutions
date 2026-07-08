@@ -53,9 +53,9 @@ Current approved filenames wired in `website/lib/siteData.ts`:
 - Header/footer logo: `aps-pa-logo.png`
 - Homepage hero: `corporate-building-exterior-1.jpg`
 - Homepage gallery commercial exterior: `corporate-building-exterior-2.jpg`
-- Homepage gallery crews/equipment: `snow-plow-equipment-1.png`
-- Homepage gallery snow/plowing: `plowing-1.png`
-- Homepage gallery parking lot work: `sealcoating.png`
+- Homepage gallery grounds and landscaping: `landscaping.png`
+- Homepage gallery snow and ice equipment: `snow-plow-equipment-1.png`
+- Homepage gallery parking lot work: `parking_lot_sealcoating.png`
 - Homepage gallery building/facility maintenance: `buildingmaintenance.png`
 - Services page overview: `landscaping-3.png`
 - Property & Building Maintenance page: `aps-drywall.jpeg`
