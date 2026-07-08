@@ -11,7 +11,6 @@ export function DemoVisual({ asset, label, variant = "property" }: DemoVisualPro
   const title = asset?.title ?? "APS service category";
   const alt = asset?.alt ?? label ?? "APS service category";
   const hasApprovedImage = Boolean(asset?.src && asset.status === "approved");
-  const status = asset?.status === "approved" ? "Service photo" : "Service category";
 
   return (
     <div className={`demo-visual demo-visual-${variant}`} role="img" aria-label={alt}>
@@ -28,10 +27,12 @@ export function DemoVisual({ asset, label, variant = "property" }: DemoVisualPro
           <div className="visual-yard" />
         </>
       )}
-      <div className="visual-panel">
-        <strong>{title}</strong>
-        <small>{status}</small>
-      </div>
+      {!hasApprovedImage ? (
+        <div className="visual-panel">
+          <strong>{title}</strong>
+          <small>Service category</small>
+        </div>
+      ) : null}
     </div>
   );
 }

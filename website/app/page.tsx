@@ -149,7 +149,6 @@ export default function HomePage() {
                 />
               ) : null}
               <span>{asset.title}</span>
-              <small>{asset.status === "approved" ? "APS service photo" : "Photo pending"}</small>
             </div>
           ))}
         </div>
