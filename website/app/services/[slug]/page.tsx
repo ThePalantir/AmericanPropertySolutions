@@ -68,7 +68,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
             <p className="eyebrow">What we handle</p>
             <h2>Service Scope</h2>
             <p>
-              A practical overview of the work visitors can discuss during a
+              Review the common work APS can discuss during a
               property walkthrough.
             </p>
           </div>
@@ -85,8 +85,8 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
           <p className="eyebrow">Walkthrough fit</p>
           <h2>Start With the Property Need</h2>
           <p>
-            APS can use the walkthrough conversation to confirm the exact site,
-            service category, timing, and next step for this work.
+            Use the walkthrough conversation to confirm the property,
+            location, timing, and best next step for this work.
           </p>
           <Link className="text-link" href="/contact">
             Request a Property Walkthrough
@@ -99,8 +99,8 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
           <p className="eyebrow">Common needs we solve</p>
           <h2>When This Service Path Fits</h2>
           <p>
-            These examples help visitors choose the right service path without
-            sorting through a long contractor list.
+            Use these examples to decide whether this APS service fits
+            the property need.
           </p>
         </div>
         <ul className="check-list service-need-list">
@@ -147,7 +147,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
 
       <CTASection
         title={`Request a walkthrough for ${service.title.toLowerCase()}.`}
-        body="Tell APS what is happening at the property, where it is located, and which service path seems closest."
+        body="Tell APS what is happening at the property, where it is located, and which service seems closest."
       />
     </>
   );

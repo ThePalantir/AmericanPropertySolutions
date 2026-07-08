@@ -46,7 +46,7 @@ export default function HomePage() {
             </Link>
           </div>
           <p className="location-note on-dark-note">
-            Start with a walkthrough so APS can match the property need to the right service path.
+            Start with a walkthrough so APS can match the property need to the right service.
           </p>
         </div>
       </CinematicHero>
@@ -65,7 +65,7 @@ export default function HomePage() {
           <p className="eyebrow">Services</p>
           <h2>Property Services Organized Around the Work You Need</h2>
           <p>
-            Choose the closest service family below. APS can confirm the
+            Choose the closest service below. APS can confirm the
             scope, timing, location, and next step during a property
             walkthrough.
           </p>
@@ -178,7 +178,7 @@ export default function HomePage() {
 
       <CTASection
         title="Request a property walkthrough."
-        body="Tell APS what is happening at the property, where it is located, and which service path seems closest."
+        body="Tell APS what is happening at the property, where it is located, and which service seems closest."
       />
     </>
   );

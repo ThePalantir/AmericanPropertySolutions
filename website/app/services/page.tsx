@@ -22,9 +22,9 @@ export default function ServicesPage() {
           <p className="eyebrow">Services</p>
           <h1>Property Maintenance Services</h1>
           <p className="lead">
-            APS services are organized into clear, professional paths for
-            property managers, business owners, facility teams, and homeowners
-            with exterior or building-related needs.
+            APS helps property managers, business owners, facility teams,
+            and homeowners start the right conversation for exterior,
+            site, seasonal, and building-related property needs.
           </p>
           <div className="hero-actions">
             <Link className="button button-primary" href="/contact">
@@ -43,10 +43,10 @@ export default function ServicesPage() {
           <p className="eyebrow">Service directory</p>
           <h2>One Clear Directory by Property Need</h2>
           <p>
-            Each APS service path appears once, grouped by how a visitor is
-            likely to think about the property issue: maintenance, exterior
-            upkeep, access areas, sitework, building repairs, or outdoor
-            improvements.
+            Find the service family that best matches the property need,
+            then review the individual APS service that fits the work:
+            maintenance, exterior upkeep, access areas, sitework,
+            building repairs, or outdoor improvements.
           </p>
         </div>
         <div className="grouped-directory-grid">
@@ -76,7 +76,7 @@ export default function ServicesPage() {
                       ))}
                     </ul>
                     <span className="text-link" aria-hidden="true">
-                      View service path
+                      View service
                     </span>
                   </Link>
                 ))}
@@ -88,12 +88,11 @@ export default function ServicesPage() {
 
       <section className="section split-band source-band">
         <div>
-          <p className="eyebrow">Additional APS paths</p>
-          <h2>Partner and Hiring Conversations Stay Routed Through Contact</h2>
+          <p className="eyebrow">Partner and hiring requests</p>
+          <h2>Service Partner and Careers Questions</h2>
           <p>
-            Service partner and careers interest can stay visible without
-            creating extra public forms or distracting from the main walkthrough
-            path.
+            Service partner interest and careers questions can start through
+            the same contact path so APS can route the request correctly.
           </p>
         </div>
         <div className="source-card-stack">
@@ -101,15 +100,15 @@ export default function ServicesPage() {
             <article key={page.title}>
               <h3>{page.title}</h3>
               <p>{page.summary}</p>
-              <small>Start with the APS contact path.</small>
+              <small>Start through APS contact.</small>
             </article>
           ))}
         </div>
       </section>
 
       <CTASection
-        title="Not sure which service path fits?"
-        body="The walkthrough path lets a visitor describe the property need first, then APS can route the conversation to the right service category."
+        title="Not sure where to start?"
+        body="Describe what is happening at the property first, then APS can route the conversation to the right service category."
       />
     </>
   );

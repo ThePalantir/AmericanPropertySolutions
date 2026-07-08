@@ -72,10 +72,10 @@ export function ContactForm() {
   return (
     <form className="quote-form" onSubmit={handleSubmit} noValidate>
       <div className="form-status" aria-live="polite">
-        {status === "idle" && "Preview form: no message is sent from this demo."}
+        {status === "idle" && "Complete the fields below to prepare a walkthrough request."}
         {status === "loading" && "Preparing confirmation..."}
         {status === "success" &&
-          "Success state preview: final request routing can be connected before launch."}
+          "Request details are ready. Please call APS directly to submit an active service request."}
         {status === "error" && "Please complete the required fields before requesting a walkthrough."}
       </div>
 

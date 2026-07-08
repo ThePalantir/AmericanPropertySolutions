@@ -26,7 +26,7 @@ export function ServiceCard({
         ))}
       </ul>
       <span className="text-link" aria-hidden="true">
-        View service path
+        View service
       </span>
     </Link>
   );
