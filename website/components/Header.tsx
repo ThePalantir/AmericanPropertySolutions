@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { business, logoAsset, navItems, serviceGroups } from "../lib/siteData";
+import { business, logoAsset, navItems } from "../lib/siteData";
 
 export function Header() {
   const hasApprovedLogo = Boolean(logoAsset.src && logoAsset.status === "approved");
@@ -31,7 +31,7 @@ export function Header() {
         </nav>
         <div className="nav-actions">
           <Link className="button button-secondary" href="/services">
-            {serviceGroups.length} Service Groups
+            View Services
           </Link>
           <Link className="button button-primary" href="/contact">
             Request a Property Walkthrough

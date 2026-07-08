@@ -19,9 +19,10 @@ export function Footer() {
           </div>
           <h2>Four-season property maintenance support</h2>
           <p>
-            A commercial-first service structure for APS property maintenance,
-            snow and ice, parking lots, concrete, sitework, landscaping,
-            building repairs, remodeling, decks, patios, and hardscapes.
+            Property maintenance, snow and ice, parking lots, concrete,
+            sitework, landscaping, building repairs, remodeling, decks,
+            patios, and hardscapes for exterior and building-related
+            property needs.
           </p>
         </div>
         <div>
@@ -57,8 +58,8 @@ export function Footer() {
         </div>
       </div>
       <div className="footer-note">
-        <span>Owner-review concept</span>
-        <span>Final launch copy and service-area wording require APS approval.</span>
+        <span>Walnutport, PA</span>
+        <span>Call 610-760-0600 to ask about service availability.</span>
       </div>
     </footer>
   );

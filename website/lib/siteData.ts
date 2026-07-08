@@ -6,7 +6,7 @@ export const business = {
   nyAddress: "3209 Steward Road, Vestal, NY 13850",
   hours: "M-F 9AM-4PM",
   demoNote:
-    "Owner-review concept: final launch copy, service areas, forms, and trust claims require APS approval."
+    "Walnutport, PA | M-F 9AM-4PM | 610-760-0600"
 };
 
 export const navItems = [
@@ -628,30 +628,48 @@ export const audienceLabels = [
 
 export const trustBarItems = [
   {
-    label: "Commercial property focus",
-    note: "Commercial service focus referencing commercial properties."
+    label: "Property maintenance",
+    note: "Grounds, lots, sitework, building repairs, and seasonal needs in one place."
   },
   {
-    label: "Four-season maintenance",
-    note: "Supported by current site positioning."
+    label: "Snow & ice management",
+    note: "Plowing, deicing, sidewalk support, and winter property service conversations."
   },
   {
     label: "Lehigh Valley base",
-    note: "Walnutport, PA location and Lehigh Valley references are public facts."
+    note: "Based in Walnutport, with service availability confirmed by location and scope."
   },
   {
-    label: "Straightforward review path",
-    note: "Visitors can request a walkthrough instead of sorting through a scattered contractor list."
+    label: "Walkthrough first",
+    note: "Tell APS what is happening at the property and get routed to the right service path."
   }
 ];
 
 export const propertyTypes = [
-  { label: "Commercial properties", status: "Commercial service focus" },
-  { label: "Office and business properties", status: "Confirm service fit" },
-  { label: "Retail centers", status: "Confirm service fit" },
-  { label: "Industrial complexes", status: "Confirm service fit" },
-  { label: "Medical centers", status: "Confirm service fit" },
-  { label: "Residential exterior projects", status: "Confirm service fit" }
+  {
+    label: "Property managers",
+    status: "Coordinate grounds, pavement, snow, sitework, and repair needs."
+  },
+  {
+    label: "Business owners",
+    status: "Keep exterior areas, lots, walkways, and buildings presentable."
+  },
+  {
+    label: "Facility teams",
+    status: "Plan maintenance work across seasons and service categories."
+  },
+  {
+    label: "Commercial properties",
+    status: "Combine grounds, access areas, concrete, and building support."
+  },
+  {
+    label: "Residential homeowners",
+    status: "Start conversations for exterior projects and improvements."
+  },
+  {
+    label: "Seasonal property needs",
+    status: "Route snow, landscape, and maintenance work through the right service path."
+  }
 ];
 
 export const serviceAreas = [

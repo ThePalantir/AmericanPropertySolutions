@@ -16,7 +16,7 @@ import {
 export const metadata: Metadata = {
   title: "Commercial Property Maintenance in Lehigh Valley",
   description:
-    "American Property Solutions commercial property maintenance concept for the Lehigh Valley, with complete four-season service organization and a property walkthrough path."
+    "American Property Solutions provides property maintenance, landscaping, snow and ice, parking lot, concrete, sitework, building repair, remodeling, deck, patio, and hardscape services."
 };
 
 export default function HomePage() {
@@ -27,15 +27,15 @@ export default function HomePage() {
           <p className="eyebrow on-dark">Commercial property maintenance</p>
           <h1>Four-Season Commercial Property Maintenance</h1>
           <p className="lead">
-            American Property Solutions is organized as a regional maintenance
-            partner for property managers, facility teams, local businesses, and
-            owners responsible for keeping sites safe, accessible, and
-            presentable year-round.
+            American Property Solutions helps property managers, facility
+            teams, local businesses, and owners maintain exterior spaces,
+            parking areas, site access, and building needs through every
+            season.
           </p>
           <p>
-            The service structure covers grounds, snow, parking lots, concrete,
-            sitework, building repairs, remodeling, decks, patios, and
-            partner-supported seasonal operations.
+            Start with APS for lawn and landscape work, snow and ice,
+            parking lot maintenance, concrete, excavation, building
+            maintenance, remodeling, decks, patios, and hardscapes.
           </p>
           <div className="hero-actions">
             <Link className="button button-primary" href="/contact">
@@ -46,12 +46,12 @@ export default function HomePage() {
             </Link>
           </div>
           <p className="location-note on-dark-note">
-            Start with a walkthrough to match the property need to the right APS service path.
+            Start with a walkthrough so APS can match the property need to the right service path.
           </p>
         </div>
       </CinematicHero>
 
-      <section className="trust-bar" aria-label="Trust and positioning notes">
+      <section className="trust-bar" aria-label="Company highlights">
         {trustBarItems.map((item) => (
           <article key={item.label}>
             <strong>{item.label}</strong>
@@ -62,11 +62,12 @@ export default function HomePage() {
 
       <section className="section services-section">
         <div className="section-heading wide-heading">
-          <p className="eyebrow">Complete property maintenance services</p>
-          <h2>One Service Hub Instead of a Scattered Contractor List</h2>
+          <p className="eyebrow">Services</p>
+          <h2>Property Services Organized Around the Work You Need</h2>
           <p>
-            The homepage shows the breadth of APS services without becoming a
-            giant encyclopedia; each service path links to a fuller detail page.
+            Choose the closest service family below. APS can confirm the
+            scope, timing, location, and next step during a property
+            walkthrough.
           </p>
         </div>
         <div className="commercial-card-grid">
@@ -79,12 +80,12 @@ export default function HomePage() {
       <section className="one-call-band section">
         <div>
           <p className="eyebrow on-dark">One call, full property coverage</p>
-          <h2>Built for Four Seasons, Not One-Off Service Searches</h2>
+          <h2>Support for the Work That Keeps Properties Moving</h2>
           <p>
-            APS is strongest when the site presents property maintenance as an
-            operational system: grounds in warm months, snow planning in winter,
-            pavement and concrete when access needs attention, and building
-            repairs when interior or facility needs appear.
+            Property maintenance rarely lives in one category. A site may
+            need landscape cleanup, pavement repair, drainage, concrete,
+            snow planning, or building repairs in the same season. APS keeps
+            those conversations connected.
           </p>
           <Link className="button button-primary" href="/services/property-maintenance">
             View Property Maintenance
@@ -102,12 +103,12 @@ export default function HomePage() {
 
       <section className="section property-types-section">
         <div className="section-heading">
-          <p className="eyebrow">Property types</p>
-          <h2>Commercial-First, With Flexible Property Support</h2>
+          <p className="eyebrow">Who APS helps</p>
+          <h2>Support for Commercial Sites and Exterior Property Projects</h2>
           <p>
-            The structure keeps commercial maintenance at the center while
-            giving visitors a natural place to ask about the exact property type
-            and service fit.
+            APS works with property managers, business owners, facility
+            teams, and homeowners who need help maintaining grounds, access
+            areas, structures, and outdoor spaces.
           </p>
         </div>
         <div className="property-grid">
@@ -122,11 +123,12 @@ export default function HomePage() {
 
       <section className="section gallery-section">
         <div className="section-heading wide-heading">
-          <p className="eyebrow">Approved local visuals</p>
-          <h2>APS Photo Slots That Support the Service Story</h2>
+          <p className="eyebrow">APS work photos</p>
+          <h2>Property Work in the Field</h2>
           <p>
-            This concept uses local APS visual assets only. Badge, rating, and
-            affiliation graphics are not shown in the public page experience.
+            Photos from APS service categories show the range of exterior,
+            pavement, snow, building maintenance, and site-support work
+            customers can ask about.
           </p>
         </div>
         <div className="gallery-grid">
@@ -147,7 +149,7 @@ export default function HomePage() {
                 />
               ) : null}
               <span>{asset.title}</span>
-              <small>{asset.status === "approved" ? "Service visual" : "Visual pending"}</small>
+              <small>{asset.status === "approved" ? "APS service photo" : "Photo pending"}</small>
             </div>
           ))}
         </div>
@@ -155,12 +157,13 @@ export default function HomePage() {
 
       <section className="section service-area commercial-area">
         <div>
-          <p className="eyebrow">Regional service coverage</p>
-          <h2>Lehigh Valley and Regional Service Coverage</h2>
+          <p className="eyebrow">Service areas</p>
+          <h2>Ask About Service Availability in Your Area</h2>
           <p>
-            APS can use this section to present service coverage clearly.
-            Visitors should ask about availability for their exact location and
-            service need.
+            APS is based in Walnutport and lists Lehigh Valley-area
+            communities and nearby counties as service-area references.
+            Availability can depend on the property location, service type,
+            and timing.
           </p>
           <Link className="text-link" href="/contact">
             Ask About Service in Your Area
@@ -175,7 +178,7 @@ export default function HomePage() {
 
       <CTASection
         title="Request a property walkthrough."
-        body="Use the walkthrough path to start a practical conversation about the site, the service mix, and the best next step."
+        body="Tell APS what is happening at the property, where it is located, and which service path seems closest."
       />
     </>
   );

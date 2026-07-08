@@ -7,11 +7,11 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://aps-demo.vercel.app"),
   title: {
-    default: "American Property Solutions | Demo Concept",
-    template: "%s | American Property Solutions Demo"
+    default: "American Property Solutions",
+    template: "%s | American Property Solutions"
   },
   description:
-    "Demo concept for American Property Solutions, showing clearer property maintenance positioning, service organization, and walkthrough paths.",
+    "American Property Solutions property maintenance, landscaping, snow and ice, parking lot, concrete, sitework, building repair, remodeling, deck, patio, and hardscape services.",
   robots: {
     index: false,
     follow: false
@@ -36,4 +36,3 @@ export default function RootLayout({
     </html>
   );
 }
-
