@@ -71,9 +71,9 @@ export const heroAsset: VisualAsset = {
 export const homeHeroSlides: VisualAsset[] = [
   heroAsset,
   {
-    id: "hero-paving-equipment",
-    title: "Paving and site equipment",
-    alt: "APS roller equipment during paving work used for homepage motion background",
+    id: "hero-building-maintenance",
+    title: "Building maintenance work",
+    alt: "Worker painting an interior ceiling during building maintenance work",
     recommendedFile: "aps-roller-scaled.jpeg",
     usage: "Homepage cinematic hero background slide.",
     src: "/approved-aps-assets/aps-roller-scaled.jpeg",
@@ -361,10 +361,10 @@ export const serviceCatalog: ServiceDetail[] = [
     image: {
       id: "excavation-sitework-visual",
       title: "Excavation and sitework",
-      alt: "APS paving and site work photo used for excavation and property support context",
-      recommendedFile: "aps-roller-scaled.jpeg",
-      usage: "Sitework-adjacent image used until a more direct excavation image is approved.",
-      src: "/approved-aps-assets/aps-roller-scaled.jpeg",
+      alt: "Paving crew and equipment used for site preparation and access-area work",
+      recommendedFile: "parking_lot_Asphalt.jpg",
+      usage: "Closest approved sitework-adjacent equipment image until a direct excavation photo is approved.",
+      src: "/approved-aps-assets/parking_lot_Asphalt.jpg",
       status: "approved"
     },
     handles: [
@@ -435,10 +435,10 @@ export const serviceCatalog: ServiceDetail[] = [
     image: {
       id: "hardscapes-visual",
       title: "Decks, patios, and hardscapes",
-      alt: "APS hardscape and landscape photo used for decks and patio context",
-      recommendedFile: "turf.png",
-      usage: "Hardscape and outdoor improvement context.",
-      src: "/approved-aps-assets/turf.png",
+      alt: "Paver installation and deck construction imagery used for patios, hardscapes, and decks",
+      recommendedFile: "landscaping2.png",
+      usage: "Paver and deck construction context for outdoor improvement services.",
+      src: "/approved-aps-assets/landscaping2.png",
       status: "approved"
     },
     handles: [
