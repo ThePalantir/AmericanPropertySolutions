@@ -28,9 +28,8 @@ export default function HomePage() {
       </CinematicHero>
 
       <section className="aps-capability-strip" aria-label="Company highlights">
-        {trustBarItems.map((item, index) => (
+        {trustBarItems.map((item) => (
           <div key={item.label}>
-            <span className="aps-strip-number">0{index + 1}</span>
             <strong>{item.label}</strong>
             <span>{item.note}</span>
           </div>
@@ -57,9 +56,8 @@ export default function HomePage() {
           <Link className="aps-quiet-link" href="/services">View the full service directory <span aria-hidden="true">&#8594;</span></Link>
         </div>
         <div className="aps-service-index">
-          {serviceGroups.map((service, index) => (
+          {serviceGroups.map((service) => (
             <Link href={service.href} key={service.title}>
-              <span className="aps-service-number">0{index + 1}</span>
               <span className="aps-service-name">
                 <small>{service.eyebrow}</small>
                 <strong>{service.title}</strong>
@@ -120,7 +118,7 @@ export default function HomePage() {
           {featuredWork.map((asset, index) => (
             <figure key={asset.id} className={index === 0 ? "aps-work-feature" : undefined}>
               <div>{asset.src && asset.status === "approved" ? <Image src={asset.src} alt={asset.alt} fill sizes={index === 0 ? "(max-width: 800px) 100vw, 66vw" : "(max-width: 800px) 100vw, 34vw"} /> : null}</div>
-              <figcaption><span>0{index + 1}</span><strong>{asset.title}</strong></figcaption>
+              <figcaption><strong>{asset.title}</strong></figcaption>
             </figure>
           ))}
         </div>
@@ -134,7 +132,7 @@ export default function HomePage() {
           <Link className="aps-quiet-link" href="/contact">Ask about your location <span aria-hidden="true">&#8594;</span></Link>
         </div>
         <div className="aps-area-list" aria-label="Service areas to confirm during walkthrough">
-          {serviceAreas.map((area, index) => <span key={area}><small>{String(index + 1).padStart(2, "0")}</small>{area}</span>)}
+          {serviceAreas.map((area) => <span key={area}>{area}</span>)}
         </div>
       </section>
 
