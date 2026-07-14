@@ -3,182 +3,142 @@ import Image from "next/image";
 import Link from "next/link";
 import { CTASection } from "../components/CTASection";
 import { CinematicHero } from "../components/CinematicHero";
-import { ServiceCard } from "../components/ServiceCard";
-import {
-  galleryAssets,
-  homeHeroSlides,
-  propertyTypes,
-  serviceAreas,
-  serviceGroups,
-  trustBarItems
-} from "../lib/siteData";
+import { galleryAssets, homeHeroSlides, propertyTypes, serviceAreas, serviceGroups, trustBarItems } from "../lib/siteData";
 
 export const metadata: Metadata = {
   title: "Commercial Property Maintenance in Lehigh Valley",
-  description:
-    "American Property Solutions provides property maintenance, landscaping, snow and ice, parking lot, concrete, sitework, building repair, remodeling, deck, patio, and hardscape services."
+  description: "American Property Solutions provides property maintenance, landscaping, snow and ice, parking lot, concrete, sitework, building repair, remodeling, deck, patio, and hardscape services."
 };
 
 export default function HomePage() {
+  const featuredWork = galleryAssets.slice(0, 3);
+
   return (
     <>
       <CinematicHero slides={homeHeroSlides}>
-        <div className="hero-copy">
+        <div className="hero-copy aps-editorial-hero-copy">
           <p className="eyebrow on-dark">Commercial property maintenance</p>
-          <h1>Four-Season Commercial Property Maintenance</h1>
-          <p className="lead">
-            American Property Solutions helps property managers, facility
-            teams, local businesses, and owners maintain exterior spaces,
-            parking areas, site access, and building needs through every
-            season.
-          </p>
-          <p>
-            Start with APS for lawn and landscape work, snow and ice,
-            parking lot maintenance, concrete, excavation, building
-            maintenance, remodeling, decks, patios, and hardscapes.
-          </p>
+          <h1>One Property. Every Season. One Place to Start.</h1>
+          <p className="lead">APS helps property managers, facility teams, businesses, and owners coordinate the exterior, access, sitework, and repair needs that keep a property moving.</p>
           <div className="hero-actions">
-            <Link className="button button-primary" href="/contact">
-              Request a Property Walkthrough
-            </Link>
-            <Link className="button button-secondary dark" href="/services">
-              Explore Services
-            </Link>
+            <Link className="button button-primary" href="/contact">Request a Property Walkthrough</Link>
+            <Link className="aps-quiet-link aps-quiet-link-light" href="/services">Explore all services <span aria-hidden="true">&#8599;</span></Link>
           </div>
-          <p className="location-note on-dark-note">
-            Start with a walkthrough so APS can match the property need to the right service.
-          </p>
         </div>
       </CinematicHero>
 
-      <section className="trust-bar" aria-label="Company highlights">
-        {trustBarItems.map((item) => (
-          <article key={item.label}>
+      <section className="aps-capability-strip" aria-label="Company highlights">
+        {trustBarItems.map((item, index) => (
+          <div key={item.label}>
+            <span className="aps-strip-number">0{index + 1}</span>
             <strong>{item.label}</strong>
             <span>{item.note}</span>
-          </article>
+          </div>
         ))}
       </section>
 
-      <section className="section services-section">
-        <div className="section-heading wide-heading">
-          <h2>Property Services Organized Around the Work You Need</h2>
-          <p>
-            Choose the closest service below. APS can confirm the
-            scope, timing, location, and next step during a property
-            walkthrough.
-          </p>
-        </div>
-        <div className="commercial-card-grid">
-          {serviceGroups.map((service) => (
-            <ServiceCard key={service.title} {...service} />
-          ))}
-        </div>
-      </section>
-
-      <section className="one-call-band section">
+      <section className="aps-editorial-section aps-intro-section">
         <div>
-          <p className="eyebrow on-dark">One call, full property coverage</p>
-          <h2>Support for the Work That Keeps Properties Moving</h2>
-          <p>
-            Property maintenance rarely lives in one category. A site may
-            need landscape cleanup, pavement repair, drainage, concrete,
-            snow planning, or building repairs in the same season. APS keeps
-            those conversations connected.
-          </p>
-          <Link className="button button-primary" href="/services/property-maintenance">
-            View Property Maintenance
-          </Link>
+          <p className="eyebrow">The property comes first</p>
+          <h2>Maintenance rarely fits into one neat category.</h2>
         </div>
-        <div className="ops-panel" aria-label="Four-season maintenance priorities">
-          <span>Grounds</span>
-          <span>Snow</span>
-          <span>Lots</span>
-          <span>Sitework</span>
-          <span>Concrete</span>
-          <span>Repairs</span>
+        <div className="aps-intro-copy">
+          <p className="aps-intro-lead">A clean entrance, clear lot, working drainage, maintained grounds, and timely repairs all shape how a property looks and functions.</p>
+          <p>When those needs cross seasons and trades, the contractor list gets complicated. APS gives owners and managers one practical starting point: walk the property, identify the work, and route the next step.</p>
+          <Link className="aps-quiet-link" href="/services/property-maintenance">How property maintenance works <span aria-hidden="true">&#8594;</span></Link>
         </div>
       </section>
 
-      <section className="section property-types-section">
-        <div className="section-heading">
-          <p className="eyebrow">Who APS helps</p>
-          <h2>Support for Commercial Sites and Exterior Property Projects</h2>
-          <p>
-            APS works with property managers, business owners, facility
-            teams, and homeowners who need help maintaining grounds, access
-            areas, structures, and outdoor spaces.
-          </p>
+      <section className="aps-editorial-section aps-services-editorial">
+        <div className="aps-services-statement">
+          <p className="eyebrow">What APS handles</p>
+          <h2>Property support, organized around the work.</h2>
+          <p>Start with the service that seems closest. APS can confirm the property, scope, location, timing, and best next step.</p>
+          <Link className="aps-quiet-link" href="/services">View the full service directory <span aria-hidden="true">&#8594;</span></Link>
         </div>
-        <div className="property-grid">
-          {propertyTypes.map((type) => (
-            <article key={type.label}>
-              <strong>{type.label}</strong>
-              <span>{type.status}</span>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="section gallery-section">
-        <div className="section-heading wide-heading">
-          <h2>Property Work in the Field</h2>
-          <p>
-            Photos from APS service categories show the range of exterior,
-            pavement, snow, building maintenance, and site-support work
-            customers can ask about.
-          </p>
-        </div>
-        <div className="gallery-grid">
-          {galleryAssets.map((asset) => (
-            <div
-              className="gallery-placeholder"
-              key={asset.id}
-              role="img"
-              aria-label={asset.alt}
-              data-has-image={asset.src && asset.status === "approved" ? "true" : "false"}
-            >
-              <span className="gallery-image" aria-hidden="true">
-                {asset.src && asset.status === "approved" ? (
-                  <Image
-                    src={asset.src}
-                    alt=""
-                    fill
-                    sizes="(max-width: 720px) 100vw, (max-width: 1040px) 50vw, 33vw"
-                  />
-                ) : null}
+        <div className="aps-service-index">
+          {serviceGroups.map((service, index) => (
+            <Link href={service.href} key={service.title}>
+              <span className="aps-service-number">0{index + 1}</span>
+              <span className="aps-service-name">
+                <small>{service.eyebrow}</small>
+                <strong>{service.title}</strong>
+                <span>{service.summary}</span>
               </span>
-              <span className="gallery-title">{asset.title}</span>
-            </div>
+              <span className="aps-service-arrow" aria-hidden="true">&#8594;</span>
+            </Link>
           ))}
         </div>
       </section>
 
-      <section className="section service-area commercial-area">
+      <section className="aps-signature-band">
+        <div className="aps-signature-image">
+          <Image src="/approved-aps-assets/landscaping-3.png" alt="APS landscaping work at a maintained commercial property" fill sizes="(max-width: 900px) 100vw, 55vw" />
+        </div>
+        <div className="aps-signature-copy">
+          <p className="eyebrow on-dark">One call, full property coverage</p>
+          <h2>Keep the conversations connected.</h2>
+          <p>Landscape cleanup may uncover drainage work. Pavement repairs may involve concrete or site preparation. Seasonal planning may touch lots, sidewalks, and access. APS helps keep the next step clear.</p>
+          <div className="aps-operations-line" aria-label="Property service categories">
+            {["Grounds", "Snow", "Lots", "Sitework", "Concrete", "Repairs"].map((item) => <span key={item}>{item}</span>)}
+          </div>
+          <Link className="button button-primary" href="/contact">Start with a Walkthrough</Link>
+        </div>
+      </section>
+
+      <section className="aps-editorial-section aps-process-section">
+        <div className="aps-process-heading">
+          <p className="eyebrow">A clear next step</p>
+          <h2>From property need to practical plan.</h2>
+        </div>
+        <ol className="aps-process-list">
+          <li><span>01</span><div><strong>Tell APS what is happening.</strong><p>Share the location, the property need, and the service that seems closest.</p></div></li>
+          <li><span>02</span><div><strong>Walk the property.</strong><p>Review the site context and identify the work that needs a closer conversation.</p></div></li>
+          <li><span>03</span><div><strong>Confirm the next step.</strong><p>Align on scope, timing, availability, and the right service path for the property.</p></div></li>
+        </ol>
+      </section>
+
+      <section className="aps-editorial-section aps-audience-section">
         <div>
-          <p className="eyebrow">Service areas</p>
-          <h2>Ask About Service Availability in Your Area</h2>
-          <p>
-            APS is based in Walnutport and lists Lehigh Valley-area
-            communities and nearby counties as service-area references.
-            Availability can depend on the property location, service type,
-            and timing.
-          </p>
-          <Link className="text-link" href="/contact">
-            Ask About Service in Your Area
-          </Link>
+          <p className="eyebrow">Who APS helps</p>
+          <h2>Built around real property responsibilities.</h2>
+          <p>APS works with people responsible for keeping grounds, access areas, structures, and outdoor spaces maintained and usable.</p>
         </div>
-        <div className="area-list" aria-label="Service areas to confirm during walkthrough">
-          {serviceAreas.map((area) => (
-            <span key={area}>{area}</span>
+        <div className="aps-audience-list">
+          {propertyTypes.slice(0, 5).map((type) => (
+            <div key={type.label}><strong>{type.label}</strong><span>{type.status}</span></div>
           ))}
         </div>
       </section>
 
-      <CTASection
-        title="Request a property walkthrough."
-        body="Tell APS what is happening at the property, where it is located, and which service seems closest."
-      />
+      <section className="aps-work-section">
+        <div className="aps-work-heading">
+          <div><p className="eyebrow">Work in the field</p><h2>Property work, seen clearly.</h2></div>
+          <p>Approved APS imagery across commercial exteriors, landscaping, winter operations, pavement, and building maintenance.</p>
+        </div>
+        <div className="aps-work-mosaic">
+          {featuredWork.map((asset, index) => (
+            <figure key={asset.id} className={index === 0 ? "aps-work-feature" : undefined}>
+              <div>{asset.src && asset.status === "approved" ? <Image src={asset.src} alt={asset.alt} fill sizes={index === 0 ? "(max-width: 800px) 100vw, 66vw" : "(max-width: 800px) 100vw, 34vw"} /> : null}</div>
+              <figcaption><span>0{index + 1}</span><strong>{asset.title}</strong></figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
+
+      <section className="aps-editorial-section aps-area-section">
+        <div>
+          <p className="eyebrow">Service availability</p>
+          <h2>Based in Walnutport. Available by property, service, and timing.</h2>
+          <p>APS lists Lehigh Valley communities and nearby counties as service-area references. Confirm availability for your property during a walkthrough.</p>
+          <Link className="aps-quiet-link" href="/contact">Ask about your location <span aria-hidden="true">&#8594;</span></Link>
+        </div>
+        <div className="aps-area-list" aria-label="Service areas to confirm during walkthrough">
+          {serviceAreas.map((area, index) => <span key={area}><small>{String(index + 1).padStart(2, "0")}</small>{area}</span>)}
+        </div>
+      </section>
+
+      <CTASection title="Walk the property. Clarify the work." body="Tell APS what is happening, where the property is located, and which service seems closest." />
     </>
   );
 }
