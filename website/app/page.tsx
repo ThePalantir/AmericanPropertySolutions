@@ -90,9 +90,9 @@ export default function HomePage() {
           <h2>From property need to practical plan.</h2>
         </div>
         <ol className="aps-process-list">
-          <li><span>01</span><div><strong>Tell APS what is happening.</strong><p>Share the location, the property need, and the service that seems closest.</p></div></li>
-          <li><span>02</span><div><strong>Walk the property.</strong><p>Review the site context and identify the work that needs a closer conversation.</p></div></li>
-          <li><span>03</span><div><strong>Confirm the next step.</strong><p>Align on scope, timing, availability, and the right service path for the property.</p></div></li>
+          <li><span>1</span><div><strong>Tell APS what is happening.</strong><p>Share the location, the property need, and the service that seems closest.</p></div></li>
+          <li><span>2</span><div><strong>Walk the property.</strong><p>Review the site context and identify the work that needs a closer conversation.</p></div></li>
+          <li><span>3</span><div><strong>Confirm the next step.</strong><p>Align on scope, timing, availability, and the right service path for the property.</p></div></li>
         </ol>
       </section>
 
