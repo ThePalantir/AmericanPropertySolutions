@@ -2,31 +2,55 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { CTASection } from "../components/CTASection";
-import { CinematicHero } from "../components/CinematicHero";
-import { galleryAssets, homeHeroSlides, propertyTypes, serviceAreas, serviceGroups, snowPartner, trustBarItems } from "../lib/commercialData";
+import { galleryAssets, propertyTypes, serviceAreas, serviceGroups, snowPartner, trustBarItems } from "../lib/commercialData";
 
 export const metadata: Metadata = {
   title: "Commercial Exterior Facilities Maintenance",
-  description: "APS provides commercial exterior facilities maintenance, concrete and site work, excavation, grading, drainage, property improvements, repair support, and a connection to specialized commercial snow and ice management.",
+  description: "American Property Solutions provides year-round commercial exterior facilities maintenance, repairs, concrete and site work, drainage, grading, property improvements, and seasonal support.",
   alternates: { canonical: "/" }
 };
 
 export default function HomePage() {
   const featuredWork = galleryAssets.slice(0, 3);
+  const facilityBenefits = [
+    {
+      title: "One practical starting point",
+      detail: "Bring connected exterior maintenance, repair, site, and improvement needs into one property conversation."
+    },
+    {
+      title: "Familiarity with the property",
+      detail: "Build continuity around the site context instead of beginning from zero with every new need."
+    },
+    {
+      title: "Connected scope planning",
+      detail: "Consider concrete, drainage, excavation, access, repairs, and improvements as related facility work."
+    },
+    {
+      title: "Continuity across seasons",
+      detail: "Keep current work and future exterior property needs connected throughout the year."
+    }
+  ];
 
   return (
     <>
-      <CinematicHero slides={homeHeroSlides}>
-        <div className="hero-copy aps-editorial-hero-copy">
-          <p className="eyebrow on-dark">Commercial exterior facilities maintenance</p>
-          <h1>One call for the exterior work your facility needs—year-round.</h1>
-          <p className="lead">APS helps facility managers, property managers, and commercial property owners coordinate maintenance, repairs, site work, concrete, drainage, property improvements, and seasonal needs through one connected property relationship.</p>
-          <div className="hero-actions">
-            <Link className="button button-primary" href="/contact">Request a Property Walkthrough</Link>
-            <Link className="aps-quiet-link aps-quiet-link-light" href="/services">View Commercial Services <span aria-hidden="true">&#8599;</span></Link>
+      <section className="aps-static-hero" aria-labelledby="homepage-hero-title">
+        <div className="aps-static-hero-media" aria-hidden="true">
+          <Image src="/og.png" alt="" fill priority sizes="100vw" />
+        </div>
+        <div className="aps-static-hero-overlay" aria-hidden="true" />
+        <div className="aps-static-hero-content">
+          <div className="aps-static-hero-copy">
+            <p className="aps-static-hero-brand">American Property Solutions</p>
+            <h1 id="homepage-hero-title">Commercial Exterior Facilities Maintenance</h1>
+            <p className="aps-static-hero-promise">One call does it all.</p>
+            <p className="lead">Year-round maintenance, repairs, site improvements, and seasonal support for commercial properties and facilities.</p>
+            <div className="hero-actions">
+              <Link className="button button-primary" href="/contact">Request a Property Walkthrough</Link>
+              <Link className="aps-quiet-link aps-quiet-link-light" href="/services">View Commercial Services <span aria-hidden="true">&#8599;</span></Link>
+            </div>
           </div>
         </div>
-      </CinematicHero>
+      </section>
 
       <section className="aps-capability-strip" aria-label="Company highlights">
         {trustBarItems.map((item) => (
@@ -49,27 +73,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="aps-editorial-section aps-services-editorial">
-        <div className="aps-services-statement">
-          <p className="eyebrow">What APS handles</p>
-          <h2>Property support, organized around the work.</h2>
-          <p>Start with the service that seems closest. APS can confirm the property, scope, location, timing, and best next step.</p>
-          <Link className="aps-quiet-link" href="/services">View the full service directory <span aria-hidden="true">&#8594;</span></Link>
-        </div>
-        <div className="aps-service-index">
-          {serviceGroups.map((service) => (
-            <Link href={service.href} key={service.title}>
-              <span className="aps-service-name">
-                <small>{service.eyebrow}</small>
-                <strong>{service.title}</strong>
-                <span>{service.summary}</span>
-              </span>
-              <span className="aps-service-arrow" aria-hidden="true">&#8594;</span>
-            </Link>
-          ))}
-        </div>
-      </section>
-
       <section className="aps-signature-band">
         <div className="aps-signature-image">
           <Image src="/approved-aps-assets/landscaping-3.png" alt="APS landscaping work at a maintained commercial property" fill sizes="(max-width: 900px) 100vw, 55vw" />
@@ -82,6 +85,27 @@ export default function HomePage() {
             {["Maintenance", "Concrete", "Site work", "Drainage", "Improvements", "Repairs"].map((item) => <span key={item}>{item}</span>)}
           </div>
           <Link className="button button-primary" href="/contact">Start with a Walkthrough</Link>
+        </div>
+      </section>
+
+      <section className="aps-editorial-section aps-services-editorial">
+        <div className="aps-services-statement">
+          <p className="eyebrow">Commercial capabilities</p>
+          <h2>Exterior work, organized around the facility.</h2>
+          <p>Start with Exterior Facilities Maintenance when needs cross categories, or review the commercial service path closest to the work.</p>
+          <Link className="aps-quiet-link" href="/services">View Commercial Services <span aria-hidden="true">&#8594;</span></Link>
+        </div>
+        <div className="aps-service-index">
+          {serviceGroups.map((service) => (
+            <Link href={service.href} key={service.title}>
+              <span className="aps-service-name">
+                <small>{service.eyebrow}</small>
+                <strong>{service.title}</strong>
+                <span>{service.summary}</span>
+              </span>
+              <span className="aps-service-arrow" aria-hidden="true">&#8594;</span>
+            </Link>
+          ))}
         </div>
       </section>
 
@@ -110,9 +134,22 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="aps-editorial-section aps-audience-section aps-facility-benefits">
+        <div>
+          <p className="eyebrow">Why the relationship helps</p>
+          <h2>Built around the facility manager&apos;s workload.</h2>
+          <p>APS is positioned as a familiar commercial property resource for connected exterior needs—not as a generic handyman or a list of unrelated services.</p>
+        </div>
+        <div className="aps-audience-list">
+          {facilityBenefits.map((benefit) => (
+            <div key={benefit.title}><strong>{benefit.title}</strong><span>{benefit.detail}</span></div>
+          ))}
+        </div>
+      </section>
+
       <section className="aps-work-section">
         <div className="aps-work-heading">
-          <div><p className="eyebrow">Commercial work in the field</p><h2>Exterior property work, seen clearly.</h2></div>
+          <div><p className="eyebrow">Existing APS field imagery</p><h2>Exterior property work, seen clearly.</h2></div>
           <p>Existing APS imagery across commercial exteriors, grounds, winter operations, pavement, and facility maintenance.</p>
         </div>
         <div className="aps-work-mosaic">
@@ -148,7 +185,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <CTASection title="Discuss your facility needs." body="Tell APS what is happening at the commercial property, where it is located, and what the facility team needs to address." />
+      <CTASection title="Let&apos;s talk about your property." body="Tell APS what is happening at the commercial property, where it is located, and what the facility team needs to address now and throughout the year." />
     </>
   );
 }
