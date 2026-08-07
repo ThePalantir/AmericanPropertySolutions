@@ -1,5 +1,7 @@
 # Current Site Audit
 
+> **Status update — August 7, 2026:** The earlier mixed-market direction in this file is superseded by the APS leadership-approved commercial-only direction in [commercial-only-revision-plan.md](commercial-only-revision-plan.md).
+
 ## Executive Summary
 
 American Property Solutions has enough real service substance to support a much stronger website, but the current site weakens credibility by scattering the business across many service labels, repeating low-quality SEO text, and burying the clearest commercial property maintenance story.

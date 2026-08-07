@@ -1,5 +1,7 @@
 # Business Profile Brief
 
+> **Status update — August 7, 2026:** The earlier mixed-market direction in this file is superseded by the APS leadership-approved commercial-only direction in [commercial-only-revision-plan.md](commercial-only-revision-plan.md).
+
 ## Summary
 
 American Property Solutions appears to be a year-round property maintenance company with a broad mix of exterior, site, parking lot, snow, landscaping, hardscaping, and repair services. The clearest pilot direction is to position APS as a practical property maintenance partner for commercial properties, property managers, local businesses, and residential property needs where appropriate.

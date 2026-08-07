@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { business, logoAsset, navItems, serviceCatalog } from "../lib/siteData";
+import { business, logoAsset, navItems, serviceCatalog } from "../lib/commercialData";
 
 export function Footer() {
   const hasApprovedLogo = Boolean(logoAsset.src && logoAsset.status === "approved");
@@ -17,12 +17,10 @@ export function Footer() {
             ) : null}
             <p className="eyebrow">American Property Solutions</p>
           </div>
-          <h2>Four-season property maintenance support</h2>
+          <h2>Commercial exterior facilities maintenance</h2>
           <p>
-            Property maintenance, snow and ice, parking lots, concrete,
-            sitework, landscaping, building repairs, remodeling, decks,
-            patios, and hardscapes for exterior and building-related
-            property needs.
+            One commercial relationship for exterior maintenance, concrete,
+            site work, drainage, improvements, repairs, and seasonal needs.
           </p>
         </div>
         <div>
@@ -59,7 +57,7 @@ export function Footer() {
       </div>
       <div className="footer-note">
         <span>Walnutport, PA</span>
-        <span>Call 610-760-0600 to ask about service availability.</span>
+        <span>Call 610-760-0600 to discuss a commercial property.</span>
       </div>
     </footer>
   );

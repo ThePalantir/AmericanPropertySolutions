@@ -1,5 +1,7 @@
 # Sitemap
 
+> **Status update — August 7, 2026:** The earlier mixed-market direction in this file is superseded by the APS leadership-approved commercial-only direction in [commercial-only-revision-plan.md](commercial-only-revision-plan.md).
+
 ## Summary
 
 This is a proposed pilot sitemap for American Property Solutions. It is designed to make the current broad service mix easier to understand, easier to maintain, and easier to convert into qualified leads.

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { business } from "../lib/siteData";
+import { business } from "../lib/commercialData";
 
 type CTASectionProps = {
   title?: string;

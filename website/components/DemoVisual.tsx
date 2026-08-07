@@ -1,5 +1,5 @@
 import Image from "next/image";
-import type { VisualAsset } from "../lib/siteData";
+import type { VisualAsset } from "../lib/commercialData";
 
 type DemoVisualProps = {
   asset?: VisualAsset;

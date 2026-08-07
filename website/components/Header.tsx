@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { business, logoAsset, navItems } from "../lib/siteData";
+import { business, logoAsset, navItems } from "../lib/commercialData";
 
 export function Header() {
   const hasApprovedLogo = Boolean(logoAsset.src && logoAsset.status === "approved");
@@ -19,7 +19,7 @@ export function Header() {
           )}
           <span>
             <strong>American Property Solutions</strong>
-            <small>Commercial property maintenance</small>
+            <small>Exterior facilities maintenance</small>
           </span>
         </Link>
         <nav className="main-nav" aria-label="Primary navigation">

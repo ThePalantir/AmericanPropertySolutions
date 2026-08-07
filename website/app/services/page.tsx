@@ -6,12 +6,13 @@ import {
   serviceDirectoryGroups,
   serviceOverviewAsset,
   supplementalPages
-} from "../../lib/siteData";
+} from "../../lib/commercialData";
 
 export const metadata: Metadata = {
-  title: "Property Maintenance Services",
+  title: "Commercial Exterior Property Services",
   description:
-    "Explore APS property maintenance services including landscaping, snow and ice, parking lots, concrete, excavation, building repairs, remodeling, decks, patios, and hardscapes."
+    "Explore APS commercial exterior facilities maintenance, concrete and site work, excavation, grading, drainage, property improvements, ongoing repair support, and commercial snow and ice management.",
+  alternates: { canonical: "/services" }
 };
 
 export default function ServicesPage() {
@@ -19,19 +20,20 @@ export default function ServicesPage() {
     <>
       <section className="page-hero section compact-hero">
         <div>
-          <p className="eyebrow">Services</p>
-          <h1>Property Maintenance Services</h1>
+          <p className="eyebrow">Commercial services</p>
+          <h1>Exterior Facility Services, Organized Around the Property</h1>
           <p className="lead">
-            APS helps property managers, business owners, facility teams,
-            and homeowners start the right conversation for exterior,
-            site, seasonal, and building-related property needs.
+            APS helps facility managers, property managers, industrial operators,
+            commercial owners, and corporate real estate teams start the right
+            conversation for exterior maintenance, site work, repairs, improvements,
+            and seasonal facility needs.
           </p>
           <div className="hero-actions">
             <Link className="button button-primary" href="/contact">
               Request a Property Walkthrough
             </Link>
-            <Link className="button button-secondary" href="/services/property-maintenance">
-              Start with Property Maintenance
+            <Link className="button button-secondary" href="/services/exterior-facilities-maintenance">
+              Start with Exterior Facilities Maintenance
             </Link>
           </div>
         </div>
@@ -40,13 +42,12 @@ export default function ServicesPage() {
 
       <section className="section directory-section grouped-services-section">
         <div className="section-heading wide-heading">
-          <p className="eyebrow">Service directory</p>
-          <h2>One Clear Directory by Property Need</h2>
+          <p className="eyebrow">Commercial service directory</p>
+          <h2>One Clear Directory by Facility Need</h2>
           <p>
-            Find the service family that best matches the property need,
-            then review the individual APS service that fits the work:
-            maintenance, exterior upkeep, access areas, sitework,
-            building repairs, or outdoor improvements.
+            Begin with Exterior Facilities Maintenance when needs cross categories,
+            or review the commercial service path closest to the work: concrete,
+            excavation, grading, drainage, improvements, repairs, or winter operations.
           </p>
         </div>
         <div className="grouped-directory-grid">
@@ -107,8 +108,8 @@ export default function ServicesPage() {
       </section>
 
       <CTASection
-        title="Not sure where to start?"
-        body="Describe what is happening at the property first, then APS can route the conversation to the right service category."
+        title="Discuss your commercial property needs."
+        body="Describe what is happening at the facility first, then APS can route the conversation to the appropriate commercial service path."
       />
     </>
   );

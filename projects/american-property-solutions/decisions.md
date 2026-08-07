@@ -1,5 +1,7 @@
 # Decisions
 
+> **Status update — August 7, 2026:** The earlier mixed-market direction in this file is superseded by the APS leadership-approved commercial-only direction in [commercial-only-revision-plan.md](commercial-only-revision-plan.md).
+
 ## Summary
 
 This decision log captures pilot-phase choices made from the intake, audit, discovery brief, sitemap, homepage copy, SEO package, design spec, and pitch summary work. These are working project decisions for the APS pilot concept, not final client-approved launch decisions unless explicitly marked approved.

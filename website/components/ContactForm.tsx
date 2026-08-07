@@ -1,7 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
-import { servicePriority } from "../lib/siteData";
+import { servicePriority } from "../lib/commercialData";
 
 type FormStatus = "idle" | "loading" | "success" | "error";
 
@@ -115,7 +115,7 @@ export function ContactForm() {
         </label>
 
         <label>
-          Property or Business Name
+          Company, Organization, or Facility Name
           <input
             value={form.property}
             onChange={(event) => updateField("property", event.target.value)}
@@ -123,7 +123,7 @@ export function ContactForm() {
         </label>
 
         <label>
-          Service Interest <span aria-hidden="true">*</span>
+          Commercial Service Interest <span aria-hidden="true">*</span>
           <select
             value={form.service}
             onChange={(event) => updateField("service", event.target.value)}
@@ -137,13 +137,13 @@ export function ContactForm() {
                 {service}
               </option>
             ))}
-            <option value="Not Sure / Multiple Services">Not Sure / Multiple Services</option>
+            <option value="Not Sure / Multiple Commercial Services">Not Sure / Multiple Commercial Services</option>
           </select>
           {errors.service && <small id="service-error">{errors.service}</small>}
         </label>
 
         <label>
-          Property Location <span aria-hidden="true">*</span>
+          Commercial Property Location <span aria-hidden="true">*</span>
           <input
             value={form.location}
             onChange={(event) => updateField("location", event.target.value)}
@@ -156,7 +156,7 @@ export function ContactForm() {
       </div>
 
       <label>
-        How Can We Help? <span aria-hidden="true">*</span>
+        What Does the Facility Need? <span aria-hidden="true">*</span>
         <textarea
           rows={5}
           value={form.message}

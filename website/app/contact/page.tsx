@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { ContactForm } from "../../components/ContactForm";
 import { DemoVisual } from "../../components/DemoVisual";
-import { business, contactAsset } from "../../lib/siteData";
+import { business, contactAsset } from "../../lib/commercialData";
 
 export const metadata: Metadata = {
-  title: "Contact American Property Solutions",
+  title: "Request Commercial Service",
   description:
-    "Call 610-760-0600 or use the walkthrough request form for American Property Solutions property maintenance services."
+    "Call 610-760-0600 or request a walkthrough to discuss commercial exterior facilities maintenance with American Property Solutions.",
+  alternates: { canonical: "/contact" }
 };
 
 export default function ContactPage() {
@@ -14,11 +15,11 @@ export default function ContactPage() {
     <>
       <section className="page-hero section compact-hero">
         <div>
-          <p className="eyebrow">Contact</p>
-          <h1>Contact American Property Solutions</h1>
+          <p className="eyebrow">Commercial property contact</p>
+          <h1>Discuss Your Facility Needs</h1>
           <p className="lead">
-            Call APS directly or use the walkthrough request path to start a
-            practical conversation about your property.
+            Call APS directly or request a walkthrough to start a practical
+            conversation about your commercial property or facility.
           </p>
           <div className="contact-actions">
             <a className="button button-primary" href={business.phoneHref}>
@@ -34,13 +35,19 @@ export default function ContactPage() {
 
       <section className="section contact-layout">
         <div id="quote-form" className="form-panel">
-          <p className="eyebrow">Walkthrough request</p>
+          <p className="eyebrow">Commercial walkthrough request</p>
           <h2>Request a Property Walkthrough</h2>
           <p>
-            Share the property location, service need, and best contact details
-            so APS can route the request to the right service conversation.
+            Share the facility location, commercial service need, and best contact
+            details so APS can route the request to the right conversation.
           </p>
           <ContactForm />
+          <p className="small-note">
+            Looking for residential services? APS is now focused exclusively on
+            commercial properties and facilities. While we no longer perform
+            homeowner projects, we are happy to recommend a trusted local
+            contractor when possible.
+          </p>
         </div>
         <aside className="contact-card" aria-label="Public APS contact details">
           <p className="eyebrow">Public contact details</p>
@@ -66,8 +73,8 @@ export default function ContactPage() {
             </div>
           </dl>
           <p className="small-note">
-            Ask about service availability, scheduling, and the best next step
-            for your property.
+            Ask about commercial service availability and the best next step
+            for your facility.
           </p>
         </aside>
       </section>

@@ -1,5 +1,7 @@
 # SEO Package
 
+> **Status update — August 7, 2026:** The earlier mixed-market direction in this file is superseded by the APS leadership-approved commercial-only direction in [commercial-only-revision-plan.md](commercial-only-revision-plan.md).
+
 ## Summary
 
 This SEO package gives American Property Solutions a cleaner search foundation for the pilot demo. It replaces repeated keyword blocks with page-specific titles, descriptions, headings, internal links, and image-alt guidance based on confirmed public services and the proposed sitemap.

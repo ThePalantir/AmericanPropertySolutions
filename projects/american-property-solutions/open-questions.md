@@ -1,5 +1,7 @@
 # Open Questions
 
+> **Status update — August 7, 2026:** The earlier mixed-market direction in this file is superseded by the APS leadership-approved commercial-only direction in [commercial-only-revision-plan.md](commercial-only-revision-plan.md).
+
 ## Summary
 
 These questions should be resolved before final sitemap approval, final public copy, SEO launch work, design finalization, demo build, or production deployment. Phase two adds specific copy, SEO, design, and pitch questions while preserving the phase-one approval risks.

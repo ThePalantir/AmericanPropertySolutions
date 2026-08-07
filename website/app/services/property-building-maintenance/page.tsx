@@ -8,5 +8,5 @@ export const metadata: Metadata = {
 };
 
 export default function PropertyBuildingMaintenanceCompatibilityPage() {
-  permanentRedirect("/services/property-maintenance");
+  permanentRedirect("/services/exterior-facilities-maintenance");
 }

@@ -1,5 +1,7 @@
 # Homepage Copy
 
+> **Status update — August 7, 2026:** The earlier mixed-market direction in this file is superseded by the APS leadership-approved commercial-only direction in [commercial-only-revision-plan.md](commercial-only-revision-plan.md).
+
 ## Summary
 
 This is draft homepage copy for the American Property Solutions pilot concept. It is written to show a clearer before-and-after direction for the business owner conversation, not as final approved public copy.

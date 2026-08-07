@@ -1,5 +1,7 @@
 # Source Content Inventory
 
+> **Status update — August 7, 2026:** The earlier mixed-market direction in this file is superseded by the APS leadership-approved commercial-only direction in [commercial-only-revision-plan.md](commercial-only-revision-plan.md).
+
 ## Summary
 
 This inventory captures useful APS source-site content that was reorganized into the expanded demo service architecture. It separates source-derived content from demo-safe rewrites and flags claims that require APS approval before public launch.

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import type { ReactNode } from "react";
-import type { VisualAsset } from "../lib/siteData";
+import type { VisualAsset } from "../lib/commercialData";
 
 type CinematicHeroProps = {
   slides: VisualAsset[];
