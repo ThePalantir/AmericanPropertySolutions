@@ -6,12 +6,13 @@ import { galleryAssets, propertyTypes, serviceAreas, serviceGroups, snowPartner,
 
 export const metadata: Metadata = {
   title: "Commercial Exterior Facilities Maintenance",
-  description: "American Property Solutions provides year-round commercial exterior facilities maintenance, repairs, concrete and site work, drainage, grading, property improvements, and seasonal support.",
+  description: "American Property Solutions provides year-round commercial exterior facilities maintenance, repairs, site work, property improvements, and access to specialized commercial snow and ice management through American Snow & Ice Solutions.",
   alternates: { canonical: "/" }
 };
 
 export default function HomePage() {
   const featuredWork = galleryAssets.slice(0, 3);
+  const primaryServiceGroups = serviceGroups.filter((service) => service.href !== "/services/commercial-snow-ice-management");
   const facilityBenefits = [
     {
       title: "One practical starting point",
@@ -96,7 +97,7 @@ export default function HomePage() {
           <Link className="aps-quiet-link" href="/services">View Commercial Services <span aria-hidden="true">&#8594;</span></Link>
         </div>
         <div className="aps-service-index">
-          {serviceGroups.map((service) => (
+          {primaryServiceGroups.map((service) => (
             <Link href={service.href} key={service.title}>
               <span className="aps-service-name">
                 <small>{service.eyebrow}</small>
@@ -106,6 +107,28 @@ export default function HomePage() {
               <span className="aps-service-arrow" aria-hidden="true">&#8594;</span>
             </Link>
           ))}
+        </div>
+      </section>
+
+      <section className="aps-snow-feature" aria-labelledby="snow-feature-title">
+        <div className="aps-snow-feature-copy">
+          <p className="eyebrow on-dark">Specialized winter operations</p>
+          <h2 id="snow-feature-title">Commercial Snow &amp; Ice Management</h2>
+          <p>Winter operations require specialized planning, equipment, documentation, and response. American Property Solutions works alongside American Snow &amp; Ice Solutions to provide commercial properties with dedicated snow and ice management throughout the winter season.</p>
+          <div className="aps-snow-brand-block">
+            <strong>{snowPartner.name}</strong>
+            <span>Dedicated Commercial Snow &amp; Ice Management</span>
+          </div>
+          <a className="button button-primary aps-snow-feature-cta" href={snowPartner.href} target="_blank" rel="noreferrer" aria-label="Explore snow and ice services at American Snow & Ice Solutions">
+            Explore Snow &amp; Ice Services <span aria-hidden="true">&#8594;</span>
+          </a>
+        </div>
+        <div className="aps-snow-feature-media">
+          <Image src="/approved-aps-assets/snow-plow-equipment-1.png" alt="Commercial snow removal equipment prepared for winter operations" fill sizes="(max-width: 1040px) 100vw, 50vw" />
+          <div className="aps-snow-feature-image-label" aria-hidden="true">
+            <span>Winter readiness</span>
+            <strong>Specialized commercial response</strong>
+          </div>
         </div>
       </section>
 
@@ -160,18 +183,6 @@ export default function HomePage() {
             </figure>
           ))}
         </div>
-      </section>
-
-
-      <section className="section split-band">
-        <div>
-          <p className="eyebrow">Specialized winter operations</p>
-          <h2>Commercial snow and ice has its own dedicated team.</h2>
-          <p>APS includes winter needs in the year-round facilities conversation. American Snow & Ice Solutions provides the detailed commercial snow and ice offering.</p>
-        </div>
-        <a className="button button-primary" href={snowPartner.href} target="_blank" rel="noreferrer">
-          Visit {snowPartner.name}
-        </a>
       </section>
       <section className="aps-editorial-section aps-area-section">
         <div>

@@ -2970,3 +2970,147 @@ main { overflow-x: clip; overflow-y: visible; }
     width: 100%;
   }
 }
+
+/* Dedicated winter brand feature — distinct from the APS service index. */
+.aps-snow-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  min-height: 640px;
+  background: #07172f;
+  color: #ffffff;
+}
+
+.aps-snow-feature-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: clamp(4.5rem, 8vw, 8rem) clamp(2rem, 6vw, 7rem);
+}
+
+.aps-snow-feature-copy h2 {
+  max-width: 760px;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  font-size: clamp(3rem, 5.4vw, 6rem);
+  letter-spacing: -0.055em;
+  line-height: 0.96;
+  text-wrap: balance;
+}
+
+.aps-snow-feature-copy > p:not(.eyebrow) {
+  max-width: 700px;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: clamp(1rem, 1.3vw, 1.18rem);
+  line-height: 1.7;
+}
+
+.aps-snow-brand-block {
+  display: grid;
+  gap: 0.35rem;
+  width: 100%;
+  max-width: 620px;
+  margin-bottom: 2rem;
+  padding: 1.2rem 1.35rem;
+  border-left: 5px solid var(--accent);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.aps-snow-brand-block strong {
+  color: #ffffff;
+  font-size: clamp(1rem, 1.5vw, 1.3rem);
+  font-weight: 900;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+}
+
+.aps-snow-brand-block span {
+  color: #cbd9ed;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.aps-snow-feature-cta {
+  gap: 0.75rem;
+  min-height: 56px;
+  padding-inline: 1.6rem;
+}
+
+.aps-snow-feature-cta span {
+  font-size: 1.15em;
+}
+
+.aps-snow-feature-media {
+  position: relative;
+  isolation: isolate;
+  min-height: 640px;
+  overflow: hidden;
+  background: #102541;
+}
+
+.aps-snow-feature-media::after {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(7, 23, 47, 0.08) 42%, rgba(7, 23, 47, 0.9) 100%);
+  content: "";
+}
+
+.aps-snow-feature-media img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.aps-snow-feature-image-label {
+  position: absolute;
+  z-index: 2;
+  right: clamp(1.5rem, 4vw, 4rem);
+  bottom: clamp(1.5rem, 4vw, 4rem);
+  left: clamp(1.5rem, 4vw, 4rem);
+  display: grid;
+  gap: 0.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.42);
+  color: #ffffff;
+}
+
+.aps-snow-feature-image-label span {
+  color: #cbd9ed;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.aps-snow-feature-image-label strong {
+  font-size: clamp(1.1rem, 2vw, 1.55rem);
+}
+
+@media (max-width: 1040px) {
+  .aps-snow-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .aps-snow-feature-media {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 720px) {
+  .aps-snow-feature-copy {
+    padding: 4.5rem 1.25rem;
+  }
+
+  .aps-snow-feature-copy h2 {
+    font-size: clamp(2.85rem, 13vw, 4.5rem);
+  }
+
+  .aps-snow-feature-cta {
+    width: 100%;
+  }
+
+  .aps-snow-feature-media {
+    min-height: 380px;
+  }
+}
