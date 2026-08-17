@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { CTASection } from "../components/CTASection";
+import { WeatherWidget } from "../components/WeatherWidget";
 import { galleryAssets, propertyTypes, serviceAreas, serviceGroups, snowPartner, trustBarItems } from "../lib/commercialData";
 
 export const metadata: Metadata = {
@@ -50,6 +51,7 @@ export default function HomePage() {
               <Link className="aps-quiet-link aps-quiet-link-light" href="/services">View Commercial Services <span aria-hidden="true">&#8599;</span></Link>
             </div>
           </div>
+          <WeatherWidget />
         </div>
       </section>
 
