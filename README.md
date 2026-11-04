@@ -3,7 +3,10 @@
 ## Droplet preview deployment
 
 Run installation and deployment commands at the repository root. The root npm
-workspace delegates build/start/lint to the Next.js application in `website/`.
+package calls Next.js directly with the application directory `website/`.
+This avoids the extra package symbolic link created by npm workspaces, which
+the host rejected in the first candidate release. Keep root dependency versions
+aligned with `website/package.json` when updating either manifest.
 The root `package-lock.json` is canonical for host installs; the original nested
 lockfile is retained for historical context and must not drive host installation.
 
