@@ -4,9 +4,9 @@
   "private": true,
   "engines": { "node": ">=20.9.0" },
   "scripts": {
-    "build": "next build website",
-    "start": "next start website",
-    "lint": "npm run lint --prefix website"
+    "build": "node node_modules/next/dist/bin/next build website",
+    "start": "node node_modules/next/dist/bin/next start website",
+    "lint": "cd website && node ../node_modules/eslint/bin/eslint.js ."
   },
   "dependencies": {
     "next": "16.2.10",
