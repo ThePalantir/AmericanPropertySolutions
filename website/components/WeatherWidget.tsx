@@ -13,18 +13,33 @@ const WIDGET_SCRIPT_SRC = "https://weatherwidget.io/js/widget.min.js";
 
 export function WeatherWidget() {
   useEffect(() => {
-    const existingScript = document.getElementById(WIDGET_SCRIPT_ID);
-
-    if (existingScript) {
-      window.__weatherwidget_init?.();
-      return;
+    function installWidget() {
+      if (document.getElementById(WIDGET_SCRIPT_ID)) {
+        window.__weatherwidget_init?.();
+        return;
+      }
+      const script = document.createElement("script");
+      script.id = WIDGET_SCRIPT_ID;
+      script.src = WIDGET_SCRIPT_SRC;
+      script.async = true;
+      document.head.appendChild(script);
     }
-
-    const script = document.createElement("script");
-    script.id = WIDGET_SCRIPT_ID;
-    script.src = WIDGET_SCRIPT_SRC;
-    script.async = true;
-    document.head.appendChild(script);
+    let idleId: number | undefined;
+    let timerId: number | undefined;
+    function scheduleWidget() {
+      if (typeof window.requestIdleCallback === "function") {
+        idleId = window.requestIdleCallback(installWidget, { timeout: 4000 });
+      } else {
+        timerId = window.setTimeout(installWidget, 1800);
+      }
+    }
+    if (document.readyState === "complete") scheduleWidget();
+    else window.addEventListener("load", scheduleWidget, { once: true });
+    return () => {
+      window.removeEventListener("load", scheduleWidget);
+      if (idleId !== undefined) window.cancelIdleCallback(idleId);
+      if (timerId !== undefined) window.clearTimeout(timerId);
+    };
   }, []);
 
   return (

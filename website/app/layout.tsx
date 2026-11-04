@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import "./globals.css";
+import "./refresh.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://aps-pa.com"),
@@ -49,7 +50,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Set the saved theme before paint to avoid a flash of the wrong theme. */}
+        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+        <script src="/theme-init.js" />
+      </head>
       <body>
         <script
           type="application/ld+json"

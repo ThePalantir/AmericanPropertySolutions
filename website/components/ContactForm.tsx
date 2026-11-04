@@ -66,16 +66,16 @@ export function ContactForm() {
     });
 
     setStatus("success");
-    setForm(initialState);
   }
 
   return (
     <form className="quote-form" onSubmit={handleSubmit} noValidate>
+      <p className="small-note">Preview form: requests are not sent. For service, call <a href="tel:+16107600600">610-760-0600</a>.</p>
       <div className="form-status" aria-live="polite">
-        {status === "idle" && "Complete the fields below to prepare a walkthrough request."}
+        {status === "idle" && "You can preview the request fields below."}
         {status === "loading" && "Preparing confirmation..."}
         {status === "success" &&
-          "Request details are ready. Please call APS directly to submit an active service request."}
+          "Preview complete. No request was sent. Please call APS directly for service."}
         {status === "error" && "Please complete the required fields before requesting a walkthrough."}
       </div>
 
@@ -169,7 +169,7 @@ export function ContactForm() {
       </label>
 
       <button className="button button-primary" type="submit" disabled={status === "loading"}>
-        {status === "loading" ? "Preparing Request..." : "Request a Property Walkthrough"}
+        {status === "loading" ? "Preparing Preview..." : "Preview walkthrough request"}
       </button>
     </form>
   );
