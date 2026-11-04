@@ -1,0 +1,12 @@
+{
+  "name": "aps-deployment",
+  "version": "0.1.0",
+  "private": true,
+  "engines": { "node": ">=20.9.0" },
+  "workspaces": ["website"],
+  "scripts": {
+    "build": "npm run build --workspace=aps-demo-site",
+    "start": "npm run start --workspace=aps-demo-site",
+    "lint": "npm run lint --workspace=aps-demo-site"
+  }
+}
